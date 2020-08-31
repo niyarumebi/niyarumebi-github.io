@@ -1,0 +1,277 @@
+@charset "UTF-8";
+.section-title {
+  padding: 8px 10px;
+  border-bottom: 1px solid #dcdcdc;
+  background: #2ccbc8;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff; }
+  .section-title .sub {
+    font-size: 11px;
+    font-weight: 200;
+    color: #fff; }
+
+.basic-info-wrap {
+  margin-bottom: 50px; }
+  .basic-info-wrap .rows-wrap .btn-wrap {
+    margin-top: 20px; }
+
+.leave-member-wrap .rows-wrap .row:last-child {
+  border-bottom: 1px solid #dcdcdc; }
+
+.row {
+  min-height: 24px;
+  padding: 8px 0;
+  line-height: 1.4;
+  font-size: 13px;
+  font-weight: 300;
+  color: #333; }
+  .row .bold {
+    font-weight: 600; }
+  .row + .row {
+    border-top: 1px solid #dcdcdc; }
+  .row .key {
+    float: left;
+    width: 30%;
+    padding-top: 7px;
+    padding-left: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333; }
+    .row .key i {
+      vertical-align: sub;
+      font-size: 14px;
+      color: #7b7b7b; }
+  .row .value {
+    padding-left: 30%;
+    padding-right: 8px; }
+    .row .value .txt-wrap {
+      min-height: 32px;
+      padding-top: 7px;
+      color: #7b7b7b; }
+    .row .value .form-ctrl + .form-ctrl {
+      margin-top: 8px; }
+    .row .value .form-ctrl.sm {
+      width: 37%; }
+    .row .value .form-ctrl input {
+      width: 100%;
+      padding: 2px 7px;
+      height: 32px;
+      border: 1px solid #dcdcdc;
+      font-size: 13px;
+      font-weight: 300;
+      color: #515152; }
+      .row .value .form-ctrl input + input {
+        margin-top: 8px; }
+      .row .value .form-ctrl input::-webkit-input-placeholder {
+        font-size: 12px;
+        font-weight: 300;
+        color: #ddd; }
+      .row .value .form-ctrl input:-moz-placeholder {
+        font-size: 12px;
+        font-weight: 300;
+        color: #ddd; }
+      .row .value .form-ctrl input::-moz-placeholder {
+        font-size: 12px;
+        font-weight: 300;
+        color: #ddd; }
+      .row .value .form-ctrl input:-ms-input-placeholder {
+        font-size: 12px;
+        font-weight: 300;
+        color: #ddd; }
+    .row .value .has-btn input {
+      width: 68%; }
+    .row .value .has-btn > .btn-action {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 29%;
+      margin-left: 1%;
+      height: 32px;
+      padding: 7px 0 0;
+      border: 1px solid #dcdcdc;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background: #fff;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 300;
+      color: #7b7b7b; }
+    .row .value.for-email {
+      font-size: 0; }
+      .row .value.for-email input {
+        display: inline-block;
+        vertical-align: middle; }
+        .row .value.for-email input.email-id, .row .value.for-email input.email-domain {
+          width: calc(50% - 11px); }
+        .row .value.for-email input.email-domain {
+          background: #f1f1f1; }
+      .row .value.for-email .email-at {
+        vertical-align: middle;
+        margin: 0 4px;
+        font-size: 15px;
+        color: #333; }
+      .row .value.for-email .col2 {
+        float: right;
+        width: calc(50% - 11px); }
+      .row .value.for-email .dropdown {
+        position: relative;
+        padding: 2px 7px;
+        height: 32px;
+        border: 1px solid #dcdcdc;
+        font-size: 13px;
+        font-weight: 300;
+        color: #515152; }
+        .row .value.for-email .dropdown.is-active .drop {
+          display: block; }
+        .row .value.for-email .dropdown .head {
+          height: 25px;
+          padding-top: 5px;
+          padding-left: 4px;
+          background-image: url(../../img/selectBox-caret.png);
+          -webkit-background-size: 13px;
+          background-size: 13px;
+          background-repeat: no-repeat;
+          background-position: 95% 60%;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 300;
+          color: #7b7b7b; }
+        .row .value.for-email .dropdown .drop {
+          display: none;
+          position: absolute;
+          z-index: 30;
+          top: 100%;
+          right: -1px;
+          min-width: 150px;
+          padding: 4px 3px;
+          border: 1px solid #dcdcdc;
+          -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
+          background: #fff;
+          -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+          .row .value.for-email .dropdown .drop li {
+            padding: 5px 6px;
+            font-size: 12px;
+            font-weight: 300;
+            color: #7b7b7b;
+            cursor: pointer; }
+            .row .value.for-email .dropdown .drop li + li {
+              border-top: 1px solid #dcdcdc; }
+    .row .value .inner-row + .inner-row {
+      margin-top: 8px; }
+    .row .value .inner-row .inner-key {
+      float: left;
+      width: 20%;
+      padding-top: 8px;
+      font-size: 13px;
+      font-weight: 300;
+      color: #7b7b7b; }
+    .row .value .inner-row .inner-value {
+      padding-left: 20%; }
+      .row .value .inner-row .inner-value .sub {
+        margin-top: 2px;
+        font-size: 11px;
+        font-weight: 300;
+        color: #7b7b7b; }
+
+.pull-right-wrap {
+  margin-top: 5px; }
+
+/* 비밀번호 확인 */
+.page-sub-name {
+  padding: 6px 0px; }
+
+.page-sub-name .page-sub-title {
+  font-size: 17px;
+  color: #333;
+  font-weight: 600; }
+
+.page-sub-name .page-sub-title-guide {
+  font-size: 10px;
+  color: #7b7b7b;
+  padding: 3px 0px; }
+
+.out-page-contents {
+  padding: 15px; }
+
+.out-main-contents {
+  width: 100%;
+  padding: 15px 0px;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC; }
+
+.out-info-btn {
+  width: 100%;
+  overflow: hidden; }
+
+.out-info-btn .left-area {
+  width: 100%;
+  padding-bottom: 20px; }
+
+.main-info-box {
+  position: relative;
+  width: 100%;
+  padding-left: 40px; }
+
+.change-information-title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 14px;
+  color: #7b7b7b;
+  font-weight: 500; }
+
+.change-information-title span {
+  width: 32px;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  left: 0px;
+  margin-right: 5px; }
+
+.change-information-title span i {
+  font-size: 25px;
+  position: relative;
+  top: 5px;
+  color: #dcdcdc; }
+
+.id-box {
+  margin-bottom: 10px; }
+
+.main-info-box input {
+  height: 32px;
+  border: 1px solid #dcdcdc;
+  font-size: 12px;
+  color: #7b7b7b;
+  width: 100%;
+  font-weight: 600;
+  padding: 0 7px; }
+
+/* 로그인 버튼 */
+.out-info-btn .right-area {
+  width: 100%; }
+
+.out-info-btn .right-area a {
+  padding: 12px 0px;
+  text-align: center;
+  display: block;
+  background-color: #2ccbc8;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 8px; }
+
+.bottom-guide-text {
+  padding: 6px 0px; }
+
+.bottom-guide-text .dot-txt {
+  font-size: 10px;
+  color: #7B7B7B; }
+
+.bottom-guide-text .dot-txt:before {
+  background-color: #7b7b7b;
+  top: 10px; }
+
+/* 비밀번호 확인 */
+
+/*# sourceMappingURL=m-mypage-edit-user-info.css.map */

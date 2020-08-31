@@ -1,0 +1,60 @@
+.mileage-main-wrap {
+  padding: 15px 0 0;
+  background: #2ccbc8;
+  text-align: center; }
+  .mileage-main-wrap .upper-wrap {
+    margin: 0 20px 13px;
+    border-bottom: 1px solid #e6e6e6; }
+    .mileage-main-wrap .upper-wrap .tit {
+      margin-bottom: 2px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff; }
+    .mileage-main-wrap .upper-wrap .value {
+      margin-bottom: 11px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff; }
+  .mileage-main-wrap .under-wrap {
+    margin-bottom: 13px; }
+    .mileage-main-wrap .under-wrap .btn-wrap {
+      margin-bottom: 5px; }
+    .mileage-main-wrap .under-wrap .btn {
+      min-width: 115px;
+      padding: 4px 5px; }
+    .mileage-main-wrap .under-wrap .txt {
+      font-size: 13px;
+      font-weight: 200;
+      color: #fff; }
+  .mileage-main-wrap .summary-info {
+    background: rgba(0, 0, 0, 0.15); }
+    .mileage-main-wrap .summary-info li {
+      float: left;
+      position: relative;
+      width: 50%;
+      padding: 13px 10px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 300;
+      color: #fff; }
+      .mileage-main-wrap .summary-info li:before {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 9px;
+        bottom: 9px;
+        left: 0;
+        width: 1px;
+        background: #e6e6e6; }
+      .mileage-main-wrap .summary-info li + li:before {
+        display: block; }
+      .mileage-main-wrap .summary-info li .key, .mileage-main-wrap .summary-info li .value {
+        float: left;
+        width: 50%; }
+      .mileage-main-wrap .summary-info li .key {
+        text-align: left; }
+      .mileage-main-wrap .summary-info li .value {
+        text-align: right;
+        font-weight: 500; }
+
+/*# sourceMappingURL=m-mypage-mileage.css.map */

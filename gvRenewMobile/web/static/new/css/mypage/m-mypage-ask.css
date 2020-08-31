@@ -1,0 +1,579 @@
+@charset "UTF-8";
+.tab-links-wrap .tab-link {
+  border-bottom-color: transparent; }
+
+.month-unit-filter {
+  margin-top: 0; }
+
+.tab-panel .upper-wrap {
+  padding: 14px 11px 0; }
+
+.btn.full-width {
+  margin: 15px 0; }
+
+/* 상품문의 / 1:1 문의 */
+.my-question .t-list-box {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dcdcdc; }
+
+.my-question .t-comment-info,
+.my-question .t-qna-info {
+  padding: 0px 20px 10px 0px;
+  position: relative; }
+
+.product-question-list .t-comment-info {
+  padding: 0px; }
+
+.my-question .t-qna-info .qna-situation {
+  display: inline-block;
+  border: 1px solid #DCDCDC;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 10px;
+  color: #7B7B7B; }
+
+.my-question .t-comment-info .comment-date,
+.my-question .t-qna-info .qna-date {
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 10px;
+  color: #7B7B7B; }
+
+.my-question .t-qna-info .qna-modified {
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  cursor: pointer;
+  font-size: 10px;
+  color: #7B7B7B; }
+
+.my-question .question-title-txt {
+  padding-right: 20px;
+  position: relative; }
+
+.my-question .question-title-txt span {
+  position: absolute;
+  right: 0px;
+  top: 0px; }
+
+.my-question .question-title-txt span i {
+  font-size: 25px;
+  color: #DCDCDC;
+  position: relative;
+  top: -3px;
+  right: -5px; }
+
+.my-question .question-title-txt span .js-icon {
+  top: -3px;
+  transform: rotate(-180deg); }
+
+.my-question .contents-gray-text {
+  color: #7B7B7B;
+  padding-bottom: 7px;
+  font-size: 12px;
+  width: 300px; }
+
+/* 리스트 버튼 클릭 */
+.my-question .click-detail-a {
+  background-color: #f4f3f4; }
+
+.my-question .comment-question {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px; }
+
+.my-question .t-comment-info .comment-question strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333; }
+
+.my-question .comment-question span {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  left: 0px; }
+
+.my-question .comment-question .icon-a {
+  color: #E34436;
+  top: 5px; }
+
+.my-question .comment-question .icon-q {
+  color: #2CCBC8;
+  top: 0px; }
+
+/* 상품문의 / 1:1 문의 */
+/* 자주묻는 질문 */
+.my-question-ask .question-ask-number {
+  width: 90px; }
+
+.my-question .my-question-ask table tr td {
+  border-right: 0px; }
+
+.t-list-box {
+  border-bottom: 1px solid #dcdcdc; }
+
+.my-question-ask .t-list-box {
+  padding: 15px 0px; }
+
+.my-question-ask .question-ask-box {
+  padding: 15px 15px 15px 0px; }
+
+.question-ask-detail {
+  background-color: #f4f3f4;
+  padding-left: 90px;
+  position: relative; }
+
+.question-ask-detail > span {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 90px;
+  padding: 15px 10px;
+  text-align: center; }
+
+.question-ask-detail > span i {
+  font-size: 25px;
+  color: #2ccbc8; }
+
+.question-ask-detail > span p {
+  position: absolute;
+  width: 90px;
+  top: -0.5px;
+  left: -3px;
+  padding: 15px 0;
+  font-size: 10px;
+  color: #fff; }
+
+.t-contents-title {
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #2ccbc8; }
+
+.txt-space {
+  padding-bottom: 10px; }
+
+/* 자주묻는 질문 */
+/* 상품 문의 하기 / 1:1 문의 하기  */
+.mypage-information {
+  width: 100%; }
+
+.information-underline {
+  border-top: 2px solid #2ccbc8; }
+
+.information-underline .btn-wrap {
+  margin: 20px 0; }
+
+.user-typing-box table tr {
+  border-bottom: 1px solid #dcdcdc; }
+
+.question-sub-title {
+  padding: 10px 7px; }
+
+.user-typing-box .dot-txt,
+.question-sub-title .dot-txt {
+  font-size: 10px;
+  font-weight: 300;
+  color: #7B7B7B; }
+
+.user-typing-box .dot-txt:before,
+.question-sub-title .dot-txt:before {
+  top: 10px;
+  background-color: #7B7B7B; }
+
+.question-sub-title .dot-txt span i {
+  position: relative;
+  font-size: 12px;
+  top: 2px; }
+
+.user-typing-box table tr th {
+  border-right: 1px solid #dcdcdc;
+  background-color: #f4f3f4;
+  width: 110px; }
+
+.t-left-title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #515152;
+  padding: 6px 16px; }
+
+.t-contents-box {
+  padding: 6px 16px; }
+
+.mypage-information input {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  font-size: 12px;
+  padding: 3px 8px;
+  color: #333;
+  display: block; }
+
+.t-contents-box textarea {
+  display: block;
+  width: 100%;
+  height: 160px;
+  padding: 7px 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 13px;
+  color: #333; }
+
+.t-contents-btn {
+  padding-bottom: 5px; }
+
+.t-contents-btn span {
+  display: block;
+  padding: 2px 0px; }
+
+.t-contents-btn span a {
+  border: 1px solid #7b7b7b;
+  border-radius: 3px;
+  color: #7b7b7b;
+  font-size: 12px;
+  padding: 2px 5px;
+  display: inline-block; }
+
+.t-box-wrap {
+  padding: 0px 16px 11px 16px; }
+
+.t-box-wrap .btn-radio + .btn-radio {
+  margin-left: 0px; }
+
+.t-box-wrap .btn-radio {
+  margin-right: 2px; }
+
+.t-box-wrap .btn-radio .icon-radio {
+  top: 1px; }
+
+.t-box-wrap .btn-radio .label-txt {
+  font-size: 10px;
+  font-weight: normal; }
+
+.btn-radio .icon-radio {
+  margin-right: 2px; }
+
+.user-typing-box .edit-additionalimages {
+  overflow: hidden; }
+
+.user-typing-box .edit-additionalimages ul li {
+  width: calc(33.333% - 1%);
+  max-width: 80px;
+  border: 1px solid #dcdcdc;
+  float: left;
+  margin-left: 1.2%;
+  box-sizing: border-box;
+  position: relative; }
+
+.user-typing-box .edit-additionalimages ul li .box-size-block {
+  display: block;
+  padding-top: 100%; }
+
+.user-typing-box .edit-additionalimages ul li:first-child {
+  margin-left: 0px; }
+
+.user-typing-box .edit-additionalimages ul li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: 0px; }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-none {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #7b7b7b;
+  z-index: 50;
+  cursor: pointer; }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-none span {
+  display: block;
+  position: relative; }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-none span:after {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  content: '';
+  top: 3px;
+  left: 50%;
+  margin-left: -0.5px;
+  background-color: #fff;
+  transform: rotate(45deg); }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-none span:before {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  content: '';
+  top: 3px;
+  left: 50%;
+  margin-left: -0.5px;
+  background-color: #fff;
+  transform: rotate(-45deg); }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-plus {
+  width: 100%;
+  padding-top: 100%;
+  cursor: pointer; }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-plus span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  display: block;
+  width: 30px;
+  height: 30px; }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-plus span:after {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  left: 50%;
+  top: 0px;
+  margin-left: -1px;
+  margin-top: -2px;
+  content: '';
+  background-color: #dcdcdc;
+  /*    transform: translate(-50%,-92%);*/ }
+
+.user-typing-box .edit-additionalimages ul li .additionalimages-plus span:before {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  left: 50%;
+  top: 0;
+  margin-left: -1px;
+  margin-top: -2px;
+  content: '';
+  background-color: #dcdcdc;
+  transform: rotate(90deg);
+  /*    transform: translate(-50%,-92%);*/ }
+
+/* 상품 문의 하기 / 1:1 문의 하기  */
+/* 작성가능 구매후기,내가 쓴 구매후기 */
+.my-comment-reviews {
+  width: 100%;
+  padding: 0px 15px; }
+
+.my-comment-reviews .order-goods-info {
+  overflow: hidden;
+  margin-bottom: 5px; }
+
+.my-comment-reviews .order-goods-info .goods-info-img {
+  width: 66px;
+  float: left;
+  border: 1px solid #dcdcdc; }
+
+.my-comment-reviews .order-goods-info .goods-info-img img {
+  width: 100%; }
+
+.my-comment-reviews .order-goods-info .goods-info-text {
+  width: calc(100% - 66px);
+  padding: 0px 0px 3px 9px;
+  float: right; }
+
+.my-comment-reviews .goods-info-text .goods-info-name {
+  font-size: 12px;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 5px; }
+
+.my-comment-reviews .goods-info-text .goods-info-category {
+  font-size: 11px;
+  color: #7b7b7b;
+  font-weight: 400; }
+
+.my-comment-reviews .order-edit-text {
+  padding-left: 64px;
+  position: relative; }
+
+.my-comment-reviews .order-edit-text > span {
+  font-size: 11px;
+  font-weight: 600;
+  width: 64px;
+  text-align: right;
+  padding-right: 8px;
+  left: 0px;
+  position: absolute; }
+
+.my-comment-reviews .order-wrote-notice {
+  font-size: 11px;
+  color: #333; }
+
+.my-comment-reviews .order-edit-text > div {
+  padding: 0px 0 0px 9px;
+  position: relative; }
+
+.my-comment-reviews .order-edit-text > div:before {
+  display: none; }
+
+/*별*/
+.my-comment-reviews .order-edit-text .reviews-product-grade .rate_ttt {
+  position: relative;
+  left: 0px;
+  top: -5px;
+  margin-bottom: 0px;
+  font-size: 0;
+  display: inline-block;
+  padding-right: 6px; }
+
+.my-comment-reviews .order-edit-text .reviews-product-grade .rate_ttt i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  width: 20px;
+  color: #dcdcdc; }
+
+.my-comment-reviews .order-edit-text .reviews-product-grade .rate_ttt .is-active {
+  color: #ffdf2c; }
+
+.my-comment-reviews .order-edit textarea {
+  width: 100%;
+  min-height: 178px;
+  padding: 7px 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 11px;
+  color: #333; }
+
+.my-comment-reviews .order-edit-text .reviews-product-grade .reviews-product-date {
+  font-size: 10px;
+  color: #7B7B7B;
+  display: inline-block; }
+
+.my-comment-reviews .edit-additionalimages {
+  overflow: hidden;
+  padding-top: 20px; }
+
+.my-comment-reviews .edit-additionalimages ul li {
+  width: calc(20% - 1%);
+  max-width: 75px;
+  border: 1px solid #dcdcdc;
+  float: left;
+  margin-left: 1.2%;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer; }
+
+.my-comment-reviews .edit-additionalimages ul li .box-size-block {
+  display: block;
+  padding-top: 100%; }
+
+.my-comment-reviews .edit-additionalimages ul li:first-child {
+  margin-left: 0px; }
+
+.my-comment-reviews .edit-additionalimages ul li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: 0px; }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #7b7b7b;
+  z-index: 50;
+  cursor: pointer; }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none span {
+  display: block;
+  position: relative; }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none span:after {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  content: '';
+  top: 3px;
+  left: 50%;
+  margin-left: -0.5px;
+  background-color: #fff;
+  transform: rotate(45deg); }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none span:before {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  content: '';
+  top: 3px;
+  left: 50%;
+  margin-left: -0.5px;
+  background-color: #fff;
+  transform: rotate(-45deg); }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus {
+  width: 100%;
+  padding-top: 100%;
+  cursor: pointer; }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  display: block;
+  width: 30px;
+  height: 30px; }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus span:after {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  left: 50%;
+  top: 0px;
+  margin-left: -1px;
+  margin-top: -2px;
+  content: '';
+  background-color: #dcdcdc;
+  /*    transform: translate(-50%,-92%);*/ }
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus span:before {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  left: 50%;
+  top: 0px;
+  margin-left: -1px;
+  margin-top: -2px;
+  content: '';
+  background-color: #dcdcdc;
+  transform: rotate(90deg);
+  /*    transform: translate(-50%,-92%);*/ }
+
+.my-comment-reviews .my-comment-modified {
+  text-align: right;
+  padding: 10px 0px; }
+
+.my-comment-reviews .my-comment-modified a {
+  display: inline-block;
+  font-size: 10px;
+  background-color: #F4F3F4;
+  border-radius: 6px;
+  padding: 4px 10px;
+  color: #7b7b7b; }
+
+.my-comment-reviews .write-review-btn {
+  text-align: right; }
+
+.my-comment-reviews .write-review-btn a {
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 16px;
+  background-color: #2CCBC8;
+  border-radius: 6px; }
+
+/* 작성가능 구매후기,내가 쓴 구매후기 */
+
+/*# sourceMappingURL=m-mypage-ask.css.map */

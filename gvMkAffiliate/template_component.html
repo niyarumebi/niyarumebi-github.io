@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title></title>
+
+    <link rel="stylesheet" href="css/base/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/base/normalize.css">
+    <link rel="stylesheet" href="css/base/slick.css">
+    <link rel="stylesheet" href="css/base/template_component.css">
+
+    <link rel="stylesheet" href="css/component/index.css">
+
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--사용법:
+     0. 파일 : template_component.html(짝꿍:template_css, script.js)에 '내용'에 들어갈 요소들을 정의해 놓았습니다. / base.html(짝꿍:base.css)에는 모든페이지에 들어가는 헤더, 푸터를 정의해 놓았습니다.
+        html head부분에 공통으로 import되어야 하는 파일 : template_component.css / base.html과 base.css /style.css
+        - 메인화면(index.html) / 로그인(login.html)페이지는 서브 페이지들과 레이아웃이 완전히 달라 처음부터 커스텀 작업이 필요하므로 아래 작업과는 별개로 생각해주시면 될 것같습니다.
+          (메인/로그인 페이지 문의 : 보윤)
+
+     1. 부트스트랩과 비슷한 방식으로 페이지별 요소 간의 스타일 차이를 최소화하기 위해, 공통클래스를 활용해 내부 요소들의 스타일을 통일하고자 합니다.
+         template_component.html 안에 있는 요소들을 복사 붙여넣기해서 사용해주시면 됩니다. (4번 필 참고!)
+         - (!!) 추가 및 개선이 필요한 component는 보윤에게 말해주세요. (단, [테이블], [아이콘이 들어간 단계 step_list] component는 승일씨에게 문의)
+
+     2. template_component.html을 브라우저에 띄우시고 [크롬]-[마우스 오른쪽 버튼]-[검사]를 통해 html 요소들의 영역을 선택하시면, 해당 코드도 선택 되어집니다.
+        선택된 html을 복사/붙여넣기하여 사용하시면 좀 더 편하게 작업하실 수 있습니다.
+
+     3. CSS 커스텀 코딩이 필요한 부분 : 페이지별 레이아웃과 그 네이밍 (네이밍이 중복되면 css가 안 먹히는 경우가 있으므로, 이름은 주의해서 작성해주세요~. 관련하여 적용이 안된다면 문의해주세요~)
+
+     4. 전 페이지 공통된 레이아웃 별 정해진 규칙 등을 위해 기본 스트럭처를 지켜주셔야합니다. (아래 참고)
+        <body>
+            <div class="페이지이름(html파일이름과 동일하게 적어주시면 좋을 것 같습니다. 6번 ex참고 ) header_space">
+                  // body태그 아래 꼭 페이지 이름의 클래스로 모든 요소들을 감싸주세요. css에 페이지이름(텍스트)를 디펜던시로 걸어주기 위함입니다.
+                  // header_space는 (!)꼭 붙여주세요~ 모든페이지에 공통으로 들어가는 헤더를 위한 여백 등의 세팅입니다.
+
+                  <div class="page_title"> // page_title은 화면 전체에 걸쳐 있어 내부에 container가 필요는 없습니다.
+                        <p class="txt">전체 페이지 제목</p>
+                  </div>
+                  <div class="page_cont_section"> // page_cont_section로 위 page_title 외의 요소들을 감싸주셔야 합니다.
+                    <div class="container"> // page_cont_section 아래에 container도 꼭 넣어주세요.
+                         ...  template_component에서 요소들 복붙 후 텍스트 수정하여 작성
+                    </div>
+                  </div>
+            </div>
+         </body>
+
+
+         [요약]
+             ...
+             <body>
+                <div class="페이지이름 header_space">
+                    <div class="page_title">
+                        <p class="txt">전체 페이지 제목</p>
+                    </div>
+                    <div class="page_cont_section">
+                         <div class="container">
+                                ...  template_componet에서 요소들 복붙 후 텍스트 수정하여 작성
+                         </div>
+                    </div>
+                </div>
+             </body>
+             ...
+
+     5. 시범 페이지로 join_guide.html과 guide_cancel.profit.html을 첨부해놓았습니다. 참고해주세요!
+
+     6. 복붙한 요소들을 페이지별로 레이아웃 커스텀을 위해서는 style.css에 몰아서 css를 작성해주세요.
+         - 페이지별 커스텀을 위한 css는 레이아웃, 여백 등, 짧은 코드가 주가 될 것이라 예상되어 추후 코드 업데이트 관리가 용이하도록 style.css에 몰아넣고자 합니다.
+        (!) 그러므로 꼭, style.css에 css를 작성하실 때에는 디펜던시를 걸어주세요. (아래 참고)
+           ex) join_guide.html 관련한 style.css의 코드  :
+                 .join_guide .recommend_section {  margin-top: 40px; }
+                 // .페이지이름 .componet이름 { ..커스텀 css }
+
+     7. 템플릿 활용하며 만드신 코드들은 코드의 통일성을 위해, 추후에 제가 한 번 더 검토 후 추가/개선 작업 등을 하도록 노력하겠습니다.
+
+<!--사용법 끝-->
+
+
+
+
+<!--요소들을 두개씩 넣어놓았습니다. 첫째것은 설명 주석이 없는 것, 둘쨰것은 설명 주석이 있는 것-->
+
+<!--전체페이지 타이틀-->
+<div class="page_title">
+    <p class="txt">
+        <span class="red">가입 신청 심사</span> 결과 조회
+    </p>
+</div>
+
+<div class="page_title">
+    <p class="txt">
+        <span class="red">가입 신청 심사</span> 결과 조회
+        <!--포인트칼라(red)를 추가하고 싶으실 경우, 위처럼 span.red로 강조하실 텍스트를 감싸주세요-->
+    </p>
+</div>
+
+
+
+<!--텍스트 입력 / input타입에 type 값 바꿔서 응용-->
+<div class="form_group">
+    <label for="">사업자등록번호</label>
+    <input type="text" class="form_control" id="" placeholder="하이픈(-) 없이 입력">
+    <div class="del_all">
+        <img src="img/btn_cancel.png" alt="">
+    </div>
+</div>
+
+<div class="form_group">
+    <!--label이 필요없는 경우가 필요하시면 추가하겠습니다.-->
+    <label for="">사업자등록번호</label>
+    <!--input의 id는 필요하시면 넣어주시고, 아니면 삭제하셔도 무방합니다.-->
+    <input type="text" class="form_control" id="" placeholder="하이픈(-) 없이 입력">
+
+    <!--인풋창에 포커스되면 생기며, 클릭하면 인풋창의 텍스트를 지워주는 용도입니다. 필요하시면 넣어주세요.
+     (!!!) (현재 구현코드는 수정중입니다.)-->
+    <div class="del_all">
+        <img src="img/btn_cancel.png" alt="">
+    </div>
+</div>
+
+
+
+<!--드랍다운 슬라이드 (한 개의 드랍다운을 추가하고 싶으실 때마다 row_drop_down 자체를 복붙한 후 내용 작성하시면 됩니다.-->
+<div class="row_drop_down">
+    <div class="head clearfix">
+        <div class="txt">가입 신청 심사 결과 조회 안내</div>
+        <img src="img/chevron_thin.png" class="img_chevron">
+    </div>
+    <div class="para">
+        <div class="bar_txt">
+            맹점 가입신청 심사결과는 가맹점 심사센터에 심사를 진행중인 건에 한해 조회가능
+        </div>
+        <div class="dot_txt">
+            모바일(BIZFast) 신청건 : 당일 16시 이전 모바일 전송건
+        </div>
+        <div class="dot_txt">
+            종이(지역단) 신청건 : 당일 15시 이전 지역단 접수 및 스캔 완료건
+        </div>
+        <div class="alert_txt clearfix">
+            <i class="fa fa-exclamation-triangle"></i>
+            <p class="txt">
+                심사결과가 조회되지 않거나, 반려사유에 대한 자세한 내용은 가맹점 심사등록센터(02-6308-15심사결과가 조회되지 않거나, 반려사유에 대한 자세한 내용은 가맹점
+                심사등록센터(02-6308-1500)로 문의해 주세요
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row_drop_down">
+    <div class="head clearfix">
+        <div class="txt">가입 신청 심사 결과 조회 안내</div>
+        <img src="img/chevron_thin.png" class="img_chevron">
+    </div>
+    <div class="para">
+        <div class="bar_txt">
+            맹점 가입신청 심사결과는 가맹점 심사센터에 심사를 진행중인 건에 한해 조회가능
+        </div>
+        <div class="dot_txt">
+            모바일(BIZFast) 신청건 : 당일 16시 이전 모바일 전송건
+        </div>
+        <div class="dot_txt">
+            종이(지역단) 신청건 : 당일 15시 이전 지역단 접수 및 스캔 완료건
+        </div>
+        <div class="alert_txt clearfix">
+            <i class="fa fa-exclamation-triangle"></i>
+            <p class="txt">
+                심사결과가 조회되지 않거나, 반려사유에 대한 자세한 내용은 가맹점 심사등록센터(02-6308-15심사결과가 조회되지 않거나, 반려사유에 대한 자세한 내용은 가맹점
+                심사등록센터(02-6308-1500)로 문의해 주세요
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--단계 요소-->
+<div class="steps_area">
+    <!--
+    1. row는 기본 세팅이므로 항상 붙여주세요
+    2. 내용이 한 줄로 이루어져 있을때는 one_line을 꼭 붙여주세요.
+    -->
+    <!--한줄-->
+    <div class="row one_line">
+        <div class="num">Step1.</div>
+        <div class="txt">가맹점 가입 신청서와 개인(신용)정보 필수·선택 동의서 작성</div>
+    </div>
+    <!--여러줄-->
+    <div class="row">
+        <div class="num">Step2.</div>
+        <div class="txt">가맹점 가입 신청서와 개인(신용)정보 필수·선택 동의서 작성</div>
+        <div class="bar_txt">
+            맹점 가입신청 심사결과는 가맹점 심사센터에 심사를 진행중인 건에 한 심사센터에 심사를 진행중인 건에 한 심사센터에 심사를 진행중인 건에 한 심사센터에 심사를 진행중인 건에 한해 조회가능
+        </div>
+    </div>
+</div>
+
+
+
+<!--버튼 : btn_area 모두 복붙하여 사용해주세요, 버튼의 개수를 늘리고 싶으시면 아래 a태그(btn)를 복붙하여 사용해주세요-->
+<div class="btn_area">
+    <a href="" class="btn darker">조회</a>
+    <a href="" class="btn md">신용카드 취급방법
+        <img src="img/arrow_long.png" class="arrow">
+    </a>
+</div>
+
+<div class="btn_area">
+    <!--버튼이 한 줄을 차지할 경우에는 btn_area를 꼭 추가해주셔야합니다.-->
+
+    <!--어두운 버튼-->
+    <a href="" class="btn darker">조회</a>
+
+    <!--오른쪽에 화살표가 들어간 버튼-->
+    <a href="" class="btn md">신용카드 취급방법
+        <img src="img/arrow_long.png" class="arrow">
+    </a>
+</div>
+
+
+
+<!--스타일01 : 한 묶음당 txt_wrap으로 감싸주세요. (ex. 제목 + 내용 요소들)-->
+<div class="txt_wrap">
+    <div class="tit">신청방법</div>
+    <!--텍스트 가운데정렬
+        txt_center 클래스를 붙여주세요
+        (여기서 smaller 클래스는, 중간 글씨크기를 주기위한 클래스로, 가운데정렬과는 별개입니다)
+    -->
+    <div class="tit smaller txt_center">잠깐! 이 서비스를 찾으세요?</div>
+</div>
+
+<!--
+    txt_wrap로 묶어서 텍스트를 작성해주시면, 그룹으로 인식되어 마진이 자동 조절됩니다.
+    (!!) 한줄 한줄의 텍스트를 작성하시려면 line294의 베이직 텍스트 컴포넌트를 사용해주세요~
+-->
+<div class="txt_wrap">
+    <div class="tit">신청방법</div>
+    <!--텍스트 가운데정렬
+        txt_center 클래스를 붙여주세요
+        (여기서 smaller 클래스는, 중간 글씨크기를 주기위한 클래스로, 가운데정렬과는 별개입니다)
+    -->
+    <div class="tit smaller txt_center">잠깐! 이 서비스를 찾으세요?</div>
+</div>
+
+
+
+<!--스타일02-->
+<div class="txt_wrap">
+    <!--회색 안에 있는 스타일-->
+    <div class="tit">서비스 소개</div>
+    <div class="desc_txt">
+        <span class="bold">홈페이지 매출취소 신청·조회</span>는 신용카드 거래의 매출이 취소되었을 때, 가맹점에서 온라인으로 편리하게 매출 취소를 신청할 수 있는 서비스입니다. 가맹점의 취소대금 처리 방식에 따라, 상계취소 또는 통장회입취소를 선택하여 신청할 수 있습니다.
+    </div>
+
+    <!--아이콘있는 스타일-->
+    <div class="desc_icon clearfix">
+        <div class="icon">
+            <i class="fa fa-ravelry"></i>
+        </div>
+        <div class="txt">취소전표 접수 절차 없이 빠르고 편리하게 매출 취소 신청이 가능합니다.</div>
+    </div>
+    <div class="desc_icon clearfix">
+        <div class="icon">
+            <i class="fa fa-ravelry"></i>
+        </div>
+        <div class="txt">취소전표 접수 절차 없이 빠르고 편리하게 매출 취소 신청이 가능합니다.</div>
+    </div>
+
+    <!--링크 형태인 스타일-->
+    <div clas="tit">서비스 종류</div>
+    <a href="" class="link_txt bdt_black clearfix">
+        <div class="left_wrap pull_left">
+            <div class="para_title">상계취소</div>
+            <div class="basic_txt">
+                가맹점에서 앞으로 지급할 가맹점대금에서 취소대금 차감
+            </div>
+        </div>
+        <div class="chevron_wrap pull_right">
+            <img src="img/chevron_thin.png">
+        </div>
+    </a>
+</div>
+
+
+<!--컨텐츠 타이틀/텍스트-->
+<!--중간크기 내용제목-->
+<div class="para_title">공통서류</div>
+<!--바가 있는 텍스트-->
+<div class="bar_txt">
+    맹점 가입신청 심사결과는 가맹점 심사센터에 심사를 진행중인 건에 한해 조회가능
+</div>
+
+<!--점이 있는 서브텍스트-->
+<div class="dot_txt">
+    모바일(BIZFast) 신청건 : 당일 16시 이전 모바일 전송건
+</div>
+
+<!--기본 텍스트-->
+<div class="basic_txt">
+    모바일(BIZFast) 신청건 : 당일 16시 이전 모바일 전송건
+</div>
+
+<!--주의 텍스트-->
+<div class="alert_txt clearfix">
+    <i class="fa fa-exclamation-triangle"></i>
+    <p class="txt">
+        심사결과가 조회되지 않거나, 반려사유에 대한 자세한 내용은 가맹점 심사등록센터(02-6308-15심사결과가 조회되지 않거나, 반려사유에 대한 자세한 내용은 가맹점 심사등록센터(02-6308-1500)로
+        문의해 주세요
+    </p>
+</div>
+
+
+
+<!--조회 등의 테이블코드 (승일님이 추가한 코드)-->
+<!-- 신청절차 안내 리스트 -->
+<div class="step_list">
+    <ul>
+        <li>
+                       <span>
+                           <i class="material-icons">
+                            create
+                            </i>
+                       </span>
+            <p>
+                <strong>
+                    1
+                </strong>
+
+                신청서 작성
+            </p>
+        </li>
+
+        <li>
+                       <span>
+
+                       </span>
+
+            <p>
+                <strong>
+                    2
+                </strong>
+
+                구비서류
+            </p>
+        </li>
+
+        <li>
+                       <span>
+
+                       </span>
+
+            <p>
+                <strong>
+                    3
+                </strong>
+
+                신청서 접수
+            </p>
+        </li>
+
+        <li>
+                       <span>
+
+                       </span>
+
+            <p>
+                <strong>
+                    4
+                </strong>
+
+                가입심사 및 승인
+            </p>
+        </li>
+    </ul>
+</div>
+
+
+<!-- 테이블 라인 두줄 -->
+<div class="table_two">
+    <table>
+        <thead>
+        <tr>
+            <th>서식구분</th>
+            <th>파일저장</th>
+        </tr>
+        </thead>
+
+
+        <tbody>
+        <!--
+                                <tr class="no_data">
+                                    <td colspan="2">조회대상이 없습니다.</td>
+                                </tr>
+
+        -->
+        <tr>
+            <td>KB국민카드 가맹점 가입신청서</td>
+            <td>
+                <a href="#">
+                    다운로드
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>개인/가맹점(신용)정보의 수집.이용.조회.제공 동의서</td>
+            <td>
+                <a href="#">
+                    다운로드
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>고객거래확인서 (개인용)</td>
+            <td>
+                <a href="#">
+                    다운로드
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- 테이블 라인 세줄 -->
+<div class="table_three">
+    <table>
+        <thead>
+        <tr>
+            <th>구분</th>
+            <th>구비서류 안내</th>
+            <th>대리인 접수시 추가 구비 서류</th>
+        </tr>
+        </thead>
+
+
+        <tbody>
+        <!--
+                                <tr class="no_data">
+                                    <td>조회대상이 없습니다.</td>
+                                </tr>
+        -->
+        <!-- 개인 사업자 -->
+        <tr>
+            <td>개인 사업자</td>
+            <td>
+                <ul>
+                    <li>가맹점가입신청서</li>
+
+                    <li>대표자 신분증
+                        <br>(모집인/대리인 제출시 사본가능)
+                    </li>
+
+                    <li>사업자등록증 사본 (또는 사업자등록증명원)</li>
+
+                    <li>결제계좌 사본</li>
+
+                    <li>각종 업종별 인허가증 사본(필요시)</li>
+
+                    <li>개인/가맹점(신용)정보의 수집·이용·조회·제공 동의서</li>
+
+                    <li>고객거래 확인서(개인용)
+                        <br> (대표자가 실제 소유자가 아닌 경우)
+                    </li>
+
+                    <li>실제소유자 신분증사본
+                        <br> (대표자가 실제 소유자가 아닌경우)
+                    </li>
+
+                    <li>가맹점 현장실사(외부/내부)사진
+                        <br> (모집인 접수 시)
+                    </li>
+                </ul>
+            </td>
+
+
+            <td>
+                <ul>
+                    <li>위임장(가맹점용)(대표자 인감 날인)</li>
+
+                    <li>대리인 신분증</li>
+                    <li>대표자 개인인감증명서</li>
+                    <li>고객거래확인서(개인용)</li>
+                </ul>
+            </td>
+        </tr>
+
+
+        <!-- 법인 사업자 -->
+        <tr>
+            <td>법인 사업자</td>
+            <td>
+                <ul>
+                    <li>가맹점가입신청서</li>
+
+                    <li>법인인감증명서</li>
+
+                    <li>법인등기부등본</li>
+
+                    <li>사업자등록증사본(또는 사업자등록증명원)</li>
+
+                    <li>결제계좌통장사본</li>
+
+                    <li>각종 업종별 인허가증사본(필요시)</li>
+
+                    <li>사용인감계(사용인감 날인시)</li>
+
+                    <li>개인/가맹점(신용)정보의 수집·이용·조회·제공
+                        <br> 동의서
+                    </li>
+
+                    <li>주주명부, 법인등기부등본 등 실제소유자 확인 서류</li>
+
+                    <li>가맹점 현장실사(외부/내부)사진
+                        <br>(모집인 접수 시)
+                    </li>
+                </ul>
+            </td>
+
+
+            <td>
+                <ul>
+                    <li>위임장(가맹점용)(대표자 인감 날인)</li>
+                    <li>대리인 신분증</li>
+                    <li>고객거래확인서(개인용)</li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- 지점 찾기 버튼 -->
+<div class="find_btn">
+    <a href="#">
+        KB국민카드지점찾기 <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </a>
+
+    <a href="#">
+        KB국민은행지점찾기 <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </a>
+</div>
+
+<!-- 파일저장 버튼 -->
+<div class="view_files">
+    <p>
+        KB국민카드 가맹점약관
+
+
+        <a href="#">
+            파일저장
+        </a>
+    </p>
+</div>
+
+
+
+
+
+<div class="fee_table">
+    <div class="txt_wrap">
+        <div class="tit">
+            신용카드 평균 결제금액별 가맹점수수료율 구간대 사용자 수 비중
+        </div>
+
+        <table>
+            <thead>
+            <tr class="">
+                <th rowspan="2" class="list_first_name">신용카드 평균 결제금액</th>
+                <th rowspan="2" class="list_percent_name">가맹점수수료율</th>
+                <th rowspan="2">영세</th>
+                <th rowspan="2">중소</th>
+                <th rowspan="2">특수</th>
+                <th colspan="2" class="bor_non_top">대형</th>
+            </tr>
+
+            <tr>
+                <th class="bor_non_bottom"></th>
+                <th>구간내
+                    <br>비중</th>
+            </tr>
+            </thead>
+
+
+            <tbody>
+            <!--
+                <tr class="no_data">
+                    <td>조회대상이 없습니다.</td>
+                </tr>
+            -->
+            <tr>
+                <th rowspan="2">
+                    2만원 이하
+                </th>
+
+                <td>
+                    0.80% 이하
+                </td>
+
+                <td>
+                    16.14
+                </td>
+
+                <td>
+                    0.00
+                </td>
+
+                <td>
+                    0.01
+                </td>
+
+                <td>
+                    0.00
+                </td>
+
+                <td>
+                    0.00
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    0.80% 이하
+                </td>
+
+                <td>
+                    16.14
+                </td>
+
+                <td>
+                    0.00
+                </td>
+
+                <td>
+                    0.01
+                </td>
+
+                <td>
+                    0.00
+                </td>
+
+                <td>
+                    0.00
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="1">
+                    2만원 초과 ~ 5만원 이하
+                </th>
+
+                <td>
+                    0.80% 이하
+                </td>
+
+                <td>
+                    16.14
+                </td>
+
+                <td>
+                    0.00
+                </td>
+
+                <td>
+                    0.01
+                </td>
+
+                <td>
+                    0.00
+                </td>
+
+                <td>
+                    0.00
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+
+<div class="grey_btn">
+    <a href="#">온라인 회원가입 신청</a>
+    <a href="#">매입거절 전표 조회</a>
+</div>
+
+
+
+<div class="table_same">
+    <table>
+        <thead>
+        <tr>
+            <th>구분</th>
+            <th>1회 등재</th>
+            <th>2회 등재</th>
+            <th>3회 등재</th>
+            <th>4회 등재</th>
+        </tr>
+        </thead>
+
+
+        <tbody>
+        <!--
+<tr class="no_data">
+    <td>조회대상이 없습니다.</td>
+</tr>
+-->
+        <!--  -->
+        <tr>
+            <td>수수료 전가</td>
+            <td>경고</td>
+            <td>1개원 거래정지</td>
+            <td>2개월 개래정지</td>
+            <td>모든 카드사 계약해지</td>
+        </tr>
+
+
+        <!--  -->
+        <tr>
+            <td>카드거래 거절</td>
+            <td>경고</td>
+            <td>계약해지 예고</td>
+            <td>모든 카드사 계약해지</td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+.m-index-wrap {
+  padding-top: 55px;
+}
+
+.main-visual-wrap {
+  .scene {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.best-section {
+  padding-top: 26px;
+  background: #f4f3f4;
+}
+
+.new-section {
+  padding-top: 26px;
+  .hash-tag-wrap {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+}
+
+.exhibition-section {
+  position: relative;
+  .container {
+    height: 250px;
+  }
+  .scene.after-change {
+    .bg-line {
+      /*transform: scaleX(1);*/
+      opacity: 1;
+    }
+    .msg-wrap {
+      .main-t-wrap, .sub-t-wrap {
+        .txt {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  .bg-line {
+    position: absolute;
+    opacity: 0;
+    top: 37%;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 1;
+    /*transform-origin: 0 50%;
+    transform: scaleX(0);*/
+    transition: all 0.2s ease-in-out;
+  }
+  .container {
+    position: relative;
+  }
+  .main-thumb {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 4%;
+    width: 46%;
+    max-width: 200px;
+    background: #fff;
+    overflow: hidden;
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+    }
+    @media only screen and (min-width: 375px) {
+      top: 16%;
+    }
+  }
+  .msg-wrap {
+    position: absolute;
+    z-index: 2;
+    top: 46%;
+    left: 53%;
+    -webkit-transform: translateY(-13%);
+    -ms-transform: translateY(-13%);
+    -o-transform: translateY(-13%);
+    transform: translateY(-13%);
+    padding-right: 10px;
+    .main-t-wrap {
+      margin-bottom: 8px;
+      max-height: 40px;
+      overflow-y: hidden;
+      .txt {
+        transform: translateY(50px);
+        -ms-word-break: keep-all;
+        word-break: keep-all;
+        line-height: 1.2;
+        font-size: 1em;
+        font-weight: 500;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    .sub-t-wrap {
+      height: 19px;
+      overflow-y: hidden;
+      margin-top: -3px;
+      .txt {
+        transform: translateY(70px);
+        font-size: 0.8em;
+        font-weight: 300;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      top: 47%;
+      left: 36%;
+      .main-t-wrap {
+        .txt {
+          font-size: 1.2em;
+        }
+      }
+      .sub-t-wrap {
+        .txt {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+/*.mini-thumb {
+    display: none;
+    position: absolute;
+    top: 310px;
+    left: 450px;
+    > ul {
+      margin-left: -5px;
+      margin-right: -5px;
+      font-size: 0;
+      .item {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 90px;
+        height: 90px;
+        margin: 0 3px;
+        cursor: pointer !important;
+        .border {
+          display: none;
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          border: 4px solid transparent;
+        }
+        &.is-active {
+          .border {
+            display: block;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }*/
+}
+
+.recommend-section {
+  padding-top: 18px;
+  .hash-tag-wrap {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .prd-list.col3 {
+    li {
+      width: 33.33%;
+      .desc {
+        padding: 5px 0 3px;
+        .name {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+.recent-section {
+  padding: 20px 0 15px;
+  .prd-list-wrap {
+    padding-top: 15px;
+  }
+  .scene-list {
+    .scene {
+      font-size: 0;
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 25%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.event-section {
+  padding: 10px 0 10px;
+  .hash-tag-wrap {
+    margin-bottom: 12px;
+  }
+  .scene {
+    display: block;
+    padding: 5px 6px;
+    img {
+      width: 100%;
+    }
+  }
+  .btn-wrap {
+    .btn-action {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      color: #2ccbc8;
+    }
+  }
+}

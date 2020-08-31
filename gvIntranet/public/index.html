@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title></title>
+
+    <link rel="stylesheet" href="../assets/css/base/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/slick.css">
+
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/component/style.css">
+
+    <script src="../assets/js/jquery-1.12.2.min.js"></script>
+    <script src="../assets/js/jquery.easing.1.3.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="main_sidebar display_user_info">
+        <h1 class="logo">
+            <a href="">
+                <img src="../assets/img/logo.png" alt="">
+            </a>
+        </h1>
+        <div class="page_big_title"  style="display: none;">
+            <div class="txt">전자 결재</div>
+            <div class="sub">GV online ONLINE</div>
+        </div>
+        <div class="user_tool">
+            <div class="thumb">
+                <img src="" alt="">
+            </div>
+            <div class="desc">
+                <div class="name">한누리</div>
+                <div class="sub">디자인팀</div>
+                <div class="sub">사원</div>
+                <div class="btn_edit"><i class="material-icons">create</i></div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="link_item is_active">
+                    <a href="" class="link">
+                        <div class="icon notice"></div>
+                        <div class="txt">공지사항</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon com_schedule"></div>
+                        <div class="txt">회사 일정</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon reserve_facilities"></div>
+                        <div class="txt">시설물 예약</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon contacts"></div>
+                        <div class="txt">비상연락망</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon compensate"></div>
+                        <div class="txt">이달의 사원</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon suggestions"></div>
+                        <div class="txt">구매요청/건의</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon anonymous_board"></div>
+                        <div class="txt">익명 게시판</div>
+                    </a>
+                </li>
+                <li class="link_item">
+                    <a href="" class="link">
+                        <div class="icon photo_board"></div>
+                        <div class="txt">포토 게시판</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="browser_screen"></div>
+    <div class="content_section fixed_left pt0">
+        <div class="container">
+            <div class="main_visual">
+                <img src="../assets/img/intra_main.png" alt="">
+            </div>
+            <div class="panels_row">
+                <div class="basic_board_panel notification">
+                    <div class="panel_title clearfix">
+                        <div class="icon notice"></div>
+                        <div class="txt">공지사항</div>
+                        <a href="" class="btn_more"></a>
+                    </div>
+                    <div class="panel_content link_list">
+                        <!--
+                        1. 게시글이 없을 경우 : li에 no_data를 추가하여 표시
+                        2. 게시글에 첨부파일이 있는 경우 : li 안 item에 has_attach 추가하여 표시
+                        3. 게시글의 상태 표시 : item 안 state에 work_done / in_progress / warning 분기하여 사용
+                        -->
+                        <ul>
+                            <li class="no_data">
+                                <a class="clearfix item">
+                                    <div class="tit">등록된 문서가 없습니다.</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="clearfix item has_attach">
+                                    <div class="tit text_ellipsis">휴가 신청은 2주 전까지 해주세요.휴가 신청은 2주 전까지 해주세요.휴가 신청은 2주 전까지
+                                        해주세요.
+                                    </div>
+                                    <div class="icon_attach"></div>
+                                    <div class="state in_progress">진행중</div>
+                                    <div class="date">2018.06.15</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="clearfix item has_attach">
+                                    <div class="tit text_ellipsis">하이빗 거래소 메인 배너 연동</div>
+                                    <div class="icon_attach"></div>
+                                    <div class="state warning">D-1</div>
+                                    <div class="date">2018.06.15</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="clearfix item">
+                                    <div class="tit text_ellipsis">워크샵(바다여행)갑니다 어디로가지요?</div>
+                                    <div class="icon_attach"></div>
+                                    <div class="state in_progress">진행중</div>
+                                    <div class="date">2018.06.15</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="clearfix item">
+                                    <div class="tit text_ellipsis">글쓰기</div>
+                                    <div class="icon_attach"></div>
+                                    <div class="state work_done">완료</div>
+                                    <div class="date">2018.06.15</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="basic_board_panel company_event">
+                    <div class="event_title">
+                        <div class="icon medal"></div>
+                        이달의 우수사원
+                    </div>
+                    <div class="panel_content employee">
+                        <div class="thumb">
+                            <img src="../assets/img/no_img.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="dept">개발팀 / 인턴</div>
+                            <div class="emp_name">박우진</div>
+                            <a href="" class="btn_more"></a>
+                        </div>
+
+                        <div class="msg">
+                            <img src="../assets/img/montly_emp_msg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panels_row">
+                <div class="basic_board_panel schedule_calendar">
+                    <div class="panel_title bdc_initial clearfix">
+                        <div class="icon notice"></div>
+                        <div class="txt">회사 일정</div>
+                        <a href="" class="btn_more"></a>
+                    </div>
+                    <div class="all_month">
+                        <div class="btn_month">1월</div>
+                        <div class="btn_month">2월</div>
+                        <div class="btn_month">3월</div>
+                        <div class="btn_month">4월</div>
+                        <div class="btn_month">5월</div>
+                        <div class="btn_month is_active">6월</div>
+                        <div class="btn_month">7월</div>
+                        <div class="btn_month">8월</div>
+                        <div class="btn_month">9월</div>
+                        <div class="btn_month">10월</div>
+                        <div class="btn_month">11월</div>
+                        <div class="btn_month">12월</div>
+                    </div>
+                    <div class="act_area">
+                        <div class="current_month">
+                            <div class="btn_prev"></div>
+                            <div class="cur_date">2018.06</div>
+                            <div class="btn_next"></div>
+                        </div>
+                        <ul class="plans">
+                            <li class="clearfix list">
+                                <div class="date">06.25</div>
+                                <div class="txt">인트라넷 만들기 시작</div>
+                            </li>
+                            <li class="clearfix list">
+                                <div class="date">06.25 ~ 06.30</div>
+                                <div class="txt">이상엽/김가희 광주 출장</div>
+                            </li>
+                            <li class="clearfix list">
+                                <div class="date">06.25</div>
+                                <div class="txt">대청소하는 날</div>
+                            </li>
+                            <li class="clearfix list">
+                                <div class="date">06.25</div>
+                                <div class="txt">워크샵 계획 일자워크샵 계획 일자워크샵 계획 일자워크샵 계획 일자워크샵 계획 일자</div>
+                            </li>
+                            <li class="clearfix list">
+                                <div class="date">06.25</div>
+                                <div class="txt">새로운 사무실 대청소하는 날</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel_wrap">
+                    <!--익게-->
+                    <div class="basic_board_panel small">
+                        <div class="panel_title clearfix">
+                            <div class="icon anonymous_board"></div>
+                            <div class="txt">업무 일정</div>
+                            <a href="" class="btn_more">+</a>
+                        </div>
+                        <div class="panel_content link_list">
+                            <ul>
+                                <li class="no_data">
+                                    <a class="item">
+                                        <div class="tit">등록된 글이 없습니다.</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">
+                                        <div class="tit text_ellipsis">뭐라고쓰지</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">
+                                        <div class="tit text_ellipsis">아이고 청소합시다</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">
+                                        <div class="tit text_ellipsis">점심메뉴 추천 해주세요</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="basic_board_panel small">
+                        <div class="panel_title clearfix">
+                            <div class="icon suggestions"></div>
+                            <div class="txt">양식게시판</div>
+                            <a href="" class="btn_more">+</a>
+                        </div>
+                        <div class="panel_content link_list">
+                            <ul>
+                                <li class="no_data">
+                                    <a class="item">
+                                        <div class="tit">등록된 글이 없습니다.</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">
+                                        <div class="tit text_ellipsis">청소용품(빗자루, 걸레, 쓰레받이, 대걸레, 짤순이)</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">
+                                        <div class="tit text_ellipsis">닭다리과자 신청합니다!</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">
+                                        <div class="tit text_ellipsis">음료수 신청합니다</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panels_row">
+                <div class="basic_board_panel photo_board">
+                    <div class="panel_title clearfix">
+                        <div class="icon photo_board"></div>
+                        <div class="txt">포토게시판</div>
+                        <a href="" class="btn_more"></a>
+                    </div>
+                    <div class="panel_content photo_list">
+                        <ul class="clearfix">
+                            <!--
+                            1. 등록된 게시물이 없을 경우 : item에 no_data 추가하여 표시
+                            2. 게시글 등록시 포토가 없는 경우 게시글 등록 못하도록 막
+                            -->
+                            <li>
+                                <a href="" class="item">
+                                    <div class="thumb">
+                                        <img src="../assets/img/no_img.png" alt="">
+                                    </div>
+                                    <div class="desc text_ellipsis">[2018.06] 회식으로 치느님을!</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item no_data">
+                                    <div class="thumb">
+                                        <img src="../assets/img/no_img.png" alt="">
+                                    </div>
+                                    <div class="desc text_ellipsis">등록된 이미지가 없습니다.</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item no_data">
+                                    <div class="thumb">
+                                        <img src="../assets/img/no_img.png" alt="">
+                                    </div>
+                                    <div class="desc text_ellipsis">등록된 이미지가 없습니다.</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="info">
+                <p>
+                    <span class="val"><strong>(주)지브이쇼핑몰</strong></span>
+                    <span class="bar">|</span>
+                    <span class="val">대표 이강신</span>
+                    <span class="bar">|</span>
+                    <span class="val">(62300) 광주광역시 광산구 수등로 258번길 10,202호</span>
+                </p>
+                <p>
+                    <span class="val">사업자등록번호 : 696-81-00789</span>
+                    <span class="bar">|</span>
+                    <span class="val">개인정보보호책임자 : 이명재</span>
+                    <span class="bar">|</span>
+                    <span class="val">통신판매업 : 신고 제2017-광주동구-0159호 <strong><a href="">[사업자정보확인]</a></strong></span>
+                </p>
+                <p class="copyright">Copyright(C) GVShopping All RIghts Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

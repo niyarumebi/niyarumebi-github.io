@@ -1,0 +1,783 @@
+@charset "UTF-8";
+.page-title.bdbn {
+  border-bottom-color: transparent; }
+
+.section-title {
+  padding: 10px 20px;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333; }
+
+.process-step-wrap {
+  padding: 0 9px;
+  background: #fff; }
+  .process-step-wrap li {
+    float: left;
+    width: 33.33%;
+    padding: 10px 0;
+    text-align: center; }
+    .process-step-wrap li:last-child .bg-wrap:before {
+      display: none; }
+    .process-step-wrap li.is-active .bg-wrap {
+      background: #2ccbc8;
+      color: #fff; }
+      .process-step-wrap li.is-active .bg-wrap:before {
+        background-position: -78px 0; }
+    .process-step-wrap li .bg-wrap {
+      position: relative;
+      padding: 4px 18px 4px 5px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #2ccbc8; }
+      .process-step-wrap li .bg-wrap:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 6px;
+        width: 11px;
+        height: 15px;
+        background-image: url(../../img/arrow-icon-H.png);
+        background-position: -98px 0;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat; }
+    @media screen and (max-width: 320px) {
+      .process-step-wrap li .bg-wrap {
+        font-size: 13px; } }
+
+.following-btn-wrap {
+  position: fixed;
+  z-index: 1500;
+  left: 0;
+  right: 0;
+  bottom: 59px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0; }
+  .following-btn-wrap .btn-action {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 57px;
+    padding: 15px 0;
+    background: #2bccc7;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff; }
+    .following-btn-wrap .btn-action.for-value {
+      background: #00999b;
+      font-size: 16px;
+      font-weight: 300; }
+      .following-btn-wrap .btn-action.for-value .qty {
+        margin-right: 4px; }
+
+.btn-wrap {
+  font-size: 0; }
+  .btn-wrap.center {
+    text-align: center; }
+  .btn-wrap.col3 .btn {
+    width: calc(33.33% - 4px); }
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: initial;
+  padding: 6px 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300; }
+  .btn + .btn {
+    margin-left: 4px; }
+  .btn i {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    font-size: 19px;
+    color: inherit; }
+  .btn.md {
+    min-width: 145px; }
+  .btn.no-bg {
+    margin-right: -10px;
+    font-size: 12px;
+    color: #7b7b7b; }
+    .btn.no-bg i {
+      color: #dcdcdc; }
+  .btn.green {
+    border-color: #2ccbc8;
+    background: #2ccbc8;
+    color: #fff; }
+  .btn.light-gray {
+    border-color: #f4f3f4;
+    background: #f4f3f4;
+    color: #333; }
+  .btn.middle-gray {
+    border-color: #dcdcdc;
+    background: #dcdcdc;
+    color: #7b7b7b; }
+  .btn.dark-gray {
+    border-color: #7b7b7b;
+    background: #7b7b7b;
+    color: #fff; }
+  .btn.green-bd {
+    border-color: #2ccbc8;
+    color: #2ccbc8; }
+  .btn.dark-gray-bd {
+    border-color: #7b7b7b;
+    color: #7b7b7b; }
+  .btn.full-width {
+    display: block;
+    padding: 10px 0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7b7b7b; }
+    .btn.full-width.green {
+      border-color: #2ccbc8;
+      background: #2ccbc8;
+      color: #fff; }
+
+.container > .btn-wrap {
+  margin-top: 20px;
+  padding: 0 10px; }
+  .container > .btn-wrap.col2 .btn {
+    width: calc(50% - 8px); }
+
+/*  주문상세, 취소상세, 주문 취소하기  */
+.info-date {
+  padding: 12px 15px; }
+  .info-date .pull-left {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333; }
+  .info-date .pull-right {
+    padding-top: 1px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #7b7b7b; }
+
+.shipment-info .rows-wrap {
+  padding: 10px 0 15px; }
+.shipment-info .row {
+  min-height: 24px;
+  line-height: 1.4;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333; }
+  .shipment-info .row .key {
+    float: left;
+    width: 28%;
+    padding-left: 21px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333; }
+  .shipment-info .row .value {
+    padding-left: 28%;
+    padding-right: 8px; }
+    .shipment-info .row .value .txt-wrap {
+      min-height: 32px;
+      line-height: 1.5;
+      font-size: 13px;
+      font-weight: 300;
+      color: #7b7b7b; }
+
+.shipped-item-info .section-title {
+  border-bottom-color: transparent; }
+.shipped-item-info .data-row-wrap {
+  padding: 13px 10px;
+  background: #f4f3f4; }
+  .shipped-item-info .data-row-wrap + .data-row-wrap {
+    padding-top: 0; }
+.shipped-item-info .data-row {
+  position: relative;
+  padding: 7px;
+  border: 1px solid #dcdcdc;
+  background: #fff; }
+  .shipped-item-info .data-row + .data-row {
+    border-top-color: transparent; }
+  .shipped-item-info .data-row .thumb {
+    float: left;
+    width: 20%; }
+    .shipped-item-info .data-row .thumb img {
+      width: 100%; }
+  .shipped-item-info .data-row .desc {
+    position: absolute;
+    left: calc(20% + 17px);
+    right: 12px;
+    top: 7px;
+    bottom: 7px; }
+    .shipped-item-info .data-row .desc .name {
+      margin-bottom: 3px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #333; }
+    .shipped-item-info .data-row .desc .sub {
+      text-indent: 3px;
+      font-size: 12px;
+      font-weight: 300;
+      color: #7b7b7b; }
+    .shipped-item-info .data-row .desc .price {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 7px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #333; }
+
+.payment-info {
+  border-bottom: 1px solid #dcdcdc; }
+  .payment-info .subject-wrap {
+    padding: 8px 20px 3px; }
+    .payment-info .subject-wrap li {
+      padding: 5px 0; }
+      .payment-info .subject-wrap li .pull-left {
+        font-size: 13px;
+        font-weight: 300;
+        color: #333; }
+      .payment-info .subject-wrap li .pull-right {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333; }
+      .payment-info .subject-wrap li.total-amount {
+        margin-top: 8px;
+        padding: 9px 0;
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc; }
+        .payment-info .subject-wrap li.total-amount .pull-left {
+          font-size: 16px;
+          font-weight: 500;
+          color: #E34436; }
+        .payment-info .subject-wrap li.total-amount .pull-right {
+          font-size: 16px;
+          font-weight: 600;
+          color: #E34436; }
+      .payment-info .subject-wrap li.bdb {
+        margin-bottom: 4px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #dcdcdc; }
+      .payment-info .subject-wrap li.pay-mean {
+        padding: 10px 0; }
+        .payment-info .subject-wrap li.pay-mean .pull-right {
+          font-weight: 300; }
+
+.cancel-reason .custom-select {
+  margin: 0 10px 10px;
+  padding: 10px 0 0; }
+.cancel-reason .txt-wrap {
+  padding: 15px 20px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #333; }
+
+/*  주문상세, 취소상세, 주문 취소하기 끝 */
+/* 주문/배송조회 */
+.m-mypage-wrap.for-myorders .tab-panel .upper-wrap {
+  padding: 10px 11px 11px;
+  border-bottom: 1px solid #dcdcdc; }
+.m-mypage-wrap.for-myorders .data-per-date-wrap .btn-to-detail {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dcdcdc; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .btn-to-detail .pull-left {
+    padding-top: 2px;
+    font-family: 'malgun gothic', '맑은 고딕';
+    text-align: center; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .btn-to-detail .pull-left .purchase-num {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .btn-to-detail .pull-left .date {
+      font-size: 11px;
+      font-weight: 300;
+      color: #7b7b7b; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .btn-to-detail .pull-right {
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #7b7b7b; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .btn-to-detail .pull-right i {
+      padding-left: 10px;
+      color: #cacaca; }
+.m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap {
+  margin: 13px 10px;
+  border: 1px solid #dcdcdc;
+  background: #fff; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap + .state-wrap {
+    padding-top: 0; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .head {
+    padding: 5px 15px;
+    border-bottom: 1px solid #dcdcdc; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .head .pull-left {
+      padding-top: 7px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .head .pull-right .btn.light-gray {
+      padding: 3px 12px;
+      font-size: 11px;
+      color: #7b7b7b; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .recent-ship-track-wrap {
+    display: none;
+    background: #f4f3f4; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .recent-ship-track-wrap.is-active {
+      display: block; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .recent-ship-track-wrap .track-wrap {
+      padding: 10px; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .recent-ship-track-wrap .bottom-guide-wrap {
+      padding: 12px 10px;
+      border-top: 1px solid #dcdcdc; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .recent-ship-track-wrap .bottom-guide-wrap .guide-txt {
+        padding-top: 6px;
+        padding-left: 9px;
+        float: left;
+        font-size: 12px;
+        font-weight: 300;
+        color: #7b7b7b; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .recent-ship-track-wrap .bottom-guide-wrap .btn-to {
+        float: right;
+        width: 42%;
+        max-width: 200px;
+        padding: 5px 0;
+        border: 1px solid #dcdcdc;
+        background: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        color: #7b7b7b; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .item {
+    padding: 10px; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .item + .item {
+      border-top: 1px solid #dcdcdc; }
+  .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap {
+    position: relative;
+    margin-bottom: 15px; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .btn-more-option {
+      position: absolute;
+      top: 3px;
+      right: -7px; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .btn-more-option i {
+        font-size: 24px;
+        color: #3ae4e1; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .thumb {
+      float: left;
+      width: 20%;
+      min-height: 63px; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .thumb img {
+        width: 100%; }
+    .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .desc {
+      position: absolute;
+      left: calc(20% + 17px);
+      right: 25px;
+      top: 0;
+      bottom: 0; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .desc .name {
+        font-size: 13px;
+        font-weight: 400;
+        color: #333; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .desc .sub {
+        font-size: 12px;
+        font-weight: 300;
+        color: #7b7b7b; }
+      .m-mypage-wrap.for-myorders .data-per-date-wrap .state-wrap .info-wrap .desc .price {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 7px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #333; }
+
+/* 장바구니 */
+.m-cart-wrap {
+  padding-top: 55px; }
+  .m-cart-wrap .bundle-shipping-wrap {
+    background: #fff; }
+    .m-cart-wrap .bundle-shipping-wrap + .bundle-shipping-wrap {
+      padding-top: 0;
+      border-top: 1px solid #dcdcdc; }
+    .m-cart-wrap .bundle-shipping-wrap .head {
+      padding: 10px 15px 10px 10px;
+      border-bottom: 1px solid #dcdcdc; }
+      .m-cart-wrap .bundle-shipping-wrap .head .pull-left {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333; }
+        .m-cart-wrap .bundle-shipping-wrap .head .pull-left .input-checkbox label span {
+          padding-top: 3px;
+          font-weight: 500; }
+        .m-cart-wrap .bundle-shipping-wrap .head .pull-left .input-checkbox label:before {
+          display: none; }
+      .m-cart-wrap .bundle-shipping-wrap .head .pull-right {
+        padding-top: 2px;
+        font-size: 11px;
+        font-weight: 300;
+        color: #333; }
+        .m-cart-wrap .bundle-shipping-wrap .head .pull-right .bold {
+          font-size: 14px;
+          font-weight: 500; }
+    .m-cart-wrap .bundle-shipping-wrap .item {
+      padding: 10px 15px 10px 10px; }
+      .m-cart-wrap .bundle-shipping-wrap .item + .item {
+        border-top: 1px solid #dcdcdc; }
+    .m-cart-wrap .bundle-shipping-wrap .input-checkbox {
+      float: left; }
+      .m-cart-wrap .bundle-shipping-wrap .input-checkbox label:before {
+        top: 6px;
+        left: 5px;
+        width: 16px;
+        height: 16px; }
+      .m-cart-wrap .bundle-shipping-wrap .input-checkbox label i {
+        margin-top: 0;
+        font-size: 25px; }
+    .m-cart-wrap .bundle-shipping-wrap .right-area {
+      padding-left: 34px; }
+    .m-cart-wrap .bundle-shipping-wrap .info-wrap {
+      position: relative; }
+      .m-cart-wrap .bundle-shipping-wrap .info-wrap .name {
+        margin-bottom: 7px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #333; }
+      .m-cart-wrap .bundle-shipping-wrap .info-wrap .thumb {
+        float: left;
+        width: 20%;
+        min-height: 60px; }
+        .m-cart-wrap .bundle-shipping-wrap .info-wrap .thumb img {
+          width: 100%; }
+      .m-cart-wrap .bundle-shipping-wrap .info-wrap .desc {
+        position: absolute;
+        left: calc(20% + 12px);
+        right: 0;
+        top: 26px;
+        bottom: 0; }
+        .m-cart-wrap .bundle-shipping-wrap .info-wrap .desc .sub {
+          font-size: 12px;
+          font-weight: 300;
+          color: #7b7b7b; }
+        .m-cart-wrap .bundle-shipping-wrap .info-wrap .desc .price-wrap {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 7px;
+          text-align: right; }
+          .m-cart-wrap .bundle-shipping-wrap .info-wrap .desc .price-wrap .original-price {
+            margin-right: 5px;
+            text-decoration: line-through;
+            font-size: 13px;
+            font-weight: 300;
+            color: #7b7b7b; }
+          .m-cart-wrap .bundle-shipping-wrap .info-wrap .desc .price-wrap .current-price {
+            font-size: 12px;
+            font-weight: 400;
+            color: #333; }
+            .m-cart-wrap .bundle-shipping-wrap .info-wrap .desc .price-wrap .current-price .money {
+              font-size: 15px;
+              font-weight: 600;
+              color: #333; }
+    .m-cart-wrap .bundle-shipping-wrap .under-tool {
+      margin-top: 15px; }
+      .m-cart-wrap .bundle-shipping-wrap .under-tool .ctrl-qty-wrap {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20%;
+        font-size: 0; }
+        .m-cart-wrap .bundle-shipping-wrap .under-tool .ctrl-qty-wrap .btn-qty {
+          display: inline-block;
+          vertical-align: middle;
+          width: 26%;
+          height: 32px;
+          padding-top: 4px;
+          border: 1px solid #dcdcdc;
+          background: #fff;
+          text-align: center;
+          font-size: 15px;
+          font-weight: 300;
+          color: #2bccc7; }
+        .m-cart-wrap .bundle-shipping-wrap .under-tool .ctrl-qty-wrap .minus {
+          -webkit-border-radius: 5px 0 0 5px;
+          border-radius: 5px 0 0 5px; }
+        .m-cart-wrap .bundle-shipping-wrap .under-tool .ctrl-qty-wrap .plus {
+          -webkit-border-radius: 0 5px 5px 0;
+          border-radius: 0 5px 5px 0; }
+        .m-cart-wrap .bundle-shipping-wrap .under-tool .ctrl-qty-wrap input {
+          display: inline-block;
+          vertical-align: middle;
+          width: 48%;
+          height: 32px;
+          border-top: 1px solid #dcdcdc;
+          border-bottom: 1px solid #dcdcdc;
+          background: #fff;
+          text-align: center;
+          font-size: 13px;
+          font-weight: 500;
+          color: #333; }
+      .m-cart-wrap .bundle-shipping-wrap .under-tool .btn {
+        width: calc(40% - 8px);
+        margin-left: 8px; }
+  .m-cart-wrap .summary-data-wrap {
+    background: #f4f3f4; }
+  .m-cart-wrap .summary-data {
+    padding: 10px 20px; }
+    .m-cart-wrap .summary-data li {
+      padding: 4px 0; }
+      .m-cart-wrap .summary-data li .pull-left {
+        font-size: 13px;
+        font-weight: 300;
+        color: #333; }
+      .m-cart-wrap .summary-data li .pull-right {
+        font-family: '맑은 고딕', 'malgun gothic';
+        font-size: 14px;
+        font-weight: 600;
+        color: #333; }
+      .m-cart-wrap .summary-data li.guide-txt {
+        font-size: 10px;
+        font-weight: 400;
+        color: #7b7b7b; }
+        .m-cart-wrap .summary-data li.guide-txt i {
+          position: relative;
+          top: 5px;
+          margin-right: 2px;
+          font-size: 19px;
+          color: #d2d2d2; }
+      .m-cart-wrap .summary-data li.sum {
+        margin-top: 15px;
+        padding: 10px 0;
+        border-top: 1px solid #dcdcdc; }
+        .m-cart-wrap .summary-data li.sum .pull-left {
+          padding-top: 6px;
+          font-size: 15px;
+          font-weight: 500;
+          color: #E34436; }
+        .m-cart-wrap .summary-data li.sum .pull-right {
+          font-size: 20px;
+          font-weight: 600;
+          color: #E34436; }
+  .m-cart-wrap .total-btn-tool {
+    margin-top: 15px;
+    margin-bottom: 135px;
+    padding: 0 10px; }
+    .m-cart-wrap .total-btn-tool .btn:first-child, .m-cart-wrap .total-btn-tool .btn:nth-child(2) {
+      width: calc(25% - 4px); }
+    .m-cart-wrap .total-btn-tool .btn:last-child {
+      width: 50%; }
+
+/* 취소/반품/교환 */
+.m-mypage-wrap.for-mycancels .tab-panel .upper-wrap {
+  padding: 10px 11px 11px;
+  border-bottom: 1px solid #dcdcdc; }
+.m-mypage-wrap.for-mycancels .data-per-date-wrap .btn-to-detail {
+  display: block;
+  padding: 13px 20px;
+  border-bottom: 1px solid #dcdcdc; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .btn-to-detail .pull-left {
+    padding-top: 2px;
+    font-family: 'malgun gothic', '맑은 고딕';
+    text-align: center; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .btn-to-detail .pull-left .purchase-num {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .btn-to-detail .pull-left .date {
+      font-size: 11px;
+      font-weight: 300;
+      color: #7b7b7b; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .btn-to-detail .pull-right {
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #7b7b7b; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .btn-to-detail .pull-right i {
+      padding-left: 10px;
+      color: #cacaca; }
+.m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap {
+  margin: 13px 10px;
+  border: 1px solid #dcdcdc;
+  background: #fff; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap.delayed-cancel .head .pull-left {
+    color: #7b7b7b; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap + .state-wrap {
+    padding-top: 0; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .head {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dcdcdc; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .head .pull-left {
+      font-size: 12px;
+      font-weight: 500;
+      color: #E34436; }
+      .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .head .pull-left .sub {
+        margin-left: 5px;
+        font-size: 11px;
+        font-weight: 300;
+        color: #7b7b7b; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .head .pull-right {
+      font-size: 11px;
+      font-weight: 300;
+      color: #7b7b7b; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .rows-wrap {
+    padding: 10px 10px 0; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .rows-wrap .row {
+      padding-bottom: 20px; }
+      .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .rows-wrap .row + .row {
+        padding-top: 10px;
+        border-top: 1px solid #dcdcdc; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .rows-wrap .name {
+      font-size: 13px;
+      font-weight: 400;
+      color: #333; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .rows-wrap .sub {
+      font-size: 12px;
+      font-weight: 300;
+      color: #7b7b7b; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .rows-wrap .price {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 7px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #333; }
+  .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .tail {
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 15px; }
+    .m-mypage-wrap.for-mycancels .data-per-date-wrap .state-wrap .tail > span {
+      font-size: 12px;
+      font-weight: 300;
+      color: #7b7b7b; }
+
+/* 배송조회 */
+.delivery-tracking .page-title-box {
+  padding: 15px;
+  background-color: #F4F3F4; }
+
+.delivery-tracking .main-goods-txt {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 30px 15px 30px;
+  border-bottom: 1px solid #DCDCDC; }
+
+.main-delivery {
+  overflow: hidden;
+  padding-top: 15px; }
+
+.main-delivery .delivery-info {
+  width: 50%;
+  float: left;
+  position: relative;
+  padding-left: 70px; }
+
+.main-delivery .delivery-info span {
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+  color: #333333;
+  display: block;
+  width: 60px;
+  text-align: left; }
+
+.main-delivery .delivery-info:first-child:before {
+  content: '';
+  position: absolute;
+  right: -0.5px;
+  width: 1px;
+  background-color: #DCDCDC;
+  top: 2px;
+  bottom: 2px; }
+
+.main-delivery .delivery-info p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center; }
+
+.delivery-location {
+  padding: 11px 10px; }
+
+.delivery-location-list {
+  padding-left: 37px;
+  position: relative; }
+
+.delivery-location-list .delivery-location-icon {
+  position: absolute;
+  width: 40px;
+  left: -6px;
+  top: 0;
+  text-align: center;
+  padding: 12px; }
+
+.delivery-location-list .delivery-location-icon span {
+  position: relative;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #7B7B7B;
+  border: 1px solid #DCDCDC;
+  top: -1px; }
+
+.delivery-location-list .delivery-location-icon span:before {
+  content: '';
+  position: absolute;
+  background-color: #DCDCDC;
+  width: 1px;
+  height: 39px;
+  left: 50%;
+  display: block;
+  margin-left: -0.5px;
+  top: -39px; }
+
+.delivery-location-list:first-child .delivery-location-icon span {
+  background-color: #2CCBC8; }
+
+.delivery-location-list:first-child .delivery-location-icon span:before {
+  display: none; }
+
+.delivery-location-list .location-list-box {
+  border-bottom: 1px solid #DCDCDC;
+  overflow: hidden;
+  padding: 9px 0px; }
+
+.delivery-location-list:last-child .location-list-box {
+  border: 0px; }
+
+.delivery-location-list .location-list-box > div {
+  float: left; }
+
+.delivery-location-list .location-list-box .location-list-date {
+  font-size: 10px;
+  color: #7B7B7B;
+  text-align: center;
+  width: 70px; }
+
+.delivery-location-list .location-list-box .location-list-place {
+  font-size: 10px;
+  color: #333333;
+  text-align: center;
+  width: calc(100% - 140px);
+  padding: 7.5px 0px; }
+
+.delivery-location-list .location-list-box .location-list-situation {
+  font-size: 10px;
+  color: #7B7B7B;
+  text-align: center;
+  width: 70px;
+  padding: 7.5px 0px; }
+
+.delivery-location-list:first-child .location-list-box .location-list-situation {
+  color: #2CCBC8; }
+
+/* 배송조회 */
+
+/*# sourceMappingURL=m-mypage-orders.css.map */

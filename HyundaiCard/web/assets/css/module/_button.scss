@@ -1,0 +1,87 @@
+// button common
+/*.btn {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    background: transparent;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;
+}*/
+
+.btn{
+    display: inline-block;
+    padding: 17px 25px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow:  0px 2px 5px rgba(0,0,0,.2);
+    box-shadow:  0px 2px 5px rgba(0,0,0,.1);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    vertical-align: middle;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    text-decoration: none;
+    @include box_shadow(3);
+}
+
+/* button type */
+.btn-primary {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+}
+.btn-primary-ol {
+    background: #fff;
+    border-color: #fff;
+    color: $primary-color;
+}
+.btn-tool {
+    background: $bg-dark-grey;
+    border-color: $bg-dark-grey;
+    color: #fff;
+}
+
+
+/* button size */
+.btn-full {
+    width: 100%;
+    padding: 12px 15px;
+}
+.btn-lg {
+    padding: 15px 20px;
+    font-size: 16px;
+}
+.btn-md {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+.btn-sm {
+    font-size: 12px;
+    padding: 5px 6px;
+}
+
+// material button effect
+.btn-material {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+

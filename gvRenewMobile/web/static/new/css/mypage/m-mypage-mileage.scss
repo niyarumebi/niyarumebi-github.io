@@ -1,0 +1,75 @@
+.mileage-main-wrap {
+  padding: 15px 0 0;
+  background: #2ccbc8;
+  text-align: center;
+  .upper-wrap {
+    margin: 0 20px 13px;
+    border-bottom: 1px solid #e6e6e6;
+    .tit {
+      margin-bottom: 2px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+    }
+    .value {
+      margin-bottom: 11px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  .under-wrap {
+    margin-bottom: 13px;
+    .btn-wrap {
+      margin-bottom: 5px;
+    }
+    .btn {
+      min-width: 115px;
+      padding: 4px 5px;
+    }
+    .txt {
+      font-size: 13px;
+      font-weight: 200;
+      color: #fff;
+    }
+  }
+  .summary-info {
+    background: rgba(0, 0, 0, .15);
+    li {
+      float: left;
+      position: relative;
+      width: 50%;
+      padding: 13px 10px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 300;
+      color: #fff;
+      &:before {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 9px;
+        bottom: 9px;
+        left: 0;
+        width: 1px;
+        background: #e6e6e6;
+      }
+      & + li {
+        &:before {
+          display: block;
+        }
+      }
+      .key, .value {
+        float: left;
+        width: 50%;
+      }
+      .key {
+        text-align: left;
+      }
+      .value {
+        text-align: right;
+        font-weight: 500;
+      }
+    }
+  }
+}

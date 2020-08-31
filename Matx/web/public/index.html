@@ -1,0 +1,1605 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title></title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" id="color-set" href="../assets/css/style.css?v=css_Ver1">
+
+    <script src="../assets/js/lib/jquery-1.12.2.min.js"></script>
+    <!--   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"> -->
+    <script src="../assets/js/lib/jquery.easing.1.3.js"></script>
+    <script src="../assets/js/lib/slick.js"></script>
+    <script src="../assets/js/lib/ripple.js"></script>
+    <!--   <script src="../assets/js/lib/jquery.mixitup.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
+    <script src="../assets/js/lib/YouTubePopUp.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+    <script src="../assets/js/animation.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id="wrap">
+
+    <div class="browser-overlay"></div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="#!">
+                    <img src="https://fr.freelogodesign.org/Content/img/logo-colors-meanings/logos-oranges/logo-fld04.svg" alt="logo">
+                </a>
+            </h1>
+            <div class="gnb">
+                <nav>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#hereVisual" class="nav-link spy-nav" id="home">home1</a>
+                            <div class="nav-drop">
+                                <ul>
+                                    <li><a href="#!">home2</a></li>
+                                    <li><a href="#!">home3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#hereAbout" class="nav-link spy-nav" id="about">about</a>
+                        </li>
+                        <li>
+                            <a href="#hereService" class="nav-link spy-nav" id="service">service</a>
+                        </li>
+                        <li>
+                            <a href="#hereWork" class="nav-link spy-nav" id="work">work</a>
+                        </li>
+                        <li>
+                            <a href="#hereTeam" class="nav-link spy-nav" id="team">team</a>
+                        </li>
+                        <li>
+                            <a href="#hereBlog" class="nav-link spy-nav" id="blog">blog</a>
+                        </li>
+                        <li>
+                            <a href="#herePricing" class="nav-link spy-nav" id="pricing">pricing</a>
+                        </li>
+                        <li>
+                            <a href="#hereContactUs" class="nav-link spy-nav" id="contact">contact</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="nav-link">rtl version</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="nav-link">more pages</a>
+                            <div class="nav-drop last">
+                                <ul>
+                                    <li><a href="#!">extra components</a></li>
+                                    <li class="first arrow">
+                                        <a href="#!">portfolio pages</a>
+                                        <div class="nav-drop2">
+                                            <ul>
+                                                <li><a href="#!">pf standard</a></li>
+                                                <li><a href="#!">pf masonry</a></li>
+                                                <li><a href="#!">pf masonry sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="second arrow">
+                                        <a href="#!">blog pages</a>
+                                        <div class="nav-drop2">
+                                            <ul>
+                                                <li><a href="#!">blog standard</a></li>
+                                                <li><a href="#!">blog masonry</a></li>
+                                                <li><a href="#!">blog masonry sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="third arrow">
+                                        <a href="#!">single blog pages</a>
+                                        <div class="nav-drop2">
+                                            <ul>
+                                                <li><a href="#!">sb standard</a></li>
+                                                <li><a href="#!">sb masonry</a></li>
+                                                <li><a href="#!">sb masonry sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#!">buy now</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btn-menu">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+            <div class="btn-cancel">
+                <i class="material-icons">arrow_forward</i>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul class="clearfix">
+            <li>
+                <a href="#hereVisual" class="spy-nav arrow">home1</a>
+                <div class="nav-drop">
+                    <ul>
+                        <li><a href="#!">home2</a></li>
+                        <li><a href="#!">home3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#hereAbout" class="spy-nav">about</a>
+            </li>
+            <li>
+                <a href="#hereService" class="spy-nav">service</a>
+            </li>
+            <li>
+                <a href="#hereWork" class="spy-nav">work</a>
+            </li>
+            <li>
+                <a href="#hereTeam" class="spy-nav">team</a>
+            </li>
+            <li>
+                <a href="#hereBlog" class="spy-nav">blog</a>
+            </li>
+            <li>
+                <a href="#herePricing" class="spy-nav">pricing</a>
+            </li>
+            <li>
+                <a href="#hereContactUs" class="spy-nav">contact</a>
+            </li>
+            <li>
+                <a href="#!">rtl version</a>
+            </li>
+            <li>
+                <a href="#!" class="arrow">more pages</a>
+                <div class="nav-drop">
+                    <ul>
+                        <li><a href="#!">extra components</a></li>
+                        <li><a href="#!">portfolio pages</a></li>
+                        <li><a href="#!">blog pages</a></li>
+                        <li><a href="#!">single blog pages</a></li>
+                        <li><a href="#!">buy now</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="option">
+        <a href="#!" class="btn-option">
+            <i class="material-icons">settings</i>
+        </a>
+        <div class="panel-option">
+            <a class="btn-buy-matrix">buy matx now</a>
+            <h3>hatx color schemes</h3>
+            <p>Matx comes with some predefined material color schemes.</p>
+            <div class="colors clearfix">
+                <a href="#!" class="color" id="color-red" data-style="style-red"></a>
+                <a href="#!" class="color" id="color-cyan" data-style="style-cyan"></a>
+                <a href="#!" class="color" id="color-indigo" data-style="style-indigo"></a>
+                <a href="#!" class="color" id="color-deep-purple" data-style="style-purple"></a>
+                <a href="#!" class="color" id="color-pink" data-style="style-pink"></a>
+                <a href="#!" class="color" id="color-blue" data-style="style-blue"></a>
+                <a href="#!" class="color" id="color-green" data-style="style-green"></a>
+                <a href="#!" class="color" id="color-orange" data-style="style-orange"></a>
+                <a href="#!" class="color" id="color-blue-grey" data-style="style-blue-grey"></a>
+                <a href="#!" class="color" id="color-teal" data-style="style-teal"></a>
+                <a href="#!" class="color" id="color-purple" data-style="style-purple"></a>
+                <a href="#!" class="color" id="color-light-green" data-style="style-light-green"></a>
+            </div>
+            <h3>hatx custom schemes</h3>
+            <p>You can also create your own color scheme in a minute.</p>
+        </div>
+    </div>
+
+    <a href="#!" class="scroll-to-top">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </a>
+
+    <div class="visual" id="hereVisual">
+        <div class="visual-slider">
+            <div class="slide-item is-current si1">
+                <div class="text">
+                    <h2>material <span>design agency</span> template</h2>
+                    <p>super clean minimal design. awesome features with endless possibilities.</p>
+                    <a href="#!" class="btn call-to-action">call to action</a>
+                    <a href="#!" class="btn learn-more">learn more</a>
+                </div>
+            </div>
+            <div class="slide-item si2">
+                <div class="text">
+                    <h2>material <span>design agency</span> template</h2>
+                    <p>super clean minimal design. awesome features with endless possibilities.</p>
+                    <a href="#!" class="btn call-to-action">call to action</a>
+                </div>
+            </div>
+            <div class="slide-item si3">
+                <div class="text">
+                    <h2>material design <span>agency template</span></h2>
+                    <p>super clean minimal design. awesome features with endless possibilities.</p>
+                    <a href="#!" class="btn call-to-action">call to action</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="introduction section-main" id="hereIntroduction">
+        <div class="container">
+            <ul class="clearfix">
+                <li class="ani1">
+                    <div class="item">
+                        <div class="icon">
+                            <i class="material-icons">card_travel</i>
+                        </div>
+                        <h3>MATERIAL DESIGN</h3>
+                        <p>We respond directly to a project’s objectives.</p>
+                    </div>
+                </li>
+                <li class="ani2">
+                    <div class="item">
+                        <div class="icon">
+                            <i class="material-icons">directions_boat</i>
+                        </div>
+                        <h3>HIGH QUALITY</h3>
+                        <p>We love working with people who embrace the design</p>
+                    </div>
+                </li>
+                <li class="ani3">
+                    <div class="item">
+                        <div class="icon">
+                            <i class="material-icons">whatshot</i>
+                        </div>
+                        <h3>MATERIAL DESIGN</h3>
+                        <p>Great service is achieved through professionalism.</p>
+                    </div>
+                </li>
+                <li class="ani4">
+                    <div class="item">
+                        <div class="icon">
+                            <i class="material-icons">gesture</i>
+                        </div>
+                        <h3>MATERIAL DESIGN</h3>
+                        <p>Working with the latest technology we design.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-us section-main" id="hereAbout" data-nav="#about">
+        <div class="container">
+            <article class="intro">
+                <h3>about us</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam
+                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolores eveniet. Duis
+                    lobortis
+                    massa imperdiet quam. Sed turpis. Praesent ut ligula non mi varius sagittis. Etiam sollicitudin,
+                    ipsum
+                    eu pulvinar rutrum.</p>
+                <a href="#!" class="btn get-in-touch">get in touch</a>
+            </article>
+            <article class="percentage">
+                <ul>
+                    <li>
+                        <p>photoshop</p>
+                        <div class="progress-bar">
+                            <div class="gauge photoshop">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>wordpress</p>
+                        <div class="progress-bar">
+                            <div class="gauge wordpress">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>laravel</p>
+                        <div class="progress-bar">
+                            <div class="gauge laravel">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>HTML/CSS</p>
+                        <div class="progress-bar">
+                            <div class="gauge html">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="why-choose-us section-main parallax-trigger">
+        <div class="parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="title-area">
+                <h3>why choose us</h3>
+                <p>We combine the best of our skills and ideas to change the idea of web service's.</p>
+            </div>
+            <div class="content clearfix">
+                <article class="accordian">
+                    <ul class="clearfix">
+                        <li>
+                            <a class="title-link" href="#choose-us-accordian-panel1">
+                                <div class="title">UNIQUE DESIGN</div>
+                                <div class="more">+</div>
+                            </a>
+                            <div class="para">Vivamus quis mi. Morbi ac felis. Sed consequat, leo eget bibendum sodales,
+                                augue velit cursus nunc, quis gravida magna mi a libero. Cras non dolor. Fusce pharetra
+                                convallis urna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="title-link" href="#choose-us-accordian-panel2">
+                                <div class="title">UNIQUE DESIGN</div>
+                                <div class="more">+</div>
+                            </a>
+                            <div class="para">Vivamus quis mi. Morbi ac felis. Sed consequat, leo eget bibendum sodales,
+                                augue velit cursus nunc, quis gravida magna mi a libero. Cras non dolor. Fusce pharetra
+                                convallis urna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="title-link" href="#choose-us-accordian-panel3">
+                                <div class="title">UNIQUE DESIGN</div>
+                                <div class="more">+</div>
+                            </a>
+                            <div class="para">Vivamus quis mi. Morbi ac felis. Sed consequat, leo eget bibendum sodales,
+                                augue velit cursus nunc, quis gravida magna mi a libero. Cras non dolor. Fusce pharetra
+                                convallis urna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="pic">
+                    <div id="choose-us-accordian-panel1" class="wrap-img">
+                        <img src="https://images.unsplash.com/photo-1566140967404-b8b3932483f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                    </div>
+                    <div id="choose-us-accordian-panel2" class="wrap-img">
+                        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                    </div>
+                    <div id="choose-us-accordian-panel3" class="wrap-img">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 " alt="">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="service section-main" id="hereService" data-nav="#service">
+        <div class="container">
+            <div class="title-area">
+                <h3>service</h3>
+                <p>We provide comprehensive web service</p>
+            </div>
+            <div class="links">
+                <a href="#tab-content-1" class="link-icon aniRipple">
+                    <i class="material-icons">directions_bike</i>
+                </a>
+                <a href="#tab-content-2" class="link-icon aniRipple">
+                    <i class="material-icons">important_devices</i>
+                </a>
+                <a href="#tab-content-3" class="link-icon aniRipple">
+                    <i class="material-icons">donut_small</i>
+                </a>
+                <a href="#tab-content-4" class="link-icon aniRipple">
+                    <i class="material-icons">question_answer</i>
+                </a>
+                <a href="#tab-content-5" class="link-icon aniRipple">
+                    <i class="material-icons">perm_media</i>
+                </a>
+            </div>
+
+            <div class="tab-contents">
+                <div class="tab-content-item" id="tab-content-1">
+                    <div class="article-area clearfix">
+                        <article class="para">
+                            <h3>GRAPHIC DESIGN</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam ut laoreet dolore magna aliquam erat volutpat.
+                                Ut
+                                wisi enim ad minim veniam, exerci tation suscipit ad minim veniam.</p>
+                            <p>Exerci tation suscipit lobortis nisl ut aliquip ex ea commodo consequat exerci tation
+                                suscipit lobortis nisl ut laoreet dolore magna aliquam ut aliquip ex ea commodo
+                                consequat.</p>
+                        </article>
+                        <article class="pic">
+                            <div class="wrap-img">
+                                <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="history">
+                        <span>1999 to 2014</span>
+                        - graphic design experience
+                    </div>
+                    <div class="statistics clearfix">
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="98"></span>
+                            <div class="subject">brochure design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="530"></span>
+                            <div class="subject">packaging design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="823"></span>
+                            <div class="subject">magazine design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="1254"></span>
+                            <div class="subject">poster design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content-item" id="tab-content-2">
+                    <div class="article-area clearfix">
+                        <article class="para">
+                            <h3>WEB DESIGN</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam ut laoreet dolore magna aliquam erat volutpat.
+                                Ut
+                                wisi enim ad minim veniam, exerci tation suscipit ad minim veniam.</p>
+                            <p>Exerci tation suscipit lobortis nisl ut aliquip ex ea commodo consequat exerci tation
+                                suscipit lobortis nisl ut laoreet dolore magna aliquam ut aliquip ex ea commodo
+                                consequat.</p>
+                        </article>
+                        <article class="pic">
+                            <div class="wrap-img">
+                                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80" alt="">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="history">
+                        <span>1999 to 2014</span>
+                        - graphic design experience
+                    </div>
+                    <div class="statistics clearfix">
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="131"></span>
+                            <div class="subject">brochure design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="456"></span>
+                            <div class="subject">packaging design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="79"></span>
+                            <div class="subject">magazine design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="2345"></span>
+                            <div class="subject">poster design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content-item" id="tab-content-3">
+                    <div class="article-area clearfix">
+                        <article class="para">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam ut laoreet dolore magna aliquam erat volutpat.
+                                Ut
+                                wisi enim ad minim veniam, exerci tation suscipit ad minim veniam.</p>
+                            <p>Exerci tation suscipit lobortis nisl ut aliquip ex ea commodo consequat exerci tation
+                                suscipit lobortis nisl ut laoreet dolore magna aliquam ut aliquip ex ea commodo
+                                consequat.</p>
+                        </article>
+                        <article class="pic">
+                            <div class="wrap-img">
+                                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="history">
+                        <span>1999 to 2014</span>
+                        - graphic design experience
+                    </div>
+                    <div class="statistics clearfix">
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="234"></span>
+                            <div class="subject">brochure design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="634"></span>
+                            <div class="subject">packaging design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="3"></span>
+                            <div class="subject">magazine design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="77"></span>
+                            <div class="subject">poster design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content-item" id="tab-content-4">
+                    <div class="article-area clearfix">
+                        <article class="para">
+                            <h3>CREATIVE PHOTOGRAPHY</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam ut laoreet dolore magna aliquam erat volutpat.
+                                Ut
+                                wisi enim ad minim veniam, exerci tation suscipit ad minim veniam.</p>
+                            <p>Exerci tation suscipit lobortis nisl ut aliquip ex ea commodo consequat exerci tation
+                                suscipit lobortis nisl ut laoreet dolore magna aliquam ut aliquip ex ea commodo
+                                consequat.</p>
+                        </article>
+                        <article class="pic">
+                            <div class="wrap-img">
+                                <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" alt="">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="history">
+                        <span>1999 to 2014</span>
+                        - graphic design experience
+                    </div>
+                    <div class="statistics clearfix">
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="364"></span>
+                            <div class="subject">brochure design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="745"></span>
+                            <div class="subject">packaging design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="234"></span>
+                            <div class="subject">magazine design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="55"></span>
+                            <div class="subject">poster design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content-item" id="tab-content-5">
+                    <div class="article-area clearfix">
+                        <article class="para">
+                            <h3>GALLERY CREATION</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam ut laoreet dolore magna aliquam erat volutpat.
+                                Ut
+                                wisi enim ad minim veniam, exerci tation suscipit ad minim veniam.</p>
+                            <p>Exerci tation suscipit lobortis nisl ut aliquip ex ea commodo consequat exerci tation
+                                suscipit lobortis nisl ut laoreet dolore magna aliquam ut aliquip ex ea commodo
+                                consequat.</p>
+                        </article>
+                        <article class="pic">
+                            <div class="wrap-img">
+                                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" alt="">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="history">
+                        <span>1999 to 2014</span>
+                        - graphic design experience
+                    </div>
+                    <div class="statistics clearfix">
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="547"></span>
+                            <div class="subject">brochure design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="78"></span>
+                            <div class="subject">packaging design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="21"></span>
+                            <div class="subject">magazine design</div>
+                        </div>
+                        <div class="item">
+                            <i class="material-icons">equalizer</i>
+                            <span class="digit" data-count="11"></span>
+                            <div class="subject">poster design</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="check-video section-main parallax-trigger">
+        <div class="parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="text-area">
+                Check out
+                <a class="btn-play" href="https://youtu.be/rrT6v5sOwJg">
+                    <i class="material-icons">play_arrow</i>
+                </a>
+                the video !
+            </div>
+        </div>
+    </section>
+
+    <section class="work section-main" id="hereWork" data-nav="#work">
+        <div class="container">
+            <div class="title-area">
+                <h3>our work</h3>
+                <p>New stunning projects for our amazing clients</p>
+            </div>
+            <div class="wrap-link">
+                <a href="#!" class="link-item is-active filter" data-filter="all">
+                    all
+                </a>
+                <a href="#!" class="link-item filter" data-filter=".bag">
+                    bag
+                </a>
+                <a href="#!" class="link-item filter" data-filter=".accessories">
+                    accessories
+                </a>
+                <a href="#!" class="link-item filter" data-filter=".design">
+                    design
+                </a>
+                <a href="#!" class="link-item filter" data-filter=".fashion">
+                    fashion
+                </a>
+            </div>
+
+            <div class="album-area clearfix">
+                <ul class="mixitup-container clearfix">
+                    <li class="mix list-pic bag">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic design">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic accessories">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic fashion">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic fashion">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic fashion accessories">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2855&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic design">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2855&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mix list-pic design bag">
+                        <div class="wrap-img">
+                            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                            <div class="overlay">
+                                <div class="wrap-text">
+                                    <i class="material-icons">add_circle</i>
+                                    <div class="name-item">item name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn load-more">load more</div>
+        </div>
+    </section>
+
+    <section class="team section-main" id="hereTeam" data-nav="#team">
+        <div class="container">
+            <div class="title-area">
+                <h3>our team</h3>
+                <p>Always strive for better work. Never stop</p>
+            </div>
+            <div class="content">
+                    <div class="team-slider"><li class="team-member">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="name-tag">
+                                    <h4>jame bond</h4>
+                                    <p>software engineer</p></div>
+                                <ul>
+                                    <li class="ability">
+                                        <h5>photoshop</h5>
+                                        <div class="progress-bar">
+                                            <div class="gauge">
+                                                <span>85%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ability">
+                                        <h5>wordpress</h5>
+                                        <div class="progress-bar">
+                                            <div class="gauge">
+                                                <span>85%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ability">
+                                        <h5>laravel</h5>
+                                        <div class="progress-bar">
+                                            <div class="gauge">
+                                                <span>85%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="sns">
+                                    <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                        <div class="team-member">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="name-tag">
+                                        <h4>jame bond</h4>
+                                        <p>software engineer</p></div>
+                                    <ul>
+                                        <li class="ability">
+                                            <h5>photoshop</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>wordpress</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>laravel</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sns">
+                                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="name-tag">
+                                        <h4>jame bond</h4>
+                                        <p>software engineer</p></div>
+                                    <ul>
+                                        <li class="ability">
+                                            <h5>photoshop</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>wordpress</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>laravel</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sns">
+                                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="name-tag">
+                                        <h4>jame bond</h4>
+                                        <p>software engineer</p></div>
+                                    <ul>
+                                        <li class="ability">
+                                            <h5>photoshop</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>wordpress</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>laravel</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sns">
+                                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="name-tag">
+                                        <h4>jame bond</h4>
+                                        <p>software engineer</p></div>
+                                    <ul>
+                                        <li class="ability">
+                                            <h5>photoshop</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>wordpress</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>laravel</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sns">
+                                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="name-tag">
+                                        <h4>jame bond</h4>
+                                        <p>software engineer</p></div>
+                                    <ul>
+                                        <li class="ability">
+                                            <h5>photoshop</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>wordpress</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>laravel</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sns">
+                                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2586&q=80" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="name-tag">
+                                        <h4>jame bond</h4>
+                                        <p>software engineer</p></div>
+                                    <ul>
+                                        <li class="ability">
+                                            <h5>photoshop</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>wordpress</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ability">
+                                            <h5>laravel</h5>
+                                            <div class="progress-bar">
+                                                <div class="gauge">
+                                                    <span>85%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sns">
+                                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-comment section-main parallax-trigger">
+        <div class="parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="tc-slider">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://images.unsplash.com/photo-1547107505-f077b589d96a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80" alt="">
+                    </div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at beatae doloremque
+                            excepturi
+                            <br>in
+                            libero minima nihil numquam obcaecati perferendis,<br>provident quae qui ratione,
+                            reprehenderit
+                            ullam vitae voluptatum? Beatae consequuntur<br>excepturi exercitationem hic ipsum iure magni
+                            nihil,
+                            pariatur recusandae sed?</p>
+                    </div>
+                    <div class="who">
+                        <span class="name">Lorem ipsum</span>
+                        <span class="role">dolor.</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://images.unsplash.com/photo-1551506247-d223ad69c414?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2900&q=80" alt="">
+                    </div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at beatae doloremque
+                            excepturi
+                            <br>in
+                            libero minima nihil numquam obcaecati perferendis,<br>provident quae qui ratione,
+                            reprehenderit
+                            ullam vitae voluptatum? Beatae consequuntur<br>excepturi exercitationem hic ipsum iure magni
+                            nihil,
+                            pariatur recusandae sed?</p>
+                    </div>
+                    <div class="who">
+                        <span class="name">Lorem ipsum</span>
+                        <span class="role">dolor.</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://images.unsplash.com/photo-1551596210-4da509bd1e99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" alt="">
+                    </div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at beatae doloremque
+                            excepturi
+                            <br>in
+                            libero minima nihil numquam obcaecati perferendis,<br>provident quae qui ratione,
+                            reprehenderit
+                            ullam vitae voluptatum? Beatae consequuntur<br>excepturi exercitationem hic ipsum iure magni
+                            nihil,
+                            pariatur recusandae sed?</p>
+                    </div>
+                    <div class="who">
+                        <span class="name">Lorem ipsum</span>
+                        <span class="role">dolor.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section class="label section-main">-->
+<!--        <div class="container">-->
+<!--            <ul>-->
+<!--                <div class="label-slider">-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client1.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client2.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client3.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client4.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client4.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client3.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client2.png" alt="">-->
+<!--                    </li>-->
+<!--                    <li class="label-list">-->
+<!--                        <img src="http://coderpixel.com/demo/matx/img/logo/client1.png" alt="">-->
+<!--                    </li>-->
+<!--                </div>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section class="blog section-main" id="hereBlog" data-nav="#blog">
+        <div class="container">
+            <div class="title-area">
+                <h3>blog post</h3>
+                <p>Check what's new in the world of web development and design trends</p>
+            </div>
+            <div class="content">
+                <ul class="clearfix">
+                    <li class="post-list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+                                <span class="date">Dec 06, 2017</span>
+                            </div>
+                            <div class="desc">
+                                <h4 class="post-title">WE SUPPORT ANY TYPE OF DESIGN</h4>
+                                <p class="post-cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                                    velit
+                                    laboriosam eius amet nobis repellat fugiat adipisci.</p>
+                            </div>
+                            <div class="tools clearfix">
+                                <a href="#!" class="comment">5 comment</a>
+                                <a href="#!" class="share">
+                                    <i class="material-icons">share</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+                                <span class="date">Dec 06, 2017</span>
+                            </div>
+                            <div class="desc">
+                                <h4 class="post-title">WE SUPPORT ANY TYPE OF DESIGN</h4>
+                                <p class="post-cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                                    velit
+                                    laboriosam eius amet nobis repellat fugiat adipisci.</p>
+                            </div>
+                            <div class="tools clearfix">
+                                <a href="#!" class="comment">5 comment</a>
+                                <a href="#!" class="share">
+                                    <i class="material-icons">share</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+                                <span class="date">Dec 06, 2017</span>
+                            </div>
+                            <div class="desc">
+                                <h4 class="post-title">WE SUPPORT ANY TYPE OF DESIGN</h4>
+                                <p class="post-cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                                    velit
+                                    laboriosam eius amet nobis repellat fugiat adipisci.</p>
+                            </div>
+                            <div class="tools clearfix">
+                                <a href="#!" class="comment">5 comment</a>
+                                <a href="#!" class="share">
+                                    <i class="material-icons">share</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+                                <span class="date">Dec 06, 2017</span>
+                            </div>
+                            <div class="desc">
+                                <h4 class="post-title">WE SUPPORT ANY TYPE OF DESIGN</h4>
+                                <p class="post-cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                                    velit
+                                    laboriosam eius amet nobis repellat fugiat adipisci.</p>
+                            </div>
+                            <div class="tools clearfix">
+                                <a href="#!" class="comment">5 comment</a>
+                                <a href="#!" class="share">
+                                    <i class="material-icons">share</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+                                <span class="date">Dec 06, 2017</span>
+                            </div>
+                            <div class="desc">
+                                <h4 class="post-title">WE SUPPORT ANY TYPE OF DESIGN</h4>
+                                <p class="post-cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                                    velit
+                                    laboriosam eius amet nobis repellat fugiat adipisci.</p>
+                            </div>
+                            <div class="tools clearfix">
+                                <a href="#!" class="comment">5 comment</a>
+                                <a href="#!" class="share">
+                                    <i class="material-icons">share</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+                                <span class="date">Dec 06, 2017</span>
+                            </div>
+                            <div class="desc">
+                                <h4 class="post-title">WE SUPPORT ANY TYPE OF DESIGN</h4>
+                                <p class="post-cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                                    velit
+                                    laboriosam eius amet nobis repellat fugiat adipisci.</p>
+                            </div>
+                            <div class="tools clearfix">
+                                <a href="#!" class="comment">5 comment</a>
+                                <a href="#!" class="share">
+                                    <i class="material-icons">share</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <div class="btn view-all">view all</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter parallax-trigger">
+        <div class="parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="text-area">
+                <span>newsletter</span>
+                <form action="">
+                    <label for=""></label>
+                    <input type="email" class="addr" placeholder="YOUR EMAIL">
+                    <button class="btn subscribe">subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="popup-wrap">
+            <div class="overlay"></div>
+            <div class="pop-up succeed">
+                성공
+                <p class="txt1">thanks!</p>
+                <p class="txt2">Almost finished... Please confirm your email address.</p>
+                <div class="btn ok">ok</div>
+            </div>
+            <div class="pop-up failed">
+                엑스
+                <p class="txt1">ops!</p>
+                <p class="txt2">Please enter a valid email address.</p>
+                <div class="btn ok">ok</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing section-main" id="herePricing" data-nav="#pricing">
+        <div class="container">
+            <div class="title-area">
+                <h3>our pricing</h3>
+                <p>We provide best price with maintaining quality</p>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="pricing-list">
+                        <div class="item">
+                            <div class="price-area">
+                                <h3 class="price">$ 10</h3>
+                                <div class="licence-type">Basic License</div>
+                            </div>
+                            <ul>
+                                <li class="option">1 projects</li>
+                                <li class="option">2GB disk space</li>
+                                <li class="option">50 Images</li>
+                                <li class="option">1 e-mail adresses</li>
+                            </ul>
+                            <div class="btn start-this-plan">start this plan</div>
+                        </div>
+                    </li>
+                    <li class="pricing-list">
+                        <div class="item">
+                            <div class="price-area">
+                                <h3 class="price">$ 25</h3>
+                                <div class="licence-type">Business License</div>
+                            </div>
+                            <ul>
+                                <li class="option">5 projects</li>
+                                <li class="option">10GB disk space</li>
+                                <li class="option">100 Images</li>
+                                <li class="option">2 e-mail adresses</li>
+                            </ul>
+                            <div class="btn start-this-plan">start this plan</div>
+                        </div>
+                    </li>
+                    <li class="pricing-list">
+                        <div class="item picked-item">
+                            <div class="price-area">
+                                <h3 class="price">$ 50</h3>
+                                <div class="licence-type">Advanced License</div>
+                            </div>
+                            <ul>
+                                <li class="option">15 projects</li>
+                                <li class="option">30GB disk space</li>
+                                <li class="option">500 Images</li>
+                                <li class="option">10 e-mail adresses</li>
+                            </ul>
+                            <div class="btn start-this-plan">start this plan</div>
+                        </div>
+                    </li>
+                    <li class="pricing-list">
+                        <div class="item">
+                            <div class="price-area">
+                                <h3 class="price">$ 100</h3>
+                                <div class="licence-type">Premium License</div>
+                            </div>
+                            <ul>
+                                <li class="option">Unlimited projects</li>
+                                <li class="option">Unlimited space</li>
+                                <li class="option">Unlimited Images</li>
+                                <li class="option">50 e-mail adresses</li>
+                            </ul>
+                            <div class="btn start-this-plan">start this plan</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="interact-twit section-main parallax-trigger">
+        <div class="parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="content">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <div class="slider">
+                    <div class="slide-item">
+                        <div class="tweet">
+                            (111)I like a
+                            <a href="https://twitter.com/YouTube" target="_blank" title="YouTube on
+                        Twitter">@YouTube</a>
+                            video
+                            <a href="https://t.co/31Jt9DHv2z" target="_blank" title="YouTube on Twitter"> ছেড়ে দে
+                                শয়তান,
+                                মন
+                                পাবি
+                                দেহ পাবি</a>
+                        </div>
+                        <div class="tools">
+                            <span class="reply"><i class="material-icons">reply</i>reply</span>
+                            <span class="retweet"><i class="fa fa-retweet" aria-hidden="true"></i>retweet</span>
+                            <span class="favorite"><i class="fa fa-heart" aria-hidden="true"></i>favorite</span>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="tweet">
+                            (222)I like a
+                            <a href="https://twitter.com/YouTube" target="_blank" title="YouTube on
+                        Twitter">@YouTube</a>
+                            video
+                            <a href="https://t.co/31Jt9DHv2z" target="_blank" title="YouTube on Twitter"> ছেড়ে দে
+                                শয়তান,
+                                মন
+                                পাবি
+                                দেহ পাবি</a>
+                        </div>
+                        <div class="tools">
+                            <span class="reply"><i class="material-icons">reply</i>reply</span>
+                            <span class="retweet"><i class="fa fa-retweet" aria-hidden="true"></i>retweet</span>
+                            <span class="favorite"><i class="fa fa-heart" aria-hidden="true"></i>favorite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us section-main" id="hereContactUs" data-nav="#contact">
+        <div class="container">
+            <div class="contact-info">
+                <h3></h3>
+                <ul>
+                    <li class="clearfix">
+                        <div class="icon"><i class="material-icons">home</i></div>
+                        <div class="addr">1600 Amphitheatre Parkway, Mountain View, CA 94043, US</div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="icon"><i class="material-icons">email</i></div>
+                        <div class="addr">info@coderpixel.com</div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="icon"><i class="material-icons">phone</i></div>
+                        <div class="addr">0088 1234 567890</div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="icon"><i class="material-icons">public</i></div>
+                        <div class="addr">www.coderpixel.com</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-area">
+                <form action="">
+                 <div class="clearfix">
+                    <div class="form-group half">
+                        <input type="text" id="name" placeholder="Name" class="form-control">
+                        <label for="name"></label>
+                    </div>
+                    <div class="form-group half">
+                        <input type="text" id="email" placeholder="Email" class="form-control">
+                        <label for="email"></label>
+                    </div>
+                 </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" class="form-control">
+                        <label for="subject"></label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" placeholder="Message"></textarea>
+                        <label for=""></label>
+                    </div>
+                    <button class="btn send">send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="map">
+      <!--
+        <div id="map" style="width:100%;height:350px;"></div>
+
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c244d1cd083a5d125a37dd551fff39b6"></script>
+        <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                mapOption = {
+                    center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
+
+            // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+            var map = new daum.maps.Map(mapContainer, mapOption);
+
+
+            var iwContent = '<div style="padding:5px;">윤세네 세상</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                iwPosition = new daum.maps.LatLng(33.450701, 126.570667), //인포윈도우 표시 위치입니다
+                iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+            // 인포윈도우를 생성하고 지도에 표시합니다
+            var infowindow = new daum.maps.InfoWindow({
+                map: map, // 인포윈도우가 표시될 지도
+                position : iwPosition,
+                content : iwContent,
+                removable : iwRemoveable
+            });
+            </script>
+            -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <a href="#!" class="footer-logo">
+                    <img src="http://coderpixel.com/demo/matx/img/logo_lite.png" alt="">
+                </a>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>MATX © 2016. ALL RIGHT RESERVED</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+</div>
+</body>
+</html>

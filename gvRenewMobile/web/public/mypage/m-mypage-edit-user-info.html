@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../../static/new/css/base/m-base.css">
+    <link rel="stylesheet" href="../static/new/css/m-mypage-common.css">
+    <link rel="stylesheet" href="../static/new/css/m-mypage-edit-user-info.css">
+
+    <script src="../../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../../static/new/js/jquery-ui.min.js"></script>
+    <script src="../../static/new/js/slick.js"></script>
+    <script src="../../static/new/js/m-common-script.js"></script>
+    <script src="../static/new/js/m-mypage-edit-user-info.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--header-->
+<header class="m-header clearfix">
+    <div class="left-area">
+        <a href="" class="left-link">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <div class="logo">
+        <a href="" class="center-link">
+            <img src="../../static/new/img/logo-basic.png" alt="">
+        </a>
+    </div>
+    <div class="right-area">
+        <a href="" class="right-link">
+            <img src="../../static/new/img/icon-btn-search-black.png" alt="">
+        </a>
+    </div>
+</header>
+
+
+<div class="page-wrap m-mypage-wrap">
+    <div class="container">
+        <div class="page-title">
+            <div class="main-t">회원정보 수정</div>
+        </div>
+
+        <div class="content-section basic-info-wrap">
+            <div class="section-title">기본 정보</div>
+            <div class="rows-wrap">
+                <div class="row clearfix">
+                    <div class="key">아이디</div>
+                    <div class="value">
+                        <div class="txt-wrap">ghaiodsfe111</div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">이름</div>
+                    <div class="value">
+                        <div class="txt-wrap">홍길동</div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">휴대폰</div>
+                    <div class="value">
+                        <div class="form-ctrl has-btn">
+                            <input type="text" value="010-0000-0000">
+                            <a href="" class="btn-action">인증번호 발송</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">기본배송지</div>
+                    <div class="value">
+                        <div class="form-ctrl has-btn">
+                            <input type="text" placeholder="주소 입력 후 검색">
+                            <a href="" class="btn-action">주소 검색</a>
+                        </div>
+                        <div class="form-ctrl sm">
+                            <input type="text" placeholder="우편주소">
+                        </div>
+                        <div class="form-ctrl">
+                            <input type="text" placeholder="기본주소">
+                        </div>
+                        <div class="form-ctrl">
+                            <input type="text" placeholder="상세주소">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">이메일</div>
+                    <div class="value for-email clearfix">
+                        <div class="form-ctrl col1">
+                            <input type="text" class="email-id" value="asdjfioaw111">
+                            <span class="email-at">@</span>
+                            <input type="text" class="email-domain" value="직접입력">
+                        </div>
+                        <div class="form-ctrl col2">
+                            <div class="dropdown">
+                                <div class="head">직접입력</div>
+                                <ul class="drop">
+                                    <!--첫번째 li의 값은 직접입력 이어야 합니다. js와 연결 되어있습니다. 띄어쓰기 주의해주세요-->
+                                    <li>직접입력</li>
+                                    <li>naver.컴</li>
+                                    <li>han메일.넷</li>
+                                    <li>rocketmail.co.kr</li>
+                                    <li>naver.com</li>
+                                    <li>naver.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">현재 비밀번호</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="password" placeholder="현재 비밀번호 입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">새 비밀번호</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="password" placeholder="8자리 이상 20자리 미만 영문/숫자/특수문자">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">새 비밀번호 확인</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="password" placeholder="새 비밀번호 다시 입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">계좌정보</div>
+                    <div class="value">
+                        <div class="inner-row clearfix">
+                            <div class="inner-key">은행명</div>
+                            <div class="inner-value">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0" selected>은행을 선택해주세요.</option>
+                                        <option value="1">ㅇ2은행</option>
+                                        <option value="2">ㅇ3은행</option>
+                                        <option value="3">ㅇ4은행</option>
+                                        <option value="3">ㅇ5은행</option>
+                                        <option value="3">ㅇ6은행</option>
+
+                                        <option value="1">ㅇ2은행</option>
+                                        <option value="2">ㅇ3은행</option>
+                                        <option value="3">ㅇ4은행</option>
+                                        <option value="3">ㅇ5은행</option>
+                                        <option value="3">ㅇ6은행</option>
+
+                                        <option value="1">ㅇ2은행</option>
+                                        <option value="2">ㅇ3은행</option>
+                                        <option value="3">ㅇ4은행</option>
+                                        <option value="3">ㅇ5은행</option>
+                                        <option value="3">ㅇ6은행</option>
+
+                                        <option value="1">ㅇ2은행</option>
+                                        <option value="2">ㅇ3은행</option>
+                                        <option value="3">ㅇ4은행</option>
+                                        <option value="3">ㅇ5은행</option>
+                                        <option value="3">ㅇ6은행</option>
+
+                                        <option value="1">ㅇ21은행</option>
+                                        <option value="2">ㅇ22은행</option>
+                                        <option value="3">ㅇ23은행</option>
+                                        <option value="3">ㅇ24은행</option>
+                                        <option value="3">ㅇ25은행</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-row clearfix">
+                            <div class="inner-key">계좌번호</div>
+                            <div class="inner-value">
+                                <div class="form-ctrl">
+                                    <input type="number">
+                                </div>
+                                <p class="sub">*예금주는 본인 회원 이름과 동일해야 합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap center">
+                    <a href="" class="btn green">수정</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section leave-member-wrap">
+            <div class="section-title">회원탈퇴 <span class="sub">회원탈퇴를 진행하시려면 아래의 절차대로 입력해주요.</span></div>
+            <div class="rows-wrap">
+                <div class="row clearfix">
+                    <div class="key">회원 탈퇴 방지</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="text" value="본인은 회원탈퇴에 동의합니다." disabled>
+                            <input type="text" placeholder="위의 글자를 동일하게 입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">현재 비밀번호</div>
+                    <div class="value">
+                        <div class="form-ctrl has-btn">
+                            <input type="password" placeholder="현재 비밀번호 입력">
+                            <a href="" class="btn-action">회원탈퇴</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

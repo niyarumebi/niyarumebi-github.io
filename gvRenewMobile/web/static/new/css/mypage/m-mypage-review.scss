@@ -1,0 +1,230 @@
+/* 작성가능 구매후기,내가 쓴 구매후기 */
+.my-comment-reviews {
+  width: 100%;
+  padding: 15px 15px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.my-comment-reviews .order-goods-info {
+  overflow: hidden;
+}
+
+
+.my-comment-reviews .order-goods-info .goods-info-img {
+  width: 66px;
+  float: left;
+  border: 1px solid #dcdcdc;
+}
+.my-comment-reviews .order-goods-info .goods-info-img img {
+  width: 100%;
+}
+.my-comment-reviews .order-goods-info .goods-info-text {
+  width: calc(100% - 66px);
+  padding: 0px 0px 3px 9px;
+  float: right;
+}
+.my-comment-reviews .goods-info-text .goods-info-name {
+  font-size: 12px;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.my-comment-reviews .goods-info-text .goods-info-category {
+  font-size: 11px;
+  color: #7b7b7b;
+  font-weight: 400;
+}
+.my-comment-reviews .order-edit-text {
+  padding-left: 64px;
+  position: relative;
+}
+.my-comment-reviews .order-edit-text > span {
+  font-size: 11px;
+  font-weight: 600;
+  width: 64px;
+  text-align: right;
+  padding-right: 8px;
+  left: 0px;
+  position: absolute;
+}
+.my-comment-reviews .order-wrote-notice {
+  font-size: 11px;
+  color: #333;
+}
+.my-comment-reviews .order-edit-text > div {
+  padding: 0px 0 0px 9px;
+  position: relative;
+
+}
+.my-comment-reviews .order-edit-text > div:before {
+  display: none
+}
+/*별*/
+.my-comment-reviews .order-edit-text .reviews-product-grade .rate_ttt {
+  position: relative;
+  left: 0px;
+  top: -5px;
+  margin-bottom: 0px;
+  font-size: 0;
+  display: inline-block;
+  padding-right: 6px;
+}
+.my-comment-reviews .order-edit-text .reviews-product-grade .rate_ttt i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  width: 20px;
+  color: #dcdcdc;
+}
+
+.my-comment-reviews .order-edit-text .reviews-product-grade .rate_ttt .is-active {
+  color: #ffdf2c;
+}
+.my-comment-reviews .order-edit textarea {
+  width: 100%;
+  min-height: 178px;
+  padding: 7px 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 11px;
+  color: #333;
+}
+.my-comment-reviews .order-edit-text .reviews-product-grade .reviews-product-date {
+  font-size: 10px;
+  color: #7B7B7B;
+  display: inline-block
+}
+.my-comment-reviews .order-edit  {
+
+}
+.my-comment-reviews .edit-additionalimages {
+  overflow: hidden;
+  padding-top: 20px;
+}
+.my-comment-reviews .edit-additionalimages ul li {
+  width: calc(20% - 1%);
+  max-width: 75px;
+  border: 1px solid #dcdcdc;
+  float: left;
+  margin-left: 1.2%;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer
+}
+.my-comment-reviews .edit-additionalimages ul li .box-size-block {
+  display: block;
+  padding-top: 100%
+}
+.my-comment-reviews .edit-additionalimages ul li:first-child {
+  margin-left: 0px;
+}
+.my-comment-reviews .edit-additionalimages ul li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+}
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #7b7b7b;
+  z-index: 50;
+  cursor: pointer
+}
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none span {
+  display: block;
+  position: relative;
+}
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none span:after {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  content: '';
+  top: 3px;
+  left: 50%;
+  margin-left: -0.5px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-none span:before {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  content: '';
+  top: 3px;
+  left: 50%;
+  margin-left: -0.5px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus {
+  width: 100%;
+  padding-top: 100%;
+  cursor: pointer
+}
+
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus span {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-47%);
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus span:after {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  left: 50%;
+  top: 0px;
+  margin-left: -1px;
+  margin-top: -2px;
+  content: '';
+  background-color: #dcdcdc;
+  /*    transform: translate(-50%,-92%);*/
+}
+.my-comment-reviews .edit-additionalimages ul li .additionalimages-plus span:before {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  left: 50%;
+  top: 0px;
+  margin-left: -1px;
+  margin-top: -2px;
+  content: '';
+  background-color: #dcdcdc;
+  transform: rotate(90deg);
+  /*    transform: translate(-50%,-92%);*/
+}
+.my-comment-reviews .my-comment-modified {
+  text-align: right;
+  padding: 10px 0px;
+}
+.my-comment-reviews .my-comment-modified a {
+  display: inline-block;
+  font-size: 10px;
+  background-color: #F4F3F4;
+  border-radius: 6px;
+  padding: 4px 10px;
+  color: #7b7b7b;
+}
+.my-comment-reviews .write-review-btn {
+  text-align: right
+}
+.my-comment-reviews .write-review-btn a {
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 16px;
+  background-color: #2CCBC8;
+  border-radius: 6px;
+}
+/* 작성가능 구매후기,내가 쓴 구매후기 */

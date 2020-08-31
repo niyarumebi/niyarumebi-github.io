@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Resume Site</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/style.css?v=css_Ver1">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/lib/slick.js"></script>
+    <script src="../assets/js/lib/jquery.easing.1.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+    <script src="../assets/js/lib/ripple.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.js"></script>
+    <script src="../assets/js/uiAnimation.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div class="overlay"></div>
+        <header class="header">
+            <h1 class="logo">
+                <a href="#!">
+                    <img src="../assets/img/logo_w.png" alt="로고">
+                </a>
+            </h1>
+            <div class="side-btn">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+
+            <nav class="gnb">
+                <a href="#hereHome" class="nav-link" id="home">home</a>
+                <a href="#hereWork" class="nav-link" id="work">work</a>
+                <a href="#hereSkills" class="nav-link" id="skills">skills</a>
+                <a href="#hereContact" class="nav-link" id="contact">contact</a>
+            </nav>
+        </header>
+
+        <div class="side-bar">
+            <nav class="gnb">
+                <a href="#hereHome" class="nav-link">home</a>
+                <a href="#hereWork" class="nav-link">work</a>
+                <a href="#hereSkills" class="nav-link">skills</a>
+                <a href="#hereContact" class="nav-link">contact</a>
+            </nav>
+        </div>
+
+        <div class="go-top">
+            <i class="material-icons">keyboard_arrow_up</i>
+        </div>
+
+        <section class="visual trigger-fadeInUp section-main" id="hereHome" data-nav="#home">
+            <div class="slider">
+                <div class="vs vs1">
+                    <div class="screen"></div>
+                    <div class="txt">
+                        <h2 class="fadeInUp-item">Front End Developer</h2>
+                        <p class="fadeInUp-item">A developer who loves experiences and new challenges</p>
+                    </div>
+                </div>
+                <div class="vs vs2">
+                    <div class="screen"></div>
+                    <div class="txt">
+                        <h2 class="fadeInUp-item">Do My Best All the way</h2>
+                        <p class="fadeInUp-item">Good things come to those who don't wait for lunch</p>
+                    </div>
+                </div>
+                <div class="vs vs3">
+                    <div class="screen"></div>
+                    <div class="txt">
+                        <h2 class="fadeInUp-item">A Developer <br>Who Enjoys Making a Result</h2>
+                        <p class="fadeInUp-item">Believe a steady small step leads a change in the future</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-next">
+                <div class="scr_ani">
+                    <img src="../assets/img/scroll.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-opt trigger-fadeInUp" id="hereAbout" data-nav="#about">
+            <div class="container">
+                <div class="title-area">
+                    <h3>about</h3>
+                </div>
+
+                <ul class="clearfix">
+                        <li class="fadeInUp-item">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <div class="image">
+                                            <i class="material-icons">highlight</i>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <h4>
+                                            Synergy Of Performance
+                                        </h4>
+                                        <p>
+                                            기여도 100%, 1년 6개월 가량 <br/>
+                                             퍼블리싱 경험으로 프론트엔드 업무에 시너지
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                    <li class="fadeInUp-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="image">
+                                    <i class="material-icons">tv</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h4>
+                                        Code Review for Better Result
+                                </h4>
+                                <p>유지보수를 염두에 둔 코드를 짜고자 노력하며<br/>개선될 수 있는 기회에 오픈마인드</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fadeInUp-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="image">
+                                    <i class="material-icons">bubble_chart</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h4>
+                                    Cooperation Movement
+                                </h4>
+                                <p>열린 마음으로 함께 일하는 것을 추구합니다.<br/>
+                                백엔드와 원활한 협업을 위해 공부합니다</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fadeInUp-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="image">
+                                    <i class="material-icons">toys</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h4>
+                                    Cross Browsing
+                                </h4>
+                                <p>
+                                    사용자들이 동일한 경험을 하도록<br>표준적인 코딩을 하고자 노력합니다
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="work section-opt trigger-fadeInUp" id="hereWork" data-nav="#work">
+            <div class="container">
+                <div class="title-area">
+                    <h3>portfolio</h3>
+                    <p>React, Redux, Saga, Styled-component<br/>Html5, Scss, jQuery</p>
+<!--                    <div class="mini-bubble">Webstorm, vscode</div>-->
+                </div>
+                <div class="content">
+                    <ul class="clearfix">
+                        <li class="fadeInUp-item">
+                            <div class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>Unsplash (리액트)</h4>
+                                        <p>-React, Redux, Saga, devAPI<br/>
+                                           -검색, 서브페이지 라우트, 콜렉션 색인 가능
+                                        </p>
+                                        <div class="link-wrap">
+                                            <a href="https://github.com/niyarumebi/copy-unsplash"
+                                               class="btn-detail">코드페이지(git)</a>
+                                        </div>
+                                        <div class="link-wrap">
+                                            <a href="https://niyarumebi.github.io/copy-unsplash/"
+                                               class="btn-detail">사이트 보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf_unsplash.jpg" alt="unsplash">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="fadeInUp-item">
+                            <div class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>GVS 쇼핑몰 PC (리뉴얼)</h4>
+                                        <p>Scss / jQuery / Slick.js 커스텀</p>
+                                        <div class="link-wrap">
+                                            <a class="btn-detail cancel">배포된 사이트</a>
+                                        </div>
+                                        <div class="link-wrap">
+                                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/gvRenewPc/"
+                                                class="btn-detail">단독페이지</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf_gvpc.jpg" alt="matx">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fadeInUp-item">
+                            <div class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>GVS 쇼핑몰 Mobile (리뉴얼)</h4>
+                                        <p>반응형 / Scss / jQuery</p>
+
+                                        <div class="link-wrap">
+<!--                                            <a href="https://m.gvsmall.com" class="btn-detail">배포된 사이트</a>-->
+                                            <a href="" class="btn-detail cancel">배포된 사이트</a>
+                                        </div>
+                                        <div class="link-wrap">
+                                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/gvRenewMobile"
+                                                class="btn-detail">단독 페이지</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf_gvmo.jpg" alt="matx">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="fadeInUp-item">
+                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/Matx" class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>MATX 메인카피</h4>
+                                        <p>-jQuery, 아코디언메뉴, 패럴렉스</p>
+                                        <p>-페이지의 컬러셋 변경 가능</p>
+                                        <p>-mixitup.js 적용</p>
+                                        <div class="btn-detail">자세히 보기</div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf1.jpg" alt="matx">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fadeInUp-item">
+                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/gvMkAffiliate" class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>GVS 제휴사이트</h4>
+                                        <p>반응형 / Scss / jQuery</p>
+                                        <p>
+
+                                        </p>
+                                        <div class="btn-detail">자세히 보기</div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf_gvaff.jpg" alt="matx">
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+<!--                        <li class="fadeInUp-item">-->
+<!--                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/drJart" class="item">-->
+<!--                                <div class="screen">-->
+<!--                                    <div class="text">-->
+<!--                                        <h4>DrJart 메인카피</h4>-->
+<!--                                        <p>Scss / jQuery / fullPage.js css 커스텀</p>-->
+<!--                                        <div class="btn-detail">자세히 보기</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="thumb">-->
+<!--                                    <img src="../assets/img/pf5.jpg" alt="닥터자르트 메인 카피">-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </li>-->
+                        <li class="fadeInUp-item">
+                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/HyundaiCard/" class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>현대카드 메인카피</h4>
+                                        <p>Scss / jQuery / Slick.js 커스텀</p>
+                                        <div class="btn-detail">자세히 보기</div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf4.gif" alt="현대카드 메인 카피">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fadeInUp-item">
+                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/gvIntranet" class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>GVS 인트라넷</h4>
+                                        <p>Scss / jQuery</p>
+                                        <p>
+
+                                        </p>
+                                        <div class="btn-detail">자세히 보기</div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf_gvintra.jpg" alt="matx">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fadeInUp-item">
+                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/gvLuxury" class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>GVS 명품관</h4>
+                                        <p>Scss / jQuery</p>
+                                        <div class="btn-detail">자세히 보기</div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf_gvluxury.jpg" alt="matx">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fadeInUp-item">
+                            <a href="http://deploy-first.s3-website.ap-northeast-2.amazonaws.com/Marketer" class="item">
+                                <div class="screen">
+                                    <div class="text">
+                                        <h4>MARKETER 메인카피</h4>
+                                        <p>반응형 / Scss</p>
+                                        <div class="btn-detail">자세히 보기</div>
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="../assets/img/pf2.gif" alt="marketer 메인 카피">
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="slogan">
+            <div class="parallax-bg"></div>
+            <div class="screen"></div>
+            <div class="lines">
+                <div class="left"></div>
+                <div class="top"></div>
+                <div class="right"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="txt">
+                <h3>"정체되어 있지 않고 계속 흐르는 물처럼"</h3>
+                <p>새로운 기술이 끊임 없이 개발되는 프론트엔드 기술의 생태계에 발 맞춰, 매일 꾸준한 걸음으로 산을 넘어가는 개발자가 목표입니다.</p>
+            </div>
+        </section>
+
+        <!--  <div class="ability">
+        <ul class="clearfix">
+            <li>
+                <div class="item">
+                    <p>HTML/CSS</p>
+                    <div class="progress-bar">
+                        <div class="gauge html">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <p>Javascript/jQuery</p>
+                    <div class="progress-bar">
+                        <div class="gauge js">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <p>Responsive Web / Mobile</p>
+                    <div class="progress-bar">
+                        <div class="gauge res">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <p>SCSS</p>
+                    <div class="progress-bar">
+                        <div class="gauge scss">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <p>GreenSock</p>
+                    <div class="progress-bar">
+                        <div class="gauge gs">
+                            <span>35%</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <p>Photoshop</p>
+                    <div class="progress-bar">
+                        <div class="gauge ps">
+                            <span>50%</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    -->
+
+        <div class="skills section-opt trigger-fadeInUp" id="hereSkills" data-nav="#skills">
+            <div class="container">
+                <div class="title-area">
+                    <h3>Skills</h3>
+                </div>
+                <ul class="clearfix">
+<!--                    <li>-->
+<!--                        <div class="item fadeInUp-item">-->
+<!--                            <i class="fa fa-html5"></i>-->
+<!--                            <div class="proficiency">90</div>-->
+<!--                            <div class="cate">HTML</div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+                    <li>
+                        <div class="item fadeInUp-item">
+                            <i class="material-icons">account_balance</i>
+                            <div class="proficiency">90</div>
+                            <div class="cate">REACT, REDUX, SAGA를</div>
+                            <div class="cate">사용하여 코드를 구현합니다.</div>
+                        </div>
+                    </li>
+<!--                    <li>-->
+<!--                        <div class="item fadeInUp-item">-->
+<!--                            <i class="material-icons">dialpad</i>-->
+<!--                            <div class="proficiency">80</div>-->
+<!--                            <div class="cate">JAVASCRIPT / JQUERY</div>-->
+<!--                            <div class="cate">라이브러리 함수 활용과 커스텀이 가능합니다.</div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+                    <li>
+                        <div class="item fadeInUp-item">
+                            <i class="fa fa-css3"></i>
+                            <div class="proficiency">90</div>
+                            <div class="cate">CSS / SCSS / Styled-component</div>
+                            <div class="cate">SCSS variable, mixin 사용 가능합니다.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item fadeInUp-item">
+                            <i class="material-icons">accessibility_new</i>
+                            <div class="proficiency">90</div>
+                            <div class="cate">PostMan</div>
+                            <div class="cate">api 테스트, api 문서가 있는<br/> 업무진행을 선호합니다.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item fadeInUp-item">
+                            <i class="material-icons">widgets</i>
+                            <div class="proficiency">80</div>
+                            <div class="cate">Responsive Web / Mobile</div>
+                            <div class="cate">반응형 웹 작업이 가능합니다.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item fadeInUp-item">
+                            <i class="material-icons">bookmark</i>
+                            <div class="proficiency">90</div>
+                            <div class="cate">Git, Jira, Jeplin</div>
+                            <div class="cate">업무분장 및 버전관리 등의<br/> 툴 사용이 가능합니다.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item fadeInUp-item">
+                            <i class="material-icons">assignment_returned</i>
+                            <div class="proficiency">90</div>
+                            <div class="cate">Webstorm</div>
+                            <div class="cate">JetBrain사의 IDE인<br/> 웹스톰을 선호합니다.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <section class="contact section-opt clearfix" id="hereContact" data-nav="#contact">
+            <div class="title-area">
+                <h3>contact</h3>
+            </div>
+            <!--   <div class="img-area">
+            <div class="bubble">
+                <p>확인하는 대로 연락드리겠습니다.<br> 좋은하루 되세요☺</p>
+            </div>
+            <img src="http://demo.epic-webdesign.com/tf-marketer/images/email.png" alt="">
+        </div>
+        <form method="POST"
+              action="http://formspree.io/rit_blossom@naver.com">
+            <div class="form-group">
+                <label class="title" for="name"></label>
+                <input type="text" id="name" placeholder="성함" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="title" for="phone"></label>
+                <input type="text" id="phone" placeholder="연락처" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="title" for="email"></label>
+                <input type="text" id="email" placeholder="이메일" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="title" for="message"></label>
+                <textarea name="" id="message" placeholder="내용을 입력해주세요."></textarea>
+            </div>
+            <button type="submit" class="btn">보내기</button>
+        </form>
+
+        -->
+            <div class="contact-info">
+                <ul>
+                    <li>
+                        <p class="subj">Email</p>
+                        <p class="val">rit_blossom@naver.com</p>
+                    </li>
+                    <li>
+                        <p class="subj">Phone</p>
+                        <p class="val">
+                            <!--<span>Ref to resume</span>-->
+                            <img src="../assets/img/pihn.jpg" alt=""><br>9:00am to 10:00pm available</p>
+                    </li>
+                    <li>
+                        <p class="subj">Address</p>
+                        <p class="val">서울 서초구</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <h1 class="logo item">
+                    <img src="../assets/img/logo_w.png" alt="logo">
+                </h1>
+                <p>Copyrignt @ Front End Developer by JBY. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

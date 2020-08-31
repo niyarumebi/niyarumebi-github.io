@@ -1,0 +1,101 @@
+.m-middle-category-wrap {
+  padding-top: 55px; }
+
+.m-search-result-wrap {
+  padding-top: 0; }
+
+.best-items {
+  margin-top: 0;
+  border-top: 6px solid #f4f3f4; }
+  .best-items .best-items-title {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2ccbc8;
+    text-align: center; }
+    .best-items .best-items-title .main-t {
+      font-size: 20px;
+      font-weight: 500;
+      color: #333; }
+    .best-items .best-items-title .sub {
+      font-size: 13px;
+      font-weight: 300;
+      color: #333; }
+  .best-items .scene-list {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dcdcdc; }
+  .best-items .slick-dots {
+    bottom: -26px; }
+  .best-items .scene {
+    position: relative;
+    display: block;
+    padding: 15px 20px; }
+  .best-items .thumb {
+    float: left;
+    width: 40%; }
+    .best-items .thumb img {
+      width: 100%; }
+  .best-items .desc {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 40%;
+    right: 20px;
+    padding-left: 5%; }
+    .best-items .desc .flag {
+      width: 37px;
+      height: 41px;
+      margin-bottom: 7px;
+      background-image: url(../../img/flag-best-item.png);
+      background-position: -2px 0;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .best-items .desc .flag .num {
+        display: inline-block;
+        padding-top: 6px;
+        padding-left: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff; }
+    .best-items .desc .name {
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333; }
+    .best-items .desc .sub {
+      height: 36px;
+      overflow-y: hidden;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      line-height: 1.4;
+      font-size: 13px;
+      font-weight: 300;
+      color: #333; }
+
+.category-text-list-wrap {
+  padding-top: 10px; }
+
+.whole-prd-list-wrap .prd-list li .desc {
+  padding: 3px 0 8px; }
+
+.related-keywords {
+  overflow-x: scroll;
+  white-space: nowrap;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 0; }
+  .related-keywords .link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333; }
+    .related-keywords .link:first-child {
+      margin-right: 7px;
+      padding-left: 12px;
+      font-weight: 500; }
+
+/*# sourceMappingURL=m-middle-category.css.map */

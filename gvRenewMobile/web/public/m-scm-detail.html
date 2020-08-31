@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../static/new/css/base/m-scm-base.css">
+    <link rel="stylesheet" href="../static/new/css/m-scm-detail.css">
+
+    <script src="../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../static/new/js/jquery-ui.min.js"></script>
+    <script src="../static/new/js/slick.js"></script>
+    <script src="../static/new/js/m-scm-common.js"></script>
+    <script src="../static/new/js/m-scm-detail.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+<script>
+</script>
+
+<body>
+
+<!--header 자리-->
+<header class="m-header clearfix">
+    <div class="left-area">
+        <a href="" class="left-link">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <div class="logo">
+        <a href="" class="center-link">
+            <img src="../static/new/img/logo-basic.png" alt="">
+        </a>
+    </div>
+    <div class="right-area">
+        <a href="" class="right-link">
+            <img src="../static/new/img/icon-btn-search-black.png" alt="">
+        </a>
+    </div>
+</header>
+
+<!--신차몰 header-->
+<header class="m-sub-header m-scm-header clearfix">
+    <a href="" class="page-link">쇼핑몰</a>
+    <a href="" class="page-link">코인몰</a>
+    <a href="" class="page-link is-active">신차몰</a>
+    <a href="" class="page-link">식자재몰</a>
+</header>
+
+<div class="m-page-wrap">
+    <div class="scm-detail-wrap">
+        <div class="container">
+            <!-- 상단 -->
+            <div class="car-info">
+                <div class="left-box car-pic">
+                    <div class="text-box">
+                        <div class="title-text">
+                            SM6 (G) 2.0
+                        </div>
+
+                        <div class="basic-text">
+                            <p class="hope-txt">
+                                희망가격 : <span class="digit">26,000,000</span>원
+                            </p>
+
+                            <p>
+                                월 이용료 : <span class="digit">200,000</span>원
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="thumb">
+                        <img src="../static/new/img/@car-pic.png" alt="">
+                    </div>
+                </div>
+
+                <div class="right-box car-info-list">
+                    <table>
+                        <tr>
+                            <th>
+                                <div class="t-txt-name">
+                                    구분
+                                </div>
+                            </th>
+
+                            <td>
+                                <div class="t-checkbox">
+                                    <div class="input-radio">
+                                        <input type="radio" name="charge" id="autobit" checked="checked">
+
+                                        <label for="autobit">
+                                            <i class="material-icons is-outline">radio_button_unchecked</i>
+                                            <i class="material-icons is-checked">radio_button_checked</i>
+                                            <span>개인</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="input-radio">
+                                        <input type="radio" name="charge" id="frontier">
+
+                                        <label for="frontier">
+                                            <i class="material-icons is-outline">radio_button_unchecked</i>
+                                            <i class="material-icons is-checked">radio_button_checked</i>
+                                            <span>개인 사업자</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="input-radio">
+                                        <input type="radio" name="charge" id="bible">
+
+                                        <label for="bible">
+                                            <i class="material-icons is-outline">radio_button_unchecked</i>
+                                            <i class="material-icons is-checked">radio_button_checked</i>
+                                            <span>법인 사업자</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <div class="t-txt-name">
+                                    성명
+                                </div>
+                            </th>
+
+                            <td>
+                                <div class="t-input">
+                                    <input type="text" placeholder="성명을 입력해주세요.">
+
+                                    <div class="t-txt">
+                                        성명을 입력해주세요.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <div class="t-txt-name">
+                                    연락처
+                                </div>
+                            </th>
+
+                            <td>
+                                <div class="t-input">
+                                    <input type="text" placeholder="연락처를 입력해주세요.">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <div class="t-txt-name">
+                                    지역
+                                </div>
+                            </th>
+
+                            <td>
+                                <div class="t-select">
+                                    <div class="custom-select">
+                                        <select>
+                                            <option value="0">지역 선택</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원</option>
+                                            <option value="1">서울</option>
+                                            <option value="2">인천</option>
+                                            <option value="3">수원마지막</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <div class="t-txt-name">
+                                    구매방식
+                                </div>
+                            </th>
+
+                            <td>
+                                <div class="t-select">
+                                    <div class="custom-select">
+                                        <select>
+                                            <option value="0">구매방식 선택</option>
+                                            <option value="1">현금</option>
+                                            <option value="2">카드</option>
+                                            <option value="3">계좌 이체</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <div class="t-txt-name">
+                                    문의사항
+                                </div>
+                            </th>
+
+                            <td>
+                                <div class="t-textarea">
+                                    <textarea name="" id="estimate-write" placeholder="추가 문의사항을 입력하여 주세요."
+                                              onfocus="this.placeholder=''"
+                                              onblur="this.placeholder='추가 문의사항을 입력하여 주세요.'"></textarea>
+                                </div>
+
+                                <div class="t-guide">
+                                    <p>위에 입력하신 내용들은 전적으로 견적산출을 위해서만 쓰여집니다.</p>
+                                    <p>신차몰은 <span>고객정보 보호를 위해 다른 목적으로 정보를 이용하지 않습니다.</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 중간 -->
+            <div class="car-estimate">
+                <div class="car-estimate-interval">
+                    <div class="left-name-box">
+                        <div class="left-box">
+                            <p>
+                                예상 차량 가격
+
+                                <span>
+                                    <i class="material-icons">chevron_right</i>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="right-box estimate-price">
+                            <span class="digit">20,000,000</span> ~
+                            <span class="digit">26,000,000</span>원
+
+                            <strong>
+                                예상
+                            </strong>
+                        </div>
+                    </div>
+
+                    <!--하기 car-price-list의 내용은 데이터 구현하시기 전에 현재 사이트에 제공될 내역인지 확인해주세요.-->
+                    <div class="car-price-list list-tep4">
+                        <ul>
+                            <li>
+                                <div class="bottom-line-box">
+                                    <div class="tep-title-txt">
+                                        신차할부
+                                    </div>
+
+                                    <div class="tep-price-txt">
+                                        <p>월 272,870 ~ 300,000원 </p>
+                                        <p>예상</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="bottom-line-box">
+                                    <div class="tep-title-txt">
+                                        오토리스
+                                    </div>
+
+                                    <div class="tep-price-txt">
+                                        <p>월 272,870 ~ 300,000원</p>
+                                        <p>예상</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="bottom-line-box">
+                                    <div class="tep-title-txt">
+                                        장기렌트
+                                    </div>
+
+                                    <div class="tep-price-txt">
+                                        <p>월 272,870 ~ 300,000원</p>
+                                        <p>예상</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="bottom-line-box">
+                                    <div class="tep-title-txt">
+                                        중고차매입
+                                    </div>
+
+                                    <div class="tep-price-txt">
+                                        <p>월 272,870 ~ 300,000원</p>
+                                        <p>예상</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 견적 요청하기  -->
+                    <div class="estimate-btn">
+                        <a href="#" class="in-color">견적 요청하기</a>
+                        <a href="#" class="out-color">카탈로그 보기</a>
+                    </div>
+                </div>
+
+                <!-- 개인정보 수집 -->
+                <div class="car-terms">
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="charge" id="scm-agree">
+
+                        <label for="scm-agree">
+                            <i class="material-icons is-outline">check_box_outline_blank</i>
+
+                            <i class="material-icons is-checked">check_box</i>
+
+                            <span>개인정보 수집 및 이용</span>
+                        </label>
+
+                        <button class="modal-on scm-terms-btn">
+                            전문보기
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 메인 img -->
+            <div class="car-detail-pic">
+                <img src="../static/new/img/@pic04.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal scm-terms-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="modal-btn">
+                <i class="material-icons">clear</i>
+            </button>
+
+            <!-- 즐겨찾기 -->
+            <div class="modal-contents-box">
+                <div class="modal-header">
+                    <div class="title-txt">
+                        개인정보 수집 및 이용
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="scm-terms-guide">
+                        <div class="guide-txt">
+                            <p>1. 개인정보의 수집 및 이용목적</p>
+                            <p>- 견적 신청에 대한 상담 및 견적제시</p>
+                            <p>* 상기 목적외의 용도로 이용자 개인정보를 외부에 제공하거나 활용하지 않습니다.</p>
+                            <p>2. 수집하는 개인정보 항목</p>
+                            <p>① 필수항목 : 성명, 연락처, 상호, 사업자등록번호, 지역</p>
+                            <p>② 선택항목 : 희망차종, 기타문의사항 </p>
+                            <p>3. 개인정보의 보유 및 이용기간</p>
+                            <p>- 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기 합니다.</p>
+                            <p>4. 동의 거부권 및 불이익</p>
+                            <p>개인정보 수집 이용에 과한 동의를 거부할 권리가 있으나, 동의 거부시 견적 상담이 불가 합니다.</p>
+                            <p>단, 필수항목만 입력하고 동의하여도 상담은 가능합니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="scm-terms-btn">
+                        <button class="close-modal">
+                            닫기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="m-footer">
+    <ul class="clearfix">
+        <li class="is-active">
+            <a href="" class="footer-link">
+                <div class="thumb home"></div>
+                <div class="txt">GV 홈</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb category"></div>
+                <div class="txt">카테고리</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb cart"></div>
+                <div class="txt">나의견적</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb login"></div>
+                <div class="txt">로그인</div>
+            </a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
+
+
+
+

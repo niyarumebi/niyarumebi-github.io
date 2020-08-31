@@ -1,0 +1,197 @@
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+@keyframes zoomImg {
+  0% {
+    opacity: 0;
+    transform: scale(2); }
+  45% {
+    opacity: 1;
+    transform: scale(1.5); }
+  90% {
+    opacity: 1;
+    transform: scale(1.7); }
+  100% {
+    opacity: 0;
+    transform: scale(1.75); } }
+.login_page {
+  position: relative;
+  overflow: hidden;
+  height: 680px;
+  padding: 60px 0; }
+  .login_page.header_space {
+    min-height: 0; }
+  .login_page .login_bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .login_page .login_bg img {
+      width: 100%;
+      height: 100%;
+      animation-name: zoomImg;
+      animation-duration: 13s;
+      animation-iteration-count: infinite; }
+  .login_page .main_panel {
+    width: 760px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 6px 12px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 6px 12px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 6px 12px 4px rgba(0, 0, 0, 0.4);
+    /*form*/ }
+    .login_page .main_panel .visual_area {
+      float: left;
+      position: relative;
+      width: calc(100% - 290px);
+      height: 550px;
+      padding: 60px 35px; }
+      .login_page .main_panel .visual_area:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.2); }
+      .login_page .main_panel .visual_area .txt_wrap {
+        position: relative; }
+      .login_page .main_panel .visual_area .tit {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff; }
+        .login_page .main_panel .visual_area .tit:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          width: 40px;
+          background: #f9f9f9; }
+      .login_page .main_panel .visual_area .phrase {
+        margin-bottom: 32px;
+        font-size: 29px;
+        font-weight: 200;
+        color: #fff; }
+        .login_page .main_panel .visual_area .phrase .emphasize {
+          font-size: 33px;
+          font-weight: 400; }
+      .login_page .main_panel .visual_area .view_more {
+        display: inline-block;
+        padding: 7px 12px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        background: rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        color: #fff; }
+        .login_page .main_panel .visual_area .view_more:hover {
+          text-decoration: underline; }
+        .login_page .main_panel .visual_area .view_more i {
+          padding-left: 10px;
+          vertical-align: middle;
+          font-size: 20px; }
+    .login_page .main_panel .input_area {
+      float: right;
+      width: 290px;
+      height: 550px;
+      padding: 0 31px;
+      position: relative;
+      background: #fff;
+      text-align: center; }
+      .login_page .main_panel .input_area .titles {
+        margin-top: 80px;
+        margin-bottom: 45px; }
+        .login_page .main_panel .input_area .titles .main {
+          margin-bottom: 1px;
+          font-size: 28px;
+          font-weight: 700; }
+        .login_page .main_panel .input_area .titles .sub {
+          font-size: 18px;
+          font-weight: 600;
+          color: #777; }
+    .login_page .main_panel .actions {
+      margin-bottom: 20px;
+      font-size: 0; }
+      .login_page .main_panel .actions .link {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        padding: 11px 0;
+        background: #f1f1f1;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer; }
+        .login_page .main_panel .actions .link.is_active {
+          font-weight: 800;
+          color: #4545c3; }
+        .login_page .main_panel .actions .link:before {
+          display: none;
+          content: '';
+          position: absolute;
+          top: 6px;
+          bottom: 6px;
+          left: 0;
+          width: 1px;
+          background: #e0e0e0; }
+        .login_page .main_panel .actions .link + .link:before {
+          display: block; }
+    .login_page .main_panel .actions_panel .type.cert {
+      padding: 19px 0;
+      line-height: 18px;
+      font-size: 14px; }
+    .login_page .main_panel .info_input {
+      position: relative; }
+      .login_page .main_panel .info_input .form_group + .form_group .form_control {
+        margin-top: -1px; }
+      .login_page .main_panel .info_input .form_group.has_keypad .btn_keypad {
+        position: absolute;
+        top: 0;
+        bottom: 1px;
+        right: 1px;
+        width: 46px;
+        background-color: #e9ebf0;
+        background-image: url(../../img/btn_keyInput.png);
+        background-position: 50%;
+        -webkit-background-size: 37%;
+        background-size: 37%;
+        background-repeat: no-repeat;
+        cursor: pointer !important; }
+      .login_page .main_panel .info_input .form_control {
+        width: 100%; }
+        .login_page .main_panel .info_input .form_control:hover, .login_page .main_panel .info_input .form_control:focus {
+          border: 1px solid #cabfbf; }
+        .login_page .main_panel .info_input .form_control + .form_control {
+          margin-top: 0; }
+    .login_page .main_panel .btn_area {
+      margin: 20px 0 0 0; }
+      .login_page .main_panel .btn_area .btn_login {
+        margin: 0;
+        min-width: initial;
+        background: #43435f;
+        font-size: 15px; }
+        .login_page .main_panel .btn_area .btn_login:hover {
+          background: #e83422; }
+    .login_page .main_panel .tools {
+      margin-top: 15px; }
+      .login_page .main_panel .tools .link {
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+        font-size: 13px; }
+        .login_page .main_panel .tools .link:hover {
+          border-bottom-style: dashed; }
+    .login_page .main_panel .install_security {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      font-size: 13px; }
+      .login_page .main_panel .install_security:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=login.css.map */

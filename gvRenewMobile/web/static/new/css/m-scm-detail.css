@@ -1,0 +1,502 @@
+@charset "UTF-8";
+.scm-detail-wrap,
+.scm-estimate-wrap {
+  padding: 15px; }
+
+.scm-detail-wrap .car-info {
+  margin-bottom: 15px; }
+
+.car-info .left-box {
+  float: none; }
+
+.car-info .right-box {
+  float: none; }
+
+/* car detail pic */
+.car-info .car-pic {
+  width: 100%;
+  min-height: auto;
+  padding: 80px 15px 0 15px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  position: relative;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 15px; }
+
+.car-info .car-pic .text-box {
+  position: absolute;
+  top: 15px;
+  left: 15px; }
+
+.car-info .car-pic .text-box .title-text {
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  padding: 0 15px 5px 0; }
+
+.car-info .car-pic .text-box .basic-text {
+  font-size: 13px;
+  color: #7b7b7b; }
+
+.car-info .car-pic .text-box .basic-text .hope-txt {
+  color: #e34436; }
+
+.car-info .car-pic .thumb img {
+  width: 100%; }
+
+/* car detail info list */
+.car-info .car-info-list {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  border-radius: 3px; }
+
+.car-info .right-box table tr th {
+  background-color: #f4f3f4; }
+
+.car-info .car-info-list table tr th {
+  width: 100px;
+  vertical-align: top;
+  padding: 12px 11px; }
+
+.car-info .car-info-list table tr td {
+  padding: 5px 8px; }
+
+.car-info .car-info-list table .t-txt-name {
+  font-size: 13px;
+  color: #515152;
+  font-weight: 400;
+  text-align: left; }
+
+/* t-input */
+.car-info .car-info-list table .t-input input {
+  border: 1px solid #dcdcdc;
+  font-size: 12px;
+  color: #515152;
+  padding: 5px 8px;
+  width: 100%; }
+
+.car-info .car-info-list table .t-input .t-txt {
+  font-size: 11px;
+  color: #e34436; }
+
+.car-info .car-info-list table .t-input input::placeholder {
+  font-size: 12px;
+  color: #dcdcdc;
+  font-weight: 400; }
+
+/* t-check */
+.car-info .car-info-list .t-checkbox .input-radio label i {
+  font-size: 14px;
+  margin-top: 7px; }
+
+.car-info .car-info-list .t-checkbox .input-radio input:checked + label i.is-checked {
+  color: #002041; }
+
+.car-info .car-info-list .input-radio + .input-radio {
+  margin-left: 3px; }
+
+.car-info .car-info-list table .t-checkbox .input-radio label span {
+  font-size: 13px;
+  color: #515152;
+  padding-left: 2px; }
+
+/* t-select */
+.car-info .car-info-list table .t-select .select-selected {
+  height: 30px;
+  font-size: 12px;
+  padding: 5px 34px 5px 8px; }
+
+.car-info .car-info-list table .t-select .select-selected:after {
+  color: #7b7b7b; }
+
+.car-info .car-info-list table .t-select .select-items div {
+  font-size: 12px;
+  padding: 5px 8px; }
+
+/* t-textarea */
+.car-info .car-info-list table .t-textarea textarea {
+  border: 1px solid #dcdcdc;
+  padding: 5px 8px;
+  width: 100%;
+  height: 64px;
+  display: block;
+  font-size: 12px; }
+
+.car-info .car-info-list table .t-textarea textarea::placeholder {
+  color: #dcdcdc; }
+
+/* t-txt */
+.car-info .car-info-list table .t-guide {
+  font-size: 11px;
+  color: #515152;
+  padding: 3px 0px; }
+
+.car-info .car-info-list table .t-guide span {
+  color: #e34436; }
+
+.car-info .car-info-list table .t-txt {
+  font-size: 13px;
+  color: #515152; }
+
+/**/
+.car-estimate {
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  overflow: hidden; }
+
+.car-estimate-interval {
+  padding: 10px 8px; }
+
+.car-estimate .bottom-line-box {
+  border: 1px solid #dcdcdc;
+  border-bottom: 0px;
+  /*    border-bottom: 7px solid #002041;*/
+  border-radius: 3px;
+  padding-bottom: 6px;
+  overflow: hidden;
+  position: relative; }
+
+.car-estimate .bottom-line-box:before {
+  position: absolute;
+  bottom: 0px;
+  height: 6px;
+  background-color: #002041;
+  content: '';
+  left: 0px;
+  right: 0px; }
+
+.car-estimate .left-name-box {
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px; }
+
+.car-estimate .left-name-box p {
+  position: relative;
+  display: inline-block;
+  padding-right: 23px;
+  font-weight: 600; }
+
+.car-estimate .left-name-box p span {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #f4f3f4;
+  border: 1px solid #dcdcdc;
+  text-align: center; }
+
+.car-estimate .left-name-box p span i {
+  font-size: 16px;
+  position: relative;
+  top: 0px;
+  left: 1px; }
+
+.car-estimate .left-name-box .left-box {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #dcdcdc; }
+
+.car-estimate .left-name-box .right-box {
+  width: 100%; }
+
+.car-estimate .left-name-box .estimate-price {
+  font-size: 13px;
+  color: #e34436;
+  font-weight: 500;
+  background-color: #f4f3f4;
+  padding: 10px; }
+
+.car-estimate .left-name-box .estimate-price strong {
+  color: #333333;
+  font-weight: 500; }
+
+.car-estimate .car-price-list {
+  overflow: hidden; }
+
+.car-estimate .car-price-list li {
+  text-align: center;
+  float: left; }
+
+.car-estimate .car-price-list li .bottom-line-box {
+  min-height: 80px;
+  background-color: #fff;
+  padding-bottom: 16px; }
+
+.car-estimate .car-price-list li .bottom-line-box .tep-title-txt {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 0px;
+  color: #333; }
+
+.car-estimate .car-price-list li .bottom-line-box .tep-price-txt {
+  font-size: 11px;
+  font-weight: 500;
+  color: #333; }
+
+.car-estimate .list-tep4 {
+  padding-bottom: 27px; }
+
+.car-estimate .list-tep4 li {
+  width: calc(50% - 3px); }
+
+.car-estimate .list-tep4 li:nth-child(odd) {
+  margin-right: 6px; }
+
+.car-estimate .list-tep4 li:nth-child(1),
+.car-estimate .list-tep4 li:nth-child(2) {
+  margin-bottom: 8px; }
+
+.car-estimate .list-tep3 li {
+  width: 100%;
+  margin-bottom: 8px; }
+
+.car-estimate .list-tep3 li:last-child {
+  margin-bottom: 0px; }
+
+/*견적 요청 버튼*/
+.car-estimate .estimate-btn {
+  padding: 34px 0px 20px 0px;
+  text-align: center;
+  position: relative; }
+
+.car-estimate .estimate-btn:before {
+  position: absolute;
+  content: '';
+  border-top: 1px solid #dcdcdc;
+  height: 4px;
+  left: -8px;
+  right: -8px;
+  top: 0px;
+  background-color: #f4f3f4; }
+
+.car-estimate .estimate-btn a {
+  text-align: center;
+  border-radius: 30px;
+  padding: 7px 0px;
+  display: inline-block;
+  width: 125px;
+  margin: 0px 3px;
+  font-size: 13px; }
+
+.car-estimate .estimate-btn .in-color {
+  border: 1px solid #002041;
+  background-color: #002041;
+  color: #fff; }
+
+.car-estimate .estimate-btn .out-color {
+  color: #002041;
+  background-color: #fff;
+  border: 1px solid #002041; }
+
+/* 이용 약관 */
+.car-estimate .car-terms {
+  background-color: #f4f3f4;
+  text-align: center;
+  padding: 3px 0px 6px; }
+
+.car-estimate .car-terms .input-checkbox label span {
+  font-size: 11px; }
+
+.car-estimate .car-terms .input-checkbox label i {
+  color: #002041;
+  margin-top: 6px;
+  font-size: 17px; }
+
+.car-estimate .car-terms .input-checkbox input:checked + label i.is-checked {
+  color: #002041; }
+
+.car-estimate .car-terms .input-checkbox .scm-terms-btn {
+  margin-left: 10px;
+  border: 1px solid #dcdcdc;
+  color: #7b7b7b;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 10px;
+  padding: 1px 11px 2px 11px;
+  cursor: pointer; }
+
+/* ************************************************ */
+.car-detail-pic {
+  padding: 20px 0px;
+  text-align: center; }
+
+.car-detail-pic img {
+  width: 100%;
+  display: inline-block; }
+
+/*modal*/
+.modal-open {
+  min-height: 100%;
+  overflow: hidden; }
+
+/* 즐겨찾기 modal */
+.modal.scm-terms-modal {
+  color: #555;
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1550;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.modal.scm-terms-modal.js-onbox {
+  display: block; }
+
+.scm-terms-modal .modal-dialog {
+  padding-top: 10%;
+  margin: 30px auto; }
+
+.scm-terms-modal .modal-content {
+  width: 310px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #7b7b7b;
+  padding: 15px; }
+
+.scm-terms-modal .modal-contents-box {
+  overflow: hidden; }
+
+/* x 닫기 버튼 */
+.scm-terms-modal .modal-content .modal-btn {
+  top: 14px;
+  right: 15px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-color: #fff; }
+
+.scm-terms-modal .modal-content .modal-btn i {
+  font-size: 30px;
+  position: relative;
+  top: 0px;
+  color: #333333; }
+
+/* food-modal css */
+.scm-terms-modal .modal-header .title-txt {
+  font-size: 17px;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 10px; }
+
+.scm-terms-modal .modal-body .scm-terms-guide {
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  padding: 10px; }
+
+.scm-terms-modal .modal-body .scm-terms-guide .guide-txt {
+  color: #515152;
+  font-size: 10px;
+  line-height: 2; }
+
+.scm-terms-modal .modal-footer .scm-terms-btn {
+  text-align: center;
+  padding-top: 10px; }
+
+.scm-terms-modal .modal-footer .scm-terms-btn .close-modal {
+  border: 1px solid #dcdcdc;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #f4f3f4;
+  border-radius: 10px;
+  padding: 7px 40px;
+  cursor: pointer; }
+
+/* ********************************************************************************** */
+.estimate-list {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  overflow: hidden; }
+
+.scm-estimate-wrap .car-info .car-pic {
+  width: 100%; }
+
+.scm-estimate-wrap .car-info .car-info-list {
+  width: 100%;
+  padding-right: 0px; }
+
+.scm-estimate-wrap .car-info .right-box table tr {
+  border-bottom: 1px solid #dcdcdc; }
+
+.scm-estimate-wrap .car-info .right-box table tr:last-child {
+  border-bottom: 0px; }
+
+.scm-estimate-wrap .car-info .car-info-list table tr th {
+  vertical-align: middle; }
+
+.scm-estimate-wrap .car-estimate {
+  border-radius: 0px 0px 10px 10px;
+  border-top: 0px;
+  background-color: #f4f3f4;
+  display: none; }
+
+.scm-estimate-wrap .car-info .car-info-list table tr td {
+  padding: 5px 11px; }
+
+.scm-estimate-wrap .car-estimate.js-block {
+  display: block; }
+
+.scm-estimate-wrap .more-estimate-btn {
+  text-align: center;
+  padding: 2px 0px 7px 0px;
+  cursor: pointer;
+  background-color: #002041; }
+
+.scm-estimate-wrap .more-estimate-btn p {
+  display: inline-block;
+  padding-right: 25px;
+  position: relative;
+  color: #fff;
+  font-size: 12px; }
+
+.scm-estimate-wrap .more-estimate-btn p span {
+  position: absolute;
+  right: 0px;
+  top: 0px; }
+
+.scm-estimate-wrap .more-estimate-btn p span i {
+  font-size: 26px;
+  position: relative;
+  top: -3px; }
+
+.scm-estimate-wrap .more-estimate-btn p span.on i {
+  transform: rotate(180deg); }
+
+.scm-estimate-wrap .car-estimate .left-name-box {
+  margin-bottom: 10px; }
+
+.scm-estimate-wrap .left-name-box .additional-options {
+  padding: 10px; }
+
+.scm-estimate-wrap .left-name-box .additional-options p {
+  font-size: 11px;
+  color: #333333;
+  font-weight: 400; }
+
+.scm-estimate-wrap .car-estimate .left-name-box p {
+  padding-right: 0px;
+  display: block; }
+
+.scm-estimate-wrap .car-estimate-interval {
+  padding: 10px 8px 20px 8px; }
+
+/*# sourceMappingURL=m-scm-detail.css.map */

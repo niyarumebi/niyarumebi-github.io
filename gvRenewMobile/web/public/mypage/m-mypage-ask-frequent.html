@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../../static/new/css/base/m-base.css">
+    <link rel="stylesheet" href="../static/new/css/m-mypage-common.css">
+    <link rel="stylesheet" href="../static/new/css/m-mypage-ask.css">
+
+    <script src="../../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../../static/new/js/jquery-ui.min.js"></script>
+    <script src="../../static/new/js/slick.js"></script>
+    <script src="../../static/new/js/m-common-script.js"></script>
+    <script src="../static/new/js/m-mypage-seung.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--header-->
+<header class="m-header clearfix">
+    <div class="left-area">
+        <a href="" class="left-link">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <div class="logo">
+        <a href="" class="center-link">
+            <img src="../../static/new/img/logo-basic.png" alt="">
+        </a>
+    </div>
+    <div class="right-area">
+        <a href="" class="right-link">
+            <img src="../../static/new/img/icon-btn-search-black.png" alt="">
+        </a>
+    </div>
+</header>
+
+
+<div class="page-wrap m-mypage-wrap">
+    <div class="container">
+        <div class="page-title">
+            <div class="main-t">나의 문의</div>
+        </div>
+
+        <div class="tab-links-wrap col3 as-static clearfix">
+            <a href="" class="tab-link">
+                <div class="txt">1:1 문의</div>
+            </a>
+            <a href="" class="tab-link">
+                <div class="txt">상품문의</div>
+            </a>
+            <a href="" class="tab-link is-active">
+                <div class="txt">자주묻는질문</div>
+            </a>
+        </div>
+
+        <div class="section-separator narrow"></div>
+
+        <div class="tab-panels-wrap">
+            <div class="tab-panel" id="ask-frequent">
+                <div class="common-table my-question-ask">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="question-ask-number">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text txt-center">
+                                        5
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="slide-btn-top-next t-title-name">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text t-name-text">
+                                        환불을 신청했는데 환불 기간은 얼마나 소요되나요?
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="slide-box-top-next">
+                            <td colspan="2">
+                                <div class="question-ask-detail">
+                                    <span>
+                                            <i class="material-icons">
+question_answer
+</i>
+
+                                            <p>
+                                                A
+                                            </p>
+                                        </span>
+
+                                    <div class="t-list-box question-ask-box">
+                                        <div class="t-contents-title">
+                                            결제수단별 환불기간 다름
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            환불 접수 완료 후, 결제 수단별 환불 시점은 아래와 같이 소요됩니다.
+                                        </div>
+                                        <div class="t-contents-text txt-space">
+                                            (반품환불은 상품 회수 > 업체 입고 > 환불승인단계를 거쳐 진행되오니 참고 부탁드립니다.)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 신용카드 : 2 영업일 이내, 카드사 승인 취소 ( 페이코, 케이페이, 페이나우 등 간편결제 동일)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 체크카드 : 2 영업일 이내, 카드사 승인 취소 후 해당 카드 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 실시간 계좌이체 : 2 영업일 이내, 승인 취소 후 결제 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            -무통장입금 : 2 영업일 이내, 환불 신청 계좌로 입금
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="question-ask-number">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text txt-center">
+                                        4
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="slide-btn-top-next t-title-name">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text t-name-text">
+                                        판매업체로 어떻게 문의 할 수있나요?
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="click-detail-box">
+                            <td colspan="2">
+                                <div class="question-ask-detail">
+                                    <span>
+                                            <i class="material-icons">
+question_answer
+</i>
+
+                                            <p>
+                                                A
+                                            </p>
+                                        </span>
+
+                                    <div class="t-list-box question-ask-box">
+                                        <div class="t-contents-title">
+                                            결제수단별 환불기간 다름
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            환불 접수 완료 후, 결제 수단별 환불 시점은 아래와 같이 소요됩니다.
+                                        </div>
+                                        <div class="t-contents-text txt-space">
+                                            (반품환불은 상품 회수 > 업체 입고 > 환불승인단계를 거쳐 진행되오니 참고 부탁드립니다.)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 신용카드 : 2 영업일 이내, 카드사 승인 취소 ( 페이코, 케이페이, 페이나우 등 간편결제 동일)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 체크카드 : 2 영업일 이내, 카드사 승인 취소 후 해당 카드 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 실시간 계좌이체 : 2 영업일 이내, 승인 취소 후 결제 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            -무통장입금 : 2 영업일 이내, 환불 신청 계좌로 입금
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="question-ask-number">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text txt-center">
+                                        3
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="slide-btn-top-next t-title-name">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text t-name-text">
+                                        구매한 상품을 교환/반품 하려면 어떻게 해야 하나요?
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="click-detail-box">
+                            <td colspan="2">
+                                <div class="question-ask-detail">
+                                    <span>
+                                            <i class="material-icons">
+question_answer
+</i>
+
+                                            <p>
+                                                A
+                                            </p>
+                                        </span>
+
+                                    <div class="t-list-box question-ask-box">
+                                        <div class="t-contents-title">
+                                            결제수단별 환불기간 다름
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            환불 접수 완료 후, 결제 수단별 환불 시점은 아래와 같이 소요됩니다.
+                                        </div>
+                                        <div class="t-contents-text txt-space">
+                                            (반품환불은 상품 회수 > 업체 입고 > 환불승인단계를 거쳐 진행되오니 참고 부탁드립니다.)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 신용카드 : 2 영업일 이내, 카드사 승인 취소 ( 페이코, 케이페이, 페이나우 등 간편결제 동일)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 체크카드 : 2 영업일 이내, 카드사 승인 취소 후 해당 카드 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 실시간 계좌이체 : 2 영업일 이내, 승인 취소 후 결제 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            -무통장입금 : 2 영업일 이내, 환불 신청 계좌로 입금
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="question-ask-number">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text txt-center">
+                                        2
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="slide-btn-top-next t-title-name">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text t-name-text">
+                                        배송중인 상품의 위치를 확인하고 싶어요.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="click-detail-box">
+                            <td colspan="2">
+                                <div class="question-ask-detail">
+                                    <span>
+                                            <i class="material-icons">
+question_answer
+</i>
+
+                                            <p>
+                                                A
+                                            </p>
+                                        </span>
+
+                                    <div class="t-list-box question-ask-box">
+                                        <div class="t-contents-title">
+                                            결제수단별 환불기간 다름
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            환불 접수 완료 후, 결제 수단별 환불 시점은 아래와 같이 소요됩니다.
+                                        </div>
+                                        <div class="t-contents-text txt-space">
+                                            (반품환불은 상품 회수 > 업체 입고 > 환불승인단계를 거쳐 진행되오니 참고 부탁드립니다.)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 신용카드 : 2 영업일 이내, 카드사 승인 취소 ( 페이코, 케이페이, 페이나우 등 간편결제 동일)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 체크카드 : 2 영업일 이내, 카드사 승인 취소 후 해당 카드 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 실시간 계좌이체 : 2 영업일 이내, 승인 취소 후 결제 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            -무통장입금 : 2 영업일 이내, 환불 신청 계좌로 입금
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="question-ask-number">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text txt-center">
+                                        1
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="slide-btn-top-next t-title-name">
+                                <div class="t-list-box">
+                                    <div class="t-contents-text t-name-text">
+                                        주문한 상품을 취소하고 싶은데 어떻게 해야 하나요?
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="click-detail-box">
+                            <td colspan="2">
+                                <div class="question-ask-detail">
+                                    <span>
+                                            <i class="material-icons">
+question_answer
+</i>
+
+                                            <p>
+                                                A
+                                            </p>
+                                        </span>
+
+                                    <div class="t-list-box question-ask-box">
+                                        <div class="t-contents-title">
+                                            결제수단별 환불기간 다름
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            환불 접수 완료 후, 결제 수단별 환불 시점은 아래와 같이 소요됩니다.
+                                        </div>
+                                        <div class="t-contents-text txt-space">
+                                            (반품환불은 상품 회수 > 업체 입고 > 환불승인단계를 거쳐 진행되오니 참고 부탁드립니다.)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 신용카드 : 2 영업일 이내, 카드사 승인 취소 ( 페이코, 케이페이, 페이나우 등 간편결제 동일)
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 체크카드 : 2 영업일 이내, 카드사 승인 취소 후 해당 카드 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            - 실시간 계좌이체 : 2 영업일 이내, 승인 취소 후 결제 계좌로 입금
+                                        </div>
+
+                                        <div class="t-contents-text">
+                                            -무통장입금 : 2 영업일 이내, 환불 신청 계좌로 입금
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="m-inner-footer">
+    <div class="footer-btn">
+        <ul>
+            <li>
+                <a href="#">로그인</a>
+            </li>
+
+            <li>
+                <a href="#">이용약관</a>
+            </li>
+
+            <li>
+                <a href="#">고객센터</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-information">
+        <div class="company-information">
+            <div class="company-btn">
+                <div class="fot-title-txt">
+                    (주)지브이쇼핑몰 사업자정보
+
+                    <span>
+                         <i class="fa fa-angle-right" aria-hidden="true"></i>
+                         </span>
+                </div>
+            </div>
+
+            <div class="company-infobox">
+                <div class="fot-txt">
+                    <p>
+                        대표이사 : 이강신
+                    </p>
+
+                    <p>
+                        개인정보보호책임자 : 이명재
+                    </p>
+
+                    <p>
+                        사업자등록번호 : 696 - 81 - 00789
+                    </p>
+
+                    <p>
+                        통신판매업 신고번호 : 제 2018 - 서울강남 - 02326호
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fot-txt footer-service">
+            고객센터 1644 - 8194 | 입점 · 제휴문의
+        </div>
+
+        <div class="fot-txt">
+            (06128) 서울특별시 강남구 봉은사로 18길 54
+        </div>
+
+        <div class="fot-sns">
+            <a href="#">
+                    <span class="fot-naver-icon">
+                        <img src="../../static/new/img/icons-inner-footer-sns.png" alt="">
+                    </span>
+            </a>
+
+            <a href="#">
+                    <span class="fot-facebook-icon">
+                        <img src="../../static/new/img/icons-inner-footer-sns.png" alt="">
+                    </span>
+            </a>
+
+            <a href="#">
+                    <span class="fot-insta-icon">
+                        <img src="../../static/new/img/icons-inner-footer-sns.png" alt="">
+                    </span>
+            </a>
+
+            <a href="#">
+                    <span class="fot-band-icon">
+                        <img src="../../static/new/img/icons-inner-footer-sns.png" alt="">
+                    </span>
+            </a>
+
+            <a href="#">
+                    <span class="fot-kakao-icon">
+                        <img src="../../static/new/img/icons-inner-footer-sns.png" alt="">
+                    </span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!--footer-->
+<footer class="m-footer">
+    <ul class="clearfix">
+        <li class="is-active">
+            <a href="" class="footer-link">
+                <div class="thumb home"></div>
+                <div class="txt">GV 홈</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb category"></div>
+                <div class="txt">카테고리</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb cart"></div>
+                <div class="txt">장바구니</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb login"></div>
+                <div class="txt">로그인</div>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+</html>

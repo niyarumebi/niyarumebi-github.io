@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../../static/new/css/base/m-base.css">
+    <link rel="stylesheet" href="../static/new/css/m-mypage-orders.css">
+
+    <script src="../../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../../static/new/js/jquery-ui.min.js"></script>
+    <script src="../../static/new/js/slick.js"></script>
+    <script src="../../static/new/js/m-common-script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--header-->
+<header class="m-header clearfix">
+    <div class="left-area">
+        <a href="" class="left-link">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <div class="logo">
+        <a href="" class="center-link">
+            <img src="../../static/new/img/logo-basic.png" alt="">
+        </a>
+    </div>
+    <div class="right-area">
+        <a href="" class="right-link">
+            <img src="../../static/new/img/icon-btn-search-black.png" alt="">
+        </a>
+    </div>
+</header>
+
+
+<!--장바구니 페이지에는 하단에 따라다니는 버튼이 있습니다. -->
+<div class="following-btn-wrap">
+    <div class="btn-action for-value">
+        <span class="qty"><span class="digit">4</span>개</span>
+        <span class="price"><span class="money">192,500</span> 원</span>
+    </div>
+    <a class="btn-action">구매하기</a>
+</div>
+
+<div class="page-wrap m-cart-wrap">
+    <div class="container">
+        <div class="process-step-wrap">
+            <ul class="clearfix">
+                <li class="is-active">
+                    <div class="bg-wrap">01 장바구니</div>
+                </li>
+                <li class="">
+                    <div class="bg-wrap">02 주문/결제</div>
+                </li>
+                <li>
+                    <div class="bg-wrap">03 주문완료</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-separator"></div>
+
+        <div class="cart-items-wrap">
+            <!--구조설명
+            01. 구조 설명
+                bundle-shipping-wrap : 최상위 : 묶음배송별 묶음 (아이템이 하나여도 묶음배송으로 생각해주시면 됩니다. 강팀장님꼐 확인요망)
+
+                ㄴhead : 전체선택 체크박스 & 배송금액을 나타내주는 head
+                ㄴitems-wrap : 하위 item박스'들'을 감싸는 박스
+                ㄴsection-separator : 데코레이션. 항상 하단에 넣어주세요
+
+                ㄴㄴitem : 실제 상품정보를 감싸는 박스
+
+                ㄴㄴㄴinput-checkbox : item의 왼쪽요소 (체크박스)
+                ㄴㄴㄴright-area : item의 오른쪽요소
+
+                ㄴㄴㄴㄴinfo-wrap : right-area의 자식 : name, thumb 및 desc가 들어가는 곳
+                ㄴㄴㄴㄴunder-tool : right-area의 자식 : 수량조절 및 주문/삭제 버튼
+            -->
+
+            <div class="bundle-shipping-wrap">
+                <div class="head clearfix">
+                    <div class="pull-left">
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="" id="select-all01">
+                            <label for="select-all01">
+                                <i class="material-icons is-outline">check_box_outline_blank</i>
+                                <i class="material-icons is-checked">check_box</i>
+                                <span>전체선택</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pull-right"><span class="bold">묶음배송</span> <span class="ship-fee">배송비 <span class="money">2,500</span>원</span></div>
+                </div>
+                <div class="items-wrap">
+                    <div class="item clearfix">
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="" id="prd1">
+                            <label for="prd1">
+                                <i class="material-icons is-outline">check_box_outline_blank</i>
+                                <i class="material-icons is-checked">check_box</i>
+                            </label>
+                        </div>
+                        <div class="right-area">
+                            <div class="info-wrap clearfix">
+                                <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                <div class="thumb">
+                                    <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                    <div class="price-wrap">
+                                        <span class="original-price"><span class="money">70,000</span>원</span>
+                                        <span class="current-price"><span class="money">60,000</span>원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap under-tool">
+                                <!-- 수량조절이 드랍다운에서 -/+ 버튼으로 변경되었습니다. (상세페이지의 옵션 > 수량조절 방법과 동일)-->
+                                <div class="ctrl-qty-wrap">
+                                    <a class="btn-qty minus">-</a>
+                                    <input type="number" value="1">
+                                    <a class="btn-qty plus">+</a>
+                                </div>
+                                <a href="" class="btn green-bd">주문</a>
+                                <a href="" class="btn middle-gray">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="" id="prd1">
+                            <label for="prd1">
+                                <i class="material-icons is-outline">check_box_outline_blank</i>
+                                <i class="material-icons is-checked">check_box</i>
+                            </label>
+                        </div>
+                        <div class="right-area">
+                            <div class="info-wrap clearfix">
+                                <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                <div class="thumb">
+                                    <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                    <div class="price-wrap">
+                                        <span class="original-price"><span class="money">70,000</span>원</span>
+                                        <span class="current-price"><span class="money">60,000</span>원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap under-tool">
+                                <!-- 수량조절이 드랍다운에서 -/+ 버튼으로 변경되었습니다. (상세페이지의 옵션 > 수량조절 방법과 동일)-->
+                                <div class="ctrl-qty-wrap">
+                                    <a class="btn-qty minus">-</a>
+                                    <input type="number" value="1">
+                                    <a class="btn-qty plus">+</a>
+                                </div>
+                                <a href="" class="btn green-bd">주문</a>
+                                <a href="" class="btn middle-gray">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-separator"></div>
+            </div>
+            <div class="bundle-shipping-wrap">
+                <div class="head clearfix">
+                    <div class="pull-left">
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="" id="select-all01">
+                            <label for="select-all01">
+                                <i class="material-icons is-outline">check_box_outline_blank</i>
+                                <i class="material-icons is-checked">check_box</i>
+                                <span>전체선택</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pull-right"><span class="bold">묶음배송</span> <span class="ship-fee">무료배송</span></div>
+                </div>
+                <div class="items-wrap">
+                    <div class="item clearfix">
+                        <div class="input-checkbox">
+                            <input type="checkbox" name="" id="prd1">
+                            <label for="prd1">
+                                <i class="material-icons is-outline">check_box_outline_blank</i>
+                                <i class="material-icons is-checked">check_box</i>
+                            </label>
+                        </div>
+                        <div class="right-area">
+                            <div class="info-wrap clearfix">
+                                <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                <div class="thumb">
+                                    <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                    <div class="price-wrap">
+                                        <span class="original-price"><span class="money">70,000</span>원</span>
+                                        <span class="current-price"><span class="money">60,000</span>원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap under-tool">
+                                <!-- 수량조절이 드랍다운에서 -/+ 버튼으로 변경되었습니다. (상세페이지의 옵션 > 수량조절 방법과 동일)-->
+                                <div class="ctrl-qty-wrap">
+                                    <a class="btn-qty minus">-</a>
+                                    <input type="number" value="1">
+                                    <a class="btn-qty plus">+</a>
+                                </div>
+                                <a href="" class="btn green-bd">주문</a>
+                                <a href="" class="btn middle-gray">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-separator"></div>
+            </div>
+
+            <div class="summary-data-wrap">
+                <ul class="summary-data">
+                    <li class="clearfix">
+                        <div class="pull-left">총 상품 금액</div>
+                        <div class="pull-right"><span class="digit">200,000</span> 원</div>
+                   </li>
+                    <li class="clearfix">
+                        <div class="pull-left">총 할인 금액</div>
+                        <div class="pull-right"><span class="digit">- 10,000</span> 원</div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="pull-left">총 배송비</div>
+                        <div class="pull-right"><span class="digit">25,000</span> 원</div>
+                    </li>
+                    <li class="guide-txt">
+                        <i class="material-icons">error</i> 배송비는 상품금액 및 상품에 따라 변경될 수 있습니다.
+                    </li>
+                    <li class="clearfix sum">
+                        <div class="pull-left">결제예상금액</div>
+                        <div class="pull-right"><span class="digit">192,500</span> 원</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-wrap center total-btn-tool">
+                <a href="" class="btn dark-gray-bd">선택삭제</a>
+                <a href="" class="btn green-bd">선택주문</a>
+                <a href="" class="btn green">전체주문</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+<footer class="m-footer">
+    <ul class="clearfix">
+        <li class="is-active">
+            <a href="" class="footer-link">
+                <div class="thumb home"></div>
+                <div class="txt">GV 홈</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb category"></div>
+                <div class="txt">카테고리</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb cart"></div>
+                <div class="txt">장바구니</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb login"></div>
+                <div class="txt">로그인</div>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+</html>

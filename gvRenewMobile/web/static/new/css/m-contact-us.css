@@ -1,0 +1,176 @@
+.page-title {
+  padding: 10px 0;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+  text-align: center; }
+  .page-title .main-t {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333; }
+  .page-title .current-count {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    min-width: 25px;
+    height: 25px;
+    padding: 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #efaf00;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff; }
+
+.contact-us {
+  padding-top: 55px; }
+
+.contents-gray-space {
+  padding: 15px;
+  background-color: #F4F3F4; }
+
+.contents-gray-space .contents-box {
+  border: 1px solid #2CCBC8;
+  background-color: #fff;
+  padding: 17px 19px;
+  border-radius: 6px; }
+
+.contents-gray-space .servic-center {
+  min-height: 120px;
+  overflow: hidden; }
+
+.contents-gray-space .servic-center .contents-txt {
+  float: left;
+  width: calc(100% - 80px); }
+
+.contents-gray-space .servic-center .contents-txt .contents-name-txt {
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 5px; }
+
+.contents-gray-space .servic-center .contents-txt .contents-name-txt span {
+  font-weight: 600; }
+
+.contents-gray-space .servic-center .contents-txt .contents-basic-txt {
+  font-size: 11px;
+  color: #7B7B7B; }
+
+.contents-gray-space .servic-center .servic-center-icons {
+  padding-top: 50px;
+  float: right;
+  width: 80px; }
+
+.contents-gray-space .servic-center .servic-center-icons span {
+  float: left;
+  width: 40px; }
+
+.contents-gray-space .servic-center .servic-center-icons .servic-center-icon02 {
+  padding: 0px 8px; }
+
+.contents-gray-space .servic-center .servic-center-icons span img {
+  width: 100%; }
+
+/**/
+.step-cuidance .gray-title-txt {
+  text-align: center;
+  font-size: 17px;
+  padding: 15px 0px;
+  color: #fff;
+  background-color: #2CCBC8; }
+
+/* left icon */
+.step-cuidance .guidance-box {
+  background-color: #F4F3F4; }
+
+.step-cuidance .guidance-box .guidance-list {
+  border-bottom: 1px solid #DCDCDC;
+  background-color: #fff;
+  padding: 20px 15px;
+  margin-bottom: 5px;
+  position: relative; }
+
+.step-cuidance .guidance-box .guidance-list:last-child {
+  border-bottom: 0px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-contents {
+  overflow: hidden; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #F4F3F4;
+  border-radius: 50%;
+  text-align: center;
+  padding: 23px 0px;
+  float: left; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon span {
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  overflow: hidden;
+  background: url(../../img/contact-us-icons.png) no-repeat;
+  background-size: 290px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon .icon-section01 {
+  background-position: -9px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon .icon-section02 {
+  background-position: -63px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon .icon-section03 {
+  background-position: -113px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon .icon-section04 {
+  background-position: -170px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-icon .icon-section05 {
+  background-position: -235px; }
+
+/* right text */
+.step-cuidance .guidance-box .guidance-list .guidance-list-text {
+  float: left;
+  padding: 10px 0px 0px 30px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-text .list-text-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  padding-bottom: 7px; }
+
+.step-cuidance .guidance-box .guidance-list .guidance-list-text .list-text-guide {
+  font-size: 12px;
+  color: #7B7B7B; }
+
+.step-cuidance .guidance-box .guidance-list:last-child {
+  margin: 0px; }
+
+.step-cuidance .guidance-box .guidance-list .next-list-icon {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #F4F3F4;
+  border-radius: 50%;
+  bottom: -19px;
+  left: 50%;
+  margin-left: -19px;
+  z-index: 50; }
+
+.step-cuidance .guidance-box .guidance-list:last-child .next-list-icon {
+  display: none; }
+
+.step-cuidance .guidance-box .guidance-list .next-list-icon i {
+  position: absolute;
+  font-size: 25px;
+  color: #2CCBC8;
+  left: 9.5px;
+  bottom: 5px; }
+
+/*# sourceMappingURL=m-contact-us.css.map */

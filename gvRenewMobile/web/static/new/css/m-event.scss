@@ -1,0 +1,261 @@
+.page-title {
+  padding: 10px 0;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+  text-align: center;
+  .main-t {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+  }
+  .current-count {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    min-width: 25px;
+    height: 25px;
+    padding: 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #efaf00;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+.mobile-event{
+  padding-top: 55px;
+}
+
+.mobile-event .container {
+  background-color: #F4F3F4
+}
+
+/* 이벤트 페이지 메인 베너 */
+.mobile-event .event-space {
+  margin-bottom: 10px;
+}
+
+.mobile-event .main-banner .scene_list .scene img {
+  width: 100%;
+}
+
+.mobile-event .slick-dots {
+  -webkit-transform: translateX-(50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 5%;
+}
+
+.mobile-event .slick-dots li {
+  margin: 0 4px;
+}
+
+.mobile-event .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  background: #DCDCDC;
+}
+
+.mobile-event .slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+
+.gray-banner-title {
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  background-color: #2CCBC8;
+  padding: 15px 0px;
+  position: relative
+}
+
+.mobile-event .sub-banner .gray-banner-title .more,
+.mobile-event .sub-banner .gray-banner-title .close {
+  position: absolute;
+  right: 15px;
+  top: 9px;
+  font-size: 10px;
+}
+
+.mobile-event .sub-banner .gray-banner-title span i {
+  font-size: 25px;
+  position: relative;
+  top: 8.5px;
+}
+
+.mobile-event .sub-banner .gray-banner-title .close i {
+  font-size: 25px;
+  position: relative;
+  top: 6px;
+}
+
+.mobile-event .sub-banner .sub-banner-list li {
+  width: 100%;
+  border-bottom: 1px solid #DCDCDC;
+  margin-bottom: 5px;
+  position: relative
+}
+
+.mobile-event .sub-banner .sub-banner-list li img {
+  width: 100%;
+}
+
+.mobile-event .sub-banner .sub-banner-list li .screen {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  text-align: center;
+  overflow: hidden
+}
+
+.mobile-event .sub-banner .sub-banner-list li .screen .event-end-box {
+  height: 100%;
+  position: relative;
+  display: block
+}
+
+.mobile-event .sub-banner .sub-banner-list li .screen .event-end-box .event-end-pic {
+  display: inline-block;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.goods-list-wrap {
+  background-color: #F4F3F4;
+  width: 100%;
+  padding: 15px 0px;
+
+}
+
+.goods-list-top {
+  margin-bottom: 10px;
+  overflow: hidden;
+
+}
+
+.top-goods-list {
+  background-color: #fff;
+}
+
+.event-goods-recommendation .scene {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 20px;
+}
+
+.event-goods-recommendation .scene .item {
+  text-align: center;
+}
+
+/*틀*/
+.event-goods-recommendation .scene .bundle-list {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+}
+
+/*li*/
+
+.event-goods-recommendation li {
+  width: 33.333%;
+  padding: 0px 5px;
+  float: left;
+}
+
+.event-goods-recommendation li .thumb {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.event-goods-recommendation li .thumb img {
+  width: 100%;
+}
+
+/* 좌우 넥스트 버튼 */
+
+.event-goods-recommendation .slick-arrow {
+  opacity: 0.7;
+  padding: 0;
+  text-indent: -99999em;
+  text-decoration: none !important;
+  display: inline-block;
+  position: absolute;
+  z-index: 500;
+  width: 40px;
+  line-height: 55px;
+  height: 55px;
+  margin-top: -25px;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 0px;
+  background: rgba(255, 255, 255, 0.0);
+  cursor: pointer;
+}
+
+.event-goods-recommendation .slick-arrow:focus {
+  outline: 0;
+}
+
+.event-goods-recommendation .slick-arrow:hover {
+  opacity: 1;
+}
+
+.event-goods-recommendation .slick-arrow.slick-prev {
+  left: 0;
+}
+
+.event-goods-recommendation .slick-arrow.slick-next {
+  right: 0;
+}
+
+.event-goods-recommendation .slick-arrow.slick-prev:after {
+  content: '\f104';
+  font-family: FontAwesome;
+  display: block;
+  top: -2px;
+  left: 5px;
+  text-shadow: 0 0 3px #b1b1b1;
+  text-indent: 0;
+  font-size: 45px;
+  color: #2CCBC8;
+  position: absolute
+}
+
+.event-goods-recommendation .slick-arrow.slick-next:after {
+  content: '\f105';
+  font-family: FontAwesome;
+  display: block;
+  top: -2px;
+  right: 5px;
+  text-shadow: 0 0 3px #b1b1b1;
+  text-indent: 0;
+  font-size: 45px;
+  color: #2CCBC8;
+  position: absolute
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>mypage-style</title>
+
+    <link rel="stylesheet" href="../../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../../static/new/css/base/m-base.css">
+    <link rel="stylesheet" href="../static/new/css/m-mypage-popup.css">
+
+    <script src="../../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../../static/new/js/jquery-ui.min.js"></script>
+    <script src="../../static/new/js/slick.js"></script>
+    <script src="../static/new/js/m-mypage-popup.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+<script>
+</script>
+<body>    
+    <div class="container">
+        <div class="ssl-box">
+            <p>
+                modal 은 구매확정 1,2,3 으로 내부요소만 바뀌도록 작업 해놨습니다. <br>
+                주석처리 부분 확인해주세요! <br>
+                <br>
+                "modal-on" 클레스 버튼을 클릭시 <br>
+                <span> "body"</span> 부분에 <span>"modal-open"</span> 클레스가 들어가고, <br>
+                <span>(div class="modal")</span> 클레스가 <span>"display:none" </span>에서 <br> <span>"display:block"</span> 처리되어 모달 창을 띄우게됩니다! <br>
+                참고해주세요!
+                <br>
+                <br>
+                (PC size로 보시면 모달창이 아랫부분으로 내려가 보입니다! MOBILE size 로 봐주세요!)
+            </p>
+            
+            <button class="modal-on">
+                모달 버튼 
+            </button>
+
+           
+           
+           
+           
+            <!-- 여기부터 modal 창 html -->
+            <!-- 여기부터 사용하시면 됩니다! -->
+            <div class="modal">
+                <div class="modal-dialog"> 
+                    <div class="modal-content">
+                        <button class="modal-btn">
+                            <i class="material-icons">clear</i>
+                        </button>
+                        
+                        <!-- 구매확정 01 -->
+                        <div class="modal-contents-box modal-contents-purchase">    
+                            <div class="modal-header">
+                                <div class="modal-goods">
+                                    <div class="modal-goods-info">
+                                        <div class="goods-info-pic">
+                                            <span>
+                                                <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                            </span>
+                                        </div>
+                                        
+                                        <div class="goods-info-txt">
+                                            <div class="modal-title-txt text-ellipsis">
+                                                <a href="#">레이디 켈리 매직 화이트닝 4종 세트 색상</a>
+                                            </div>
+                                            
+                                            <div class="modal-sub-txt">
+                                                (세럼+CC크림+선크림+클렌징 폼)* 사은품 꽃비누_두줄까지 보여집니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="modal-goods-price">
+                                        60,000원 / 1개
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="modal-body-txt">
+                                    반품/교환 계획이 없는지 확인하시고 구매를 확정하실 경우에만 <span class="green">구매확정</span>을 해주세요.
+                                </div>    
+                                
+                                <div class="modal-body-guide">
+                                    *구매확정 후 반품 /교환은 판매자의 동의가 있어야 가능합니다
+                                </div>    
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class="modal-footer-btn">
+                                    <a class="close-modal">취소</a>
+                                    <a href="#" class="confirm-btn">구매확정</a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                        <!-- 구매확정 02 -->
+<!--
+                        <div class="modal-contents-box modal-contents-purchase">    
+                            <div class="modal-header">
+                                <div class="modal-goods">
+                                    <div class="modal-goods-info">
+                                        <div class="goods-info-pic">
+                                            <span>
+                                                <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                            </span>
+                                        </div>
+                                        
+                                        <div class="goods-info-txt">
+                                            <div class="modal-title-txt text-ellipsis">
+                                                <a href="#">레이디 켈리 매직 화이트닝 4종 세트 색상</a>
+                                            </div>
+                                            
+                                            <div class="modal-sub-txt">
+                                                (세럼+CC크림+선크림+클렌징 폼)* 사은품 꽃비누_두줄까지 보여집니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="modal-goods-price">
+                                        60,000원 / 1개
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="modal-body-txt">
+                                    반품/교환 계획이 없는지 확인하시고 구매를 확정하실 경우에만 <span>구매확정</span>을 해주세요.
+                                </div>    
+                                
+                                <div class="modal-body-guide">
+                                    *구매확정 후 반품 /교환은 판매자의 동의가 있어야 가능합니다
+                                </div>    
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class="modal-footer-btn">
+                                    <a class="close-modal">취소</a>
+                                    <a href="#" class="confirm-btn">구매확정</a>
+                                </div>
+                            </div>
+                        </div>
+-->
+                        
+                        
+                        
+                        <!-- 구매확정 03 -->
+                        <!-- 주문배송 더보기 -->
+<!--
+                        <div class="modal-contents-box modal-contents-list">    
+                            <div class="modal-header">
+                                <div class="modal-goods">
+                                    <div class="modal-goods-info">
+                                        <div class="goods-info-pic">
+                                            <span>
+                                                <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                            </span>
+                                        </div>
+                                        
+                                        <div class="goods-info-txt">
+                                            <div class="modal-title-txt">
+                                                <a href="#">레이디 켈리 매직 화이트닝 4종 세트 색상</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="modal-body-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                주문상세 보기
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">
+                                                장바구니 담기
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">
+                                                구매확정
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">
+                                                배송조회
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

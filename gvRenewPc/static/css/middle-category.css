@@ -1,0 +1,172 @@
+.best-items-section {
+  margin-bottom: 100px;
+  padding: 50px 0 70px;
+  background: #f4f3f4; }
+  .best-items-section .best-items-wrap .best-items {
+    margin-left: -10px;
+    margin-right: -10px; }
+    .best-items-section .best-items-wrap .best-items li {
+      float: left;
+      width: 33.33%;
+      padding: 0 10px; }
+      .best-items-section .best-items-wrap .best-items li .item {
+        display: block;
+        position: relative; }
+        .best-items-section .best-items-wrap .best-items li .item:hover .thumb {
+          border-color: #ddd; }
+        .best-items-section .best-items-wrap .best-items li .item:hover .desc .name {
+          text-decoration: underline; }
+        .best-items-section .best-items-wrap .best-items li .item .deco {
+          position: absolute;
+          z-index: 1;
+          top: -4px;
+          right: 12px;
+          width: 61px;
+          height: 70px;
+          padding-top: 13px;
+          background-image: url(../../static/img/flag-best-item.png);
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          text-align: center;
+          font-size: 18px;
+          color: #fff; }
+        .best-items-section .best-items-wrap .best-items li .item .thumb {
+          border: 1px solid transparent;
+          min-height: 378px;
+          background: #fff; }
+          .best-items-section .best-items-wrap .best-items li .item .thumb img {
+            width: 100%;
+            height: 100%; }
+        .best-items-section .best-items-wrap .best-items li .item .desc {
+          margin-top: 20px;
+          text-align: center; }
+          .best-items-section .best-items-wrap .best-items li .item .desc .name {
+            margin-bottom: 2px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #515151; }
+          .best-items-section .best-items-wrap .best-items li .item .desc .sub {
+            font-size: 14px;
+            font-weight: 300;
+            color: #4f4f4f; }
+
+.category-text-list-wrap {
+  margin-bottom: 50px; }
+  .category-text-list-wrap h2.category-text-list-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #515152; }
+  .category-text-list-wrap .category-text-list {
+    padding-top: 10px;
+    border-top: 2px solid #2ccbc8; }
+    .category-text-list-wrap .category-text-list li {
+      position: relative;
+      width: 16.6%;
+      float: left;
+      padding: 0 9px; }
+      .category-text-list-wrap .category-text-list li:before {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 1px;
+        background: #dcdcdc; }
+      .category-text-list-wrap .category-text-list li + li:before {
+        display: block; }
+      .category-text-list-wrap .category-text-list li + li:nth-child(6n-5):before {
+        display: none; }
+      .category-text-list-wrap .category-text-list li .list-link {
+        display: block;
+        padding: 7px 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        color: #515152; }
+        .category-text-list-wrap .category-text-list li .list-link:hover, .category-text-list-wrap .category-text-list li .list-link.is-active {
+          font-weight: 500;
+          color: #2ccbc8; }
+
+.prd-list-wrap {
+  padding-top: 23px;
+  margin-bottom: 100px; }
+  .prd-list-wrap .upper-tool {
+    margin-bottom: 24px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ddd; }
+    .prd-list-wrap .upper-tool .left-area {
+      float: left;
+      padding-top: 17px; }
+    .prd-list-wrap .upper-tool .right-area {
+      float: right; }
+    .prd-list-wrap .upper-tool .search-wrap .form-ctrl {
+      position: relative;
+      width: 290px;
+      border: 2px solid #dcdcdc; }
+      .prd-list-wrap .upper-tool .search-wrap .form-ctrl input[type="text"] {
+        width: 100%;
+        height: 30px;
+        padding: 2px 42px 2px 10px;
+        font-size: 14px;
+        color: #515151; }
+      .prd-list-wrap .upper-tool .search-wrap .form-ctrl .btn-search {
+        position: absolute;
+        display: inline-block;
+        top: 5px;
+        right: 13px;
+        width: 20px;
+        height: 19px;
+        background-image: url(../../static/img/icon_btn_search.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat; }
+  .prd-list-wrap .prd-list-style4 {
+    margin-left: -6px;
+    margin-right: -6px; }
+    .prd-list-wrap .prd-list-style4 li {
+      float: left;
+      width: 25%;
+      margin-bottom: 35px;
+      padding: 0 6px; }
+      .prd-list-wrap .prd-list-style4 li .item {
+        display: block; }
+        .prd-list-wrap .prd-list-style4 li .item:hover .thumb:before {
+          display: block; }
+        .prd-list-wrap .prd-list-style4 li .item:hover .desc .name {
+          text-decoration: underline; }
+        .prd-list-wrap .prd-list-style4 li .item .thumb {
+          position: relative;
+          height: 286px;
+          border: 1px solid #ddd; }
+          .prd-list-wrap .prd-list-style4 li .item .thumb:before {
+            display: none;
+            content: '';
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
+            border: 2px solid #29ccc9; }
+          .prd-list-wrap .prd-list-style4 li .item .thumb img {
+            width: 100%;
+            height: 100%; }
+        .prd-list-wrap .prd-list-style4 li .item .desc {
+          margin-top: 10px;
+          text-align: center; }
+          .prd-list-wrap .prd-list-style4 li .item .desc .name {
+            margin-bottom: 3px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #515151; }
+          .prd-list-wrap .prd-list-style4 li .item .desc .sub {
+            font-size: 14px;
+            font-weight: 300;
+            color: #4f4f4f; }
+
+/*# sourceMappingURL=middle-category.css.map */
+
+/*# sourceMappingURL=middle-category.css.map */

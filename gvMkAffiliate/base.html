@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title></title>
+
+    <link rel="stylesheet" href="css/base/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/base/normalize.css">
+    <link rel="stylesheet" href="css/base/slick.css">
+    <link rel="stylesheet" href="css/base/template_component.css">
+
+    <link rel="stylesheet" href="css/base/base.css">
+
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="browser_screen"></div>
+<div class="header">
+    <div class="top_bar"></div>
+    <div class="header_container clearfix">
+        <h1 class="logo"><a href=""><img src="img/mkGvLogo.png" alt=""></a></h1>
+        <div class="btn_navigator">
+            <div class="btn_txt closed"><i class="fa fa-bars"></i> 전체메뉴</div>
+            <div class="btn_txt open"><img src="img/btn_cancel_blue.png" class="img_icon"> 닫기</div>
+            <div class="navigator">
+                <ul class="link_layout clearfix">
+                    <li class="category_columns">
+                        <div class="inner_wrap">
+                            <div class="head has_sub_layout">조회하기</div>
+                            <div class="menu_body">
+                                <ul>
+                                    <li class="has_sub_menu">
+                                        <a class="link">거래내역 <i class="fa fa-chevron-down"
+                                                                aria-hidden="true"></i></a>
+                                        <div class="sub_menu">
+                                            <ul>
+                                                <li class="list">
+                                                    <a href="">매출내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="https://naver.com">승인내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">대금입금내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">매출반송내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">대금미지급내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">연체상계</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">국세청 제출 자료</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">매출・승인 내역 다운로드</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="link">가맹점 번호</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="link">가맹점 가입진행상황</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="link">가맹점한도/잔여한도</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!--두번쨰 칼럼-->
+                    <li class="category_columns">
+                        <div class="inner_wrap">
+                            <div class="head has_sub_layout">가입안내</div>
+                            <div class="menu_body">
+                                <ul>
+                                    <li>
+                                        <a href="" class="link">삼성카드 가맹점</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="link">수기 매출전표 특약 안내</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="category_columns">
+                        <div class="inner_wrap">
+                            <div class="head has_sub_layout">신청하기</div>
+                            <div class="menu_body">
+                                <ul>
+                                    <li>
+                                        <a href="" class="link">홈페이지 매출취소 신청조회</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="category_columns">
+                        <div class="inner_wrap">
+                            <div class="head has_sub_layout">홍보하기</div>
+                            <div class="menu_body">
+                                <ul>
+                                    <li class="has_sub_menu">
+                                        <a class="link">가맹점 혜택안내 <i class="fa fa-chevron-down"
+                                                                    aria-hidden="true"></i></a>
+                                        <div class="sub_menu">
+                                            <ul>
+                                                <li class="list">
+                                                    <a href="">매출내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">대금미지급내역</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">매출승인 내역 다운로드</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="has_sub_menu">
+                                        <a class="link">빅데이터 마케팅 파트너십 <i class="fa fa-chevron-down"
+                                                                         aria-hidden="true"></i></a>
+                                        <div class="sub_menu">
+                                            <ul>
+                                                <li class="list">
+                                                    <a href="">빅데이터 컨설팅</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">LINK 비즈파트너</a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="">리얼타임 리서치서비스</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page_path">현재 페이지 이름</div>
+        <ul class="user_tools">
+            <li class="btn_user_search">
+                <a class="link">
+                    <div class="icon search"></div>
+                    <div class="txt">검색</div>
+                </a>
+                <div class="search_drop_down">
+                    <form action="">
+                        <div class="tit">사이트 내 검색하기</div>
+                        <div class="search_wrap">
+                            <input type="search" class="form_control" placeholder="검색어를 입력해주세요">
+                            <button class="btn_search"></button>
+                        </div>
+                    </form>
+                    <div class="btn_close_user_search">닫기 X</div>
+                </div>
+            </li>
+            <li>
+                <div class="bar"></div>
+            </li>
+            <li class="btn_user_login">
+                <a href="" class="link">
+                    <div class="icon login"></div>
+                    <div class="txt">로그인</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer_container">
+        <div class="tels">
+            <div class="item">
+                <p class="key">GV 대표전화</p>
+                <p class="val">1644-8194</p>
+            </div>
+            <div class="item">
+                <p class="key">가맹신청</p>
+                <p class="val">1644-8194</p>
+            </div>
+        </div>
+        <div class="bars">
+            <a href="" class="link">회사소개</a>
+            <a class="bar">|</a>
+            <a href="" class="link">이용약관</a>
+            <a class="bar">|</a>
+            <a href="" class="link bold">개인정보 처리방침</a>
+        </div>
+        <div class="line_txt">대표이사 이강신 / (62300) 광주광역시 광산구 수등로 258번길 10,202호 / 사업자등록번호 696-81-00789</div>
+        <div class="line_txt">통신판매업신고 : 제2018-광주북구-119호</div>
+        <div class="copyright">Copyright(C) GVShopping All RIghts Reserved.</div>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

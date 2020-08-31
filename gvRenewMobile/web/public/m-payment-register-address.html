@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../static/new/css/base/m-base.css">
+    <link rel="stylesheet" href="../static/new/css/m-twotab-page.css">
+
+    <script src="../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../static/new/js/jquery-ui.min.js"></script>
+    <script src="../static/new/js/slick.js"></script>
+    <script src="../static/new/js/m-common-script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--header자리-->
+<header class="m-header clearfix">
+    <div class="left-area">
+        <a href="" class="left-link">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <div class="logo">
+        <a href="" class="center-link">
+            <img src="../static/new/img/logo-basic.png" alt="">
+        </a>
+    </div>
+    <div class="right-area">
+        <a href="" class="right-link">
+            <img src="../static/new/img/icon-btn-search-black.png" alt="">
+        </a>
+    </div>
+</header>
+
+
+<div class="page-wrap m-two-tabs-page">
+    <div class="container">
+        <div class="page-title">배송정보</div>
+        <div class="tab-links-wrap">
+            <a href="#my-addr" class="tab-link">나의 주소록</a>
+            <a href="#new-addr" class="tab-link">새 주소</a>
+        </div>
+        <div class="tab-panels-wrap">
+            <div class="tab-panel" id="my-addr">
+                <div class="row clearfix">
+                    <div class="key">배송메세지</div>
+                    <div class="value">
+                        <div class="custom-select">
+                            <select>
+                                <option value="0" selected>배송지를 선택해주세요.</option>
+                                <option value="1">배송지1</option>
+                                <option value="2">배송지2</option>
+                                <option value="3">배송지3</option>
+                                <option value="4">배송지4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="key">받으시는 분</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="text" value="홍길동(집)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">휴대폰</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="text" value="010-0000-0000">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">배송주소</div>
+                    <div class="value">
+                        <div class="form-ctrl sm">
+                            <input type="text" value="12345">
+                        </div>
+                        <div class="form-ctrl">
+                            <input type="text" value="서울특별시 강남구 봉은사 18 54(역삼동)">
+                        </div>
+                        <div class="form-ctrl">
+                            <input type="text" value="지브이 쇼핑몰">
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-right-wrap clearfix">
+                    <div class="input-checkbox pull-right">
+                        <input type="checkbox" name="" id="set-as-default-addr">
+                        <label for="set-as-default-addr">
+                            <i class="material-icons is-outline">check_box_outline_blank</i>
+                            <i class="material-icons is-checked">check_box</i>
+                            <span>기본배송지로 등록하기</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="" class="btn-action">수정</a>
+                    <a href="" class="btn-action green">선택</a>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="new-addr">
+                <div class="row clearfix">
+                    <div class="key">배송지 별명</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="text" placeholder="배송지 별명 입력해주세요.">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="key">받으시는 분</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="text" placeholder="성명 입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">휴대폰</div>
+                    <div class="value">
+                        <div class="form-ctrl">
+                            <input type="number" placeholder="-없이 입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="key">배송주소</div>
+                    <div class="value">
+                        <div class="form-ctrl has-btn">
+                            <input type="text" placeholder="주소 입력 후 검색">
+                            <a href="" class="btn-action">검색</a>
+                        </div>
+                        <div class="form-ctrl sm">
+                            <input type="text" placeholder="우편주소">
+                        </div>
+                        <div class="form-ctrl">
+                            <input type="text" placeholder="기본주소">
+                        </div>
+                        <div class="form-ctrl">
+                            <input type="text" placeholder="상세주소">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap" style="text-align: right;">
+                    <a href="" class="btn-action green">저장</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--footer-->
+<footer class="m-footer">
+    <ul class="clearfix">
+        <li class="is-active">
+            <a href="" class="footer-link">
+                <div class="thumb home"></div>
+                <div class="txt">GV 홈</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb category"></div>
+                <div class="txt">카테고리</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb cart"></div>
+                <div class="txt">장바구니</div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="footer-link">
+                <div class="thumb login"></div>
+                <div class="txt">로그인</div>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+
+</body>
+</html>

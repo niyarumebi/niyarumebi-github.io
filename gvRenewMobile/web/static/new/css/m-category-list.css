@@ -1,0 +1,83 @@
+.category-list .big-category-list {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 10px 38px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  /*    min-height: 45px;*/ }
+
+.category-list .big-category-list .list-icons {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 2px;
+  top: 3px;
+  overflow: hidden; }
+
+.category-list .big-category-list .list-icons img {
+  height: 35px;
+  position: relative; }
+
+.category-list .big-category-list .food-icon img {
+  left: -110px; }
+
+.category-list .big-category-list .life-icon img {
+  left: -285px; }
+
+.category-list .big-category-list .beauty-icon img {
+  left: -218px; }
+
+.category-list .big-category-list .fashion-icon img {
+  left: -251px; }
+
+.category-list .big-category-list .homeinterior-icon img {
+  left: -152px; }
+
+.category-list .big-category-list .digital-icon img {
+  left: 0px; }
+
+.category-list .big-category-list .sports-icon img {
+  left: -317px; }
+
+.category-list .big-category-list .child-icon img {
+  left: -33px; }
+
+.category-list .big-category-list .pet-icon img {
+  left: -188px; }
+
+.category-list .big-category-list .show-icon img {
+  left: -72px; }
+
+.category-list .big-category-list span {
+  position: absolute;
+  right: 15px; }
+
+.category-list .big-category-list span i {
+  font-size: 20px;
+  transform: rotate(90deg); }
+
+.category-list .big-category-list span .js-icon {
+  font-size: 20px;
+  transform: rotate(-90deg);
+  position: relative;
+  right: 1px; }
+
+.category-list .sub-category-list {
+  display: none; }
+
+.category-list .sub-category-list table tr {
+  border-bottom: 1px solid #dcdcdc; }
+
+.category-list .sub-category-list table tr td {
+  width: 50%; }
+
+.category-list .sub-category-list table tr td:first-child {
+  border-right: 1px solid #dcdcdc; }
+
+.category-list .sub-category-list table tr td .t-list-text {
+  padding: 12px 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333; }
+
+/*# sourceMappingURL=m-category-list.css.maps.map */

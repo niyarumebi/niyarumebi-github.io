@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../../static/new/fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/new/css/base/slick.css">
+    <link rel="stylesheet" href="../../static/new/css/base/m-base.css">
+    <link rel="stylesheet" href="../../static/new/css/mypage/m-mypage-common.css">
+    <link rel="stylesheet" href="../../static/new/css/mypage/m-mypage-orders.css">
+
+    <script src="../../static/new/js/jquery-1.12.2.min.js"></script>
+    <script src="../../static/new/js/jquery.easing.1.3.js"></script>
+    <script src="../../static/new/js/jquery-ui.min.js"></script>
+    <script src="../../static/new/js/slick.js"></script>
+    <script src="../../static/new/js/m-common-script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--header-->
+<header class="m-header clearfix">
+    <div class="left-area">
+        <a href="" class="left-link">
+            <i class="material-icons">arrow_back</i>
+        </a>
+    </div>
+    <div class="logo">
+        <a href="" class="center-link">
+            <img src="../../static/new/img/logo-basic.png" alt="">
+        </a>
+    </div>
+    <div class="right-area">
+        <a href="" class="right-link">
+            <img src="../../static/new/img/icon-btn-search-black.png" alt="">
+        </a>
+    </div>
+</header>
+
+<div class="page-wrap m-mypage-wrap for-myorders">
+    <div class="container">
+        <div class="page-title"><div class="main-t">나의 주문</div></div>
+
+        <div class="tab-links-wrap as-static col2 clearfix">
+            <a href="" class="tab-link is-active">
+                <div class="txt">주문/배송조회</div>
+            </a>
+            <a href="" class="tab-link">
+                <div class="txt">취소/반품/교환</div>
+            </a>
+        </div>
+
+        <div class="tab-panels-wrap">
+            <div class="tab-panel as-static" id="order-history">
+                <div class="upper-wrap">
+                    <div class="month-unit-filter">
+                        <ul class="btns-wrap">
+                            <li>
+                                <a href="" class="btn-mm">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-mm">1개월</a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-mm">3개월</a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-mm">6개월</a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-mm">12개월</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="sub-msg">* 1년 이전 내역은 PC버전에서 확인해주세요.</p>
+                </div>
+                <div class="bottom-wrap">
+
+                    <!--구조설명
+                    01. 배송완료일 경우, 하단 btn-wrap의 클래스와 텍스트를 바꿔주세요. (마크업 제일 마지막에 예제가 있습니다.)
+                    02. head의 오른쪽 배송조회 버튼 셀렉터는 drop-ship-track로 잡으시면 됩니다. (m-common-script의 mypage_dropShipTrack 함수 참고)
+                    03. 구조 설명
+                        data-per-date-wrap : 최상위 : 날짜별 묶음
+
+                        ㄴbtn-to-detail : 바로 하위 : 날짜텍스트와 주문상세보기 버튼
+                        ㄴstate-wrap : 바로 하위 : 날짜묶음 안에 상태별 (결제완료, 배송준비중 , 배송중, 배송완료)
+
+                        ㄴㄴhead : 상품 정보의 헤드
+                        ㄴㄴrecent-ship-track-wrap : 최근 배송조회 3건 드랍다운을 감싸는 박스
+                        ㄴㄴitem : 상품 정보
+
+                        ㄴㄴㄴinfo-wrap : item의 자식 :  옵션팝업버튼, 상품 thumb와 desc를 감싸는 박스
+                        ㄴㄴㄴbtn-wrap  : item의 자식 :  세 가지 버튼을 감싸는 박스
+                    -->
+
+                    <div class="data-per-date-wrap">
+                        <a href="" class="btn-to-detail clearfix">
+                            <div class="pull-left">
+                                <div class="purchase-num">2018005648</div>
+                                <div class="date">2018/10/19</div>
+                            </div>
+                            <div class="pull-right">주문상세보기<i class="fa fa-chevron-right"></i></div>
+                        </a>
+                        <div class="state-wrap">
+                            <div class="head clearfix">
+                                <div class="pull-left">결제완료</div>
+                                <div class="pull-right">
+                                    <a href="" class="btn light-gray">주문취소</a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="info-wrap clearfix">
+                                    <a class="btn-more-option">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="thumb">
+                                        <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="price"><span class="money">60,000</span>원 / <span class="digit">1</span>개</div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap center col3">
+                                    <a href="" class="btn green">구매후기 쓰기</a>
+                                    <a href="" class="btn dark-gray-bd">1:1 문의</a>
+                                    <a href="" class="btn dark-gray">구매확정</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-separator narrow"></div>
+                    </div>
+
+                    <div class="data-per-date-wrap">
+                        <a href="" class="btn-to-detail clearfix">
+                            <div class="pull-left">2018/10/19</div>
+                            <div class="pull-right">주문상세보기<i class="fa fa-chevron-right"></i></div>
+                        </a>
+                        <div class="state-wrap">
+                            <div class="head clearfix">
+                                <div class="pull-left">배송준비중</div>
+                                <div class="pull-right">
+                                    <a class="btn no-bg drop-ship-track">배송조회 <i class="material-icons">keyboard_arrow_down</i></a>
+                                </div>
+                            </div>
+                            <div class="recent-ship-track-wrap">
+                                <!--(이 주석은 읽으신 뒤 삭제해주세요.) 승일님이 작업한 배송조회코드를 그대로 가져왔습니다.-->
+                                <div class="delivery-tracking">
+                                    <div class="delivery-location">
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    배송준비중
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    도착
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    지브이쇼핑몰
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    집하
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-guide-wrap clearfix">
+                                    <div class="guide-txt">*최근 3건만 노출됩니다.</div>
+                                    <a href="" class="btn-to">배송조회 전체보기</a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="info-wrap clearfix">
+                                    <a class="btn-more-option">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="thumb">
+                                        <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="price"><span class="money">60,000</span>원 / <span class="digit">1</span>개</div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap center col3">
+                                    <a href="" class="btn green">구매후기 쓰기</a>
+                                    <a href="" class="btn dark-gray-bd">1:1 문의</a>
+                                    <a href="" class="btn dark-gray">구매확정</a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="info-wrap clearfix">
+                                    <a class="btn-more-option">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="thumb">
+                                        <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="price"><span class="money">60,000</span>원 / <span class="digit">1</span>개</div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap center col3">
+                                    <a href="" class="btn green">구매후기 쓰기</a>
+                                    <a href="" class="btn dark-gray-bd">1:1 문의</a>
+                                    <a href="" class="btn dark-gray">구매확정</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="state-wrap">
+                            <div class="head clearfix">
+                                <div class="pull-left">배송중</div>
+                                <div class="pull-right">
+                                    <a class="btn no-bg drop-ship-track">배송조회 <i class="material-icons">keyboard_arrow_down</i></a>
+                                </div>
+                            </div>
+                            <div class="recent-ship-track-wrap">
+                                <!--(이 주석은 읽으신 뒤 삭제해주세요.) 승일님이 작업한 배송조회코드를 그대로 가져왔습니다.-->
+                                <div class="delivery-tracking">
+                                    <div class="delivery-location">
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    배송준비중
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    도착
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    지브이쇼핑몰
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    집하
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-guide-wrap clearfix">
+                                    <div class="guide-txt">*최근 3건만 노출됩니다.</div>
+                                    <a href="" class="btn-to">배송조회 전체보기</a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="info-wrap clearfix">
+                                    <a class="btn-more-option">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="thumb">
+                                        <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="price"><span class="money">60,000</span>원 / <span class="digit">1</span>개</div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap center col3">
+                                    <a href="" class="btn green">구매후기 쓰기</a>
+                                    <a href="" class="btn dark-gray-bd">1:1 문의</a>
+                                    <a href="" class="btn dark-gray">구매확정</a>
+                                </div>
+                            </div>
+                    </div>
+
+                        <div class="section-separator narrow"></div>
+                    </div>
+
+                    <div class="data-per-date-wrap">
+                        <a href="" class="btn-to-detail clearfix">
+                            <div class="pull-left">2018/10/19</div>
+                            <div class="pull-right">주문상세보기<i class="fa fa-chevron-right"></i></div>
+                        </a>
+                        <div class="state-wrap">
+                            <div class="head clearfix">
+                                <div class="pull-left">배송완료</div>
+                                <div class="pull-right">
+                                    <a class="btn no-bg drop-ship-track">배송조회 <i class="material-icons">keyboard_arrow_down</i></a>
+                                </div>
+                            </div>
+                            <div class="recent-ship-track-wrap">
+                                <!--(이 주석은 읽으신 뒤 삭제해주세요.) 승일님이 작업한 배송조회코드를 그대로 가져왔습니다.-->
+                                <div class="delivery-tracking">
+                                    <div class="delivery-location">
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    배송준비중
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    도착
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    지브이쇼핑몰
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    집하
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-guide-wrap clearfix">
+                                    <div class="guide-txt">*최근 3건만 노출됩니다.</div>
+                                    <a href="" class="btn-to">배송조회 전체보기</a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="info-wrap clearfix">
+                                    <a class="btn-more-option">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="thumb">
+                                        <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="price"><span class="money">60,000</span>원 / <span class="digit">1</span>개</div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap center col3">
+                                    <a href="" class="btn green">구매후기 쓰기</a>
+                                    <a href="" class="btn dark-gray-bd">1:1 문의</a>
+                                    <a href="" class="btn dark-gray">구매확정</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="state-wrap">
+                            <div class="head clearfix">
+                                <div class="pull-left">배송완료</div>
+                                <div class="pull-right">
+                                    <a class="btn no-bg drop-ship-track">배송조회 <i class="material-icons">keyboard_arrow_down</i></a>
+                                </div>
+                            </div>
+                            <div class="recent-ship-track-wrap">
+                                <!--(이 주석은 읽으신 뒤 삭제해주세요.) 승일님이 작업한 배송조회코드를 그대로 가져왔습니다.-->
+                                <div class="delivery-tracking">
+                                    <div class="delivery-location">
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    배송준비중
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    서울 관악구 우체국
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    도착
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-location-list">
+                                            <div class="delivery-location-icon">
+                            <span>
+
+                            </span>
+                                            </div>
+
+                                            <div class="location-list-box">
+                                                <div class="location-list-date">
+                                                    <p>2018.10.10</p>
+                                                    <p>PM 02:30</p>
+                                                </div>
+
+                                                <div class="location-list-place">
+                                                    지브이쇼핑몰
+                                                </div>
+
+                                                <div class="location-list-situation">
+                                                    집하
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-guide-wrap clearfix">
+                                    <div class="guide-txt">*최근 3건만 노출됩니다.</div>
+                                    <a href="" class="btn-to">배송조회 전체보기</a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="info-wrap clearfix">
+                                    <a class="btn-more-option">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <div class="thumb">
+                                        <img src="https://s3.ap-northeast-2.amazonaws.com/gvshopimage/korea/20180329/71836/91047_b4651b0ff643a973e4de9c7f4a6871f05830c6ca.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name text-ellipsis">레이디캘리 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="sub text-ellipsis">4종세트 / 세럼+CC크림+선크림+클렌징 폼 *패키지 포장 무료</div>
+                                        <div class="price"><span class="money">60,000</span>원 / <span class="digit">1</span>개</div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap center col3">
+                                    <a href="" class="btn green-bd">구매후기 보기</a>
+                                    <a href="" class="btn dark-gray-bd">1:1 문의</a>
+                                    <a class="btn middle-gray">확정완료</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-separator narrow"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

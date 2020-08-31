@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.tab-panels-wrap {
+  padding: 0;
+  border: none; }
+
+.tab-panel .btn-wrap {
+  padding-left: 0; }
+
+.m-two-tabs-page {
+  background-color: #f4f3f4; }
+
+.search-list ul {
+  background-color: #fff;
+  border: 1px solid #2ccbc8; }
+
+.search-list li {
+  border-top: 1px solid #dcdcdc;
+  position: relative; }
+
+.search-list li:first-child {
+  border-top: 0px; }
+
+.search-list li a {
+  padding-left: 20px;
+  display: block; }
+
+.search-list li a .search-list-txt {
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px 0px;
+  color: #333; }
+
+.search-list li .list-order {
+  width: 25px;
+  display: inline-block;
+  color: #2ccbc8;
+  font-weight: 600; }
+
+/* 최근검색어 */
+.recent-list li {
+  padding-right: 35px; }
+
+.recent-list li span {
+  height: 40px;
+  width: 35px;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: 0px; }
+
+.recent-list li span i {
+  position: relative;
+  top: 8px;
+  font-size: 17px;
+  color: #333; }
+
+.btn-wrap {
+  margin-top: 16px;
+  text-align: center; }
+
+.btn-delete {
+  display: inline-block;
+  vertical-align: middle; }
+  .btn-delete .thumb {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px; }
+  .btn-delete .txt {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333; }
+
+/*# sourceMappingURL=m-search-page.css.map */

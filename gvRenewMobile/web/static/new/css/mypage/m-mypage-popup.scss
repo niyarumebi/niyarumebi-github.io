@@ -1,0 +1,301 @@
+.ssl-box {
+    margin-bottom: 30px;
+    width: 100%;
+}
+.ssl-box > p {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid #dcdcdc
+}
+.ssl-box > p span {
+    color: red
+}
+
+/* 모달창 */
+/* modal */
+.modal-on {
+    width: 90%;
+    margin-left: 5%;
+    padding: 20px 0px;
+    font-size: 20px;
+    cursor: pointer
+}
+.modal-open {
+    min-height: 100%;
+    overflow: hidden
+}
+
+.modal {
+    color: #555;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1550;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal.js-onbox {
+    display: block;
+}
+.modal-dialog {
+    padding-top: 40%;
+    margin: 30px auto;
+}
+.modal-content {
+    width: 265px;
+    border-radius: 6px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.modal-contents-box {
+    border-radius: 6px;
+    overflow: hidden
+}
+.modal-content .modal-btn {
+    top: -20px;
+    right: -20px;
+    position: absolute;
+    color: #fff;
+    background-color: #7B7B7B;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+.modal-content .modal-btn i {
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+}
+
+/* 구매학정 01 */
+/* head 01: 정보 */
+.modal-contents-purchase .modal-header {
+    background-color: #F4F3F4;
+    padding: 15px;
+    min-height: 112px;
+}
+.modal-contents-purchase .modal-goods .modal-goods-info {
+    padding-bottom: 10px;
+    overflow: hidden
+}
+.modal-contents-purchase .modal-goods .modal-goods-info .goods-info-pic {
+    float: left;
+    width: 53px;
+}
+.modal-contents-purchase .modal-goods .modal-goods-info .goods-info-pic span {
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block
+}
+.modal-contents-purchase .modal-goods .modal-goods-info .goods-info-pic span img {
+    width: 100%
+}
+.modal-contents-purchase .modal-goods .modal-goods-info .goods-info-txt {
+    float: left;
+    width: calc(100% - 53px);
+    padding-left: 10px;
+}
+.modal-contents-purchase .modal-goods .modal-goods-info .goods-info-txt .modal-title-txt {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 3px
+}
+.modal-contents-purchase .modal-goods .modal-goods-info .goods-info-txt .modal-sub-txt {
+    font-size: 10px;
+    color: #7B7B7B;
+    min-height: 30px;
+    width: 100%;
+    overflow: hidden
+}
+.modal-contents-purchase .modal-goods .modal-goods-price {
+    text-align: right;
+    color: #333;
+    font-size: 13px;
+}
+/* body 01: 정보 */
+.modal-contents-purchase .modal-body {
+    padding: 10px 15px;
+    background-color: #fff;
+    min-height: 100px;
+}
+.modal-contents-purchase .modal-body .modal-body-txt {
+    font-size: 12px;
+    color: #333333;
+    padding-bottom: 10px;
+}
+.modal-contents-purchase .modal-body .modal-body-txt .green {
+    color: #2CCBC8
+}
+.modal-contents-purchase .modal-body .modal-body-guide {
+    font-size: 11px;
+    color: #333333;
+    font-weight: 600;
+}
+/* footer 01,02: 정보 */
+
+.modal-contents-confirmation .modal-footer,
+.modal-contents-purchase .modal-footer {
+    border-top: 1px solid #F4F3F4;
+}
+.modal-contents-confirmation .modal-footer .modal-footer-btn,
+.modal-contents-purchase .modal-footer .modal-footer-btn {
+    overflow: hidden
+}
+.modal-contents-confirmation .modal-footer .modal-footer-btn a,
+.modal-contents-purchase .modal-footer .modal-footer-btn a {
+    font-size: 14px;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding: 19px 0px;
+    position: relative;
+    cursor: pointer
+}
+.modal-contents-confirmation .modal-footer .modal-footer-btn a:before, 
+.modal-contents-purchase .modal-footer .modal-footer-btn a:before {
+    position: absolute;
+    width: 1px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #f4f3f4;
+    content: '';
+    right: -0.5px
+}
+.modal-contents-confirmation .modal-footer .modal-footer-btn .confirm-btn ,
+.modal-contents-purchase .modal-footer .modal-footer-btn .confirm-btn {
+    color: #2CCBC8
+}
+/* 구매학정 01 */
+
+
+
+
+
+
+
+
+
+/* 구매학정 02 */
+/* head 02: 정보 */
+.modal-contents-confirmation .modal-header {
+    background-color: #fff;
+    padding: 15px;
+    min-height: 112px;
+}
+.modal-contents-confirmation .modal-title-name {
+    text-align: center;
+    padding-top: 10px;
+}
+.modal-contents-confirmation .modal-title-name .modal-title-icon i {
+    font-size: 38px;
+    color: #2CCBC8;
+    position: relative;
+    top: 3px
+}
+.modal-contents-confirmation .modal-title-name .modal-title-txt {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+}
+/* body 02: 정보 */
+.modal-contents-confirmation .modal-body {
+    padding: 0px 15px;
+    background-color: #fff;
+    min-height: 100px;
+}
+.modal-contents-confirmation .modal-body-contents {
+    background-color: #F4F3F4
+}
+.modal-contents-confirmation .modal-body-contents .modal-contents-txt {
+    text-align: center;
+    font-size: 12px;
+    padding: 9px 0px;
+    line-height: 1.6;
+    color: #333333
+        
+}
+.modal-contents-confirmation .modal-body-contents .modal-contents-txt span {
+    color: #2CCBC8
+}
+/* 구매학정 02 */
+
+
+/* 구매학정 03 */
+/* head 02: 정보 */
+.modal-contents-list .modal-header {
+    background-color: #F4F3F4;
+    padding: 15px;
+}
+.modal-contents-list .modal-goods .modal-goods-info {
+    overflow: hidden
+}
+.modal-contents-list .modal-goods .modal-goods-info .goods-info-pic {
+    float: left;
+    width: 53px;
+}
+.modal-contents-list .modal-goods .modal-goods-info .goods-info-pic span {
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block
+}
+.modal-contents-list .modal-goods .modal-goods-info .goods-info-pic span img {
+    width: 100%
+}
+.modal-contents-list .modal-goods .modal-goods-info .goods-info-txt {
+    float: left;
+    width: calc(100% - 53px);
+    padding-left: 10px;
+}
+.modal-contents-list .modal-goods .modal-goods-info .goods-info-txt .modal-title-txt {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 3px
+}
+
+
+/* body 02: 정보 */
+.modal-contents-list .modal-body {
+    background-color: #fff;
+    min-height: 100px;
+}
+.modal-contents-list .modal-body-list li {
+    border-bottom: 1px solid #F4F3F4
+}
+.modal-contents-list .modal-body-list li:last-child {
+    border-bottom: 0px
+}
+.modal-contents-list .modal-body-list li a {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0px;
+    color: #333333
+}
+/* 구매학정 03 */
+/* 모달창 */
+
+
+
+
+
